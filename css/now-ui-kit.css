@@ -3909,7 +3909,6 @@ Created using IcoMoon - icomoon.io
   display: inline-block;
   font: normal normal normal 14px/1 'Nucleo Outline';
   font-size: inherit;
-  speak: none;
   text-transform: none;
   /* Better Font Rendering */
   -webkit-font-smoothing: antialiased;
@@ -5448,7 +5447,6 @@ img {
 
 .footer nav {
   display: inline-block;
-  float: left;
 }
 
 .footer ul {

@@ -454,6 +454,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   -moz-transition: 300ms ease 0s;
   -ms-transition: 300ms ease 0s;
   -o-transform: 300ms ease 0s;
+  transform: none;
   transition: 300ms ease 0s;
 }
 

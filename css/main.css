@@ -52,9 +52,6 @@ body {
 .btn-category {
     background-color: #AD91FF !important
 }
- .btn-category:hover {
-    opacity: .89;
-}
 
 .heading {
     padding: 160px 50px !important;

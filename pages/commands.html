@@ -23,13 +23,13 @@
 <nav class="navbar navbar-expand-lg bg-transparent">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     </button>
-    <a class="botlogo" href="../index.html">
+    <a class="botlogo" href="../home.html">
     <img src="../assets/RuneIconCircle.png" width="80" height="80" role="button">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../home.html">Home</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="">Commands <span class="sr-only">(current)</span></a>
@@ -50,305 +50,382 @@
     </div>
 </nav>
 
+<script>
+function setgeneral() {
+    document.getElementById("Economy").style.display = "none";
+    document.getElementById("Moderator").style.display = "none";
+    document.getElementById("Information").style.display = "none";
+    document.getElementById("Reddit").style.display = "none";
+    document.getElementById("General").style.display = "block";
+    elements = document.getElementsByClassName('btn btn-category is-active');
+    for (element of elements) {element.className = 'btn btn-category';}
+    document.getElementById("generalbutton").className = 'btn btn-category is-active';
+}
+
+function seteconomy() {
+    document.getElementById("General").style.display = "none";
+    document.getElementById("Moderator").style.display = "none";
+    document.getElementById("Information").style.display = "none";
+    document.getElementById("Reddit").style.display = "none";
+    document.getElementById("Economy").style.display = "block";
+    elements = document.getElementsByClassName('btn btn-category is-active');
+    for (element of elements) {element.className = 'btn btn-category';}
+    document.getElementById("economybutton").className = 'btn btn-category is-active';
+}
+function setmoderator() {
+    document.getElementById("Economy").style.display = "none";
+    document.getElementById("General").style.display = "none";
+    document.getElementById("Information").style.display = "none";
+    document.getElementById("Reddit").style.display = "none";
+    document.getElementById("Moderator").style.display = "block";
+    elements = document.getElementsByClassName('btn btn-category is-active');
+    for (element of elements) {element.className = 'btn btn-category';}
+    document.getElementById("moderatorbutton").className = 'btn btn-category is-active';
+}
+function setinformation() {
+    document.getElementById("Economy").style.display = "none";
+    document.getElementById("Moderator").style.display = "none";
+    document.getElementById("General").style.display = "none";
+    document.getElementById("Reddit").style.display = "none";
+    document.getElementById("Information").style.display = "block";
+    elements = document.getElementsByClassName('btn btn-category is-active');
+    for (element of elements) {element.className = 'btn btn-category';}
+    document.getElementById("informationbutton").className = 'btn btn-category is-active';
+}
+
+function setreddit() {
+    document.getElementById("Economy").style.display = "none";
+    document.getElementById("Moderator").style.display = "none";
+    document.getElementById("Information").style.display = "none";
+    document.getElementById("General").style.display = "none";
+    document.getElementById("Reddit").style.display = "block";
+    elements = document.getElementsByClassName('btn btn-category is-active');
+    for (element of elements) {element.className = 'btn btn-category';}
+    document.getElementById("redditbutton").className = 'btn btn-category is-active';
+}
+</script>
+
 <div class="heading">
     <h1 class="title centered">Commands</h1>
     <div class='subtitle centered'>List of bot commands</div>
     <br />
 
     <div class='container'>
-        <div class='container-4item'>
-            <div class='btn btn-primary '>General</div>
-            <div class='btn btn-primary'>Economy</div>
-            <div class='btn btn-primary'>Moderator</div>
-            <div class='btn btn-primary'>Information</div>
-        </div>
-        <div class="container-item">
-            <div class="Name has-text-primary">dadjoke</div>
-            <div class="Description">Retrieves a randomly generated dad joke.</div>
-            <div class="Usage has-text-gray">!!dadjoke</div>
+        <div class='container-header'>
+            <a id='generalbutton' class='btn btn-category is-active' onclick=setgeneral() href="#/General">General</a>
+            <a id='economybutton' class='btn btn-category' onclick=seteconomy() href="#/Economy">Economy</a>
+            <a id='moderatorbutton' class='btn btn-category' onclick=setmoderator() href="#/Moderator">Moderator</a>
+            <a id='informationbutton' class='btn btn-category' onclick=setinformation() href="#/Information">Information</a>
+            <a id='redditbutton' class='btn btn-category' onclick=setreddit() href="#/Reddit">Reddit</a>
         </div>
 
-        <div class="container-item">
-            <div class="Name has-text-primary">serveravatar</div>
-            <div class="Description">Grab the current server's avatar icon.</div>
-            <div class="Usage has-text-gray">!!serveravatar</div>
+        <div id='General''>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">addbot</div>
+                <div class="Description">Invite Rune to your server.</div>
+                <div class="Usage has-text-gray">!!addbot</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">dadjoke</div>
+                <div class="Description">Retrieves a randomly generated dad joke.</div>
+                <div class="Usage has-text-gray">!!dadjoke</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">hug</div>
+                <div class="Description">Use this to show your appreciation to a member by hugging them.</div>
+                <div class="Usage has-text-gray">!!hug [@Member/ID] (reason)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">tictactoe</div>
+                <div class="Description">Play a game of tic-tac-toe against a friend!</div>
+                <div class="Usage has-text-gray">!!tictactoe [@Member/ID]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">devserver</div>
+                <div class="Description">An invite to Rune's support server.</div>
+                <div class="Usage has-text-gray">!!devserver</div>
+            </div>
+    
+            <div class="container-item final-item">
+                <div class="Name has-text-primary">advice</div>
+                <div class="Description">Randomly generated advice using the adviceslip.com API.</div>
+                <div class="Usage has-text-gray">!!advice</div>
+            </div>
+    
         </div>
 
-        <div class="container-item">
-            <div class="Name has-text-primary">blackjack</div>
-            <div class="Description">Play a game of blackjack to earn coins.</div>
-            <div class="Usage has-text-gray">!!blackjack [bet or "none"]</div>
+        <div id='Economy' class='hidden'>
+            <div class="container-item">
+                <div class="Name has-text-primary">coins</div>
+                <div class="Description">Shows the amount of coins a user has in their account.</div>
+                <div class="Usage has-text-gray">!!coins (@Member/ID)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">blackjack</div>
+                <div class="Description">Play a game of blackjack to earn coins.</div>
+                <div class="Usage has-text-gray">!!blackjack [bet or "none"]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">withdraw</div>
+                <div class="Description">Withdraw coins from your bank to your wallet.</div>
+                <div class="Usage has-text-gray">!!withdraw [number/all]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">deposit</div>
+                <div class="Description">Deposit your coins from your wallet to the bank for safe-keeping.</div>
+                <div class="Usage has-text-gray">!!deposit [number/all]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">grenade</div>
+                <div class="Description">Use a grenade item and potentially explode another user, stealing their precious coins.</div>
+                <div class="Usage has-text-gray">!!grenade [@Member/ID]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">leaderboard</div>
+                <div class="Description">See the coins leaderboard.</div>
+                <div class="Usage has-text-gray">!!coinslb</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">shop</div>
+                <div class="Description">Displays the coins Shop.</div>
+                <div class="Usage has-text-gray">!!shop</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">work</div>
+                <div class="Description">Working can be very tiring - not with Rune though! Work every 2 hours to earn coins.</div>
+                <div class="Usage has-text-gray">!!work</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">inventory</div>
+                <div class="Description">View your purchased items/perks inventory.</div>
+                <div class="Usage has-text-gray">!!inventory</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">upgrade</div>
+                <div class="Description">Upgrade your bank storage! Store more coins by increasing your maximum capacity.</div>
+                <div class="Usage has-text-gray">!!upgrade</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">use</div>
+                <div class="Description">Use an item from your inventory.</div>
+                <div class="Usage has-text-gray">!!use (item)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">star</div>
+                <div class="Description">Instantly send a message to the star-board!</div>
+                <div class="Usage has-text-gray">!!star (message link)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">numberguesser</div>
+                <div class="Description">Guess the number to earn coins.</div>
+                <div class="Usage has-text-gray">!!guesser [bet or "none"]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">crime</div>
+                <div class="Description">Crime is fun, as long as it is legal! Commit a crime - high risk, high reward to earn coins.</div>
+                <div class="Usage has-text-gray">!!crime</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">dig</div>
+                <div class="Description">Dig with a shovel! A chance to earn coins.</div>
+                <div class="Usage has-text-gray">!!dig</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">hunt</div>
+                <div class="Description">Go hunting for animals! A chance to earn coins.</div>
+                <div class="Usage has-text-gray">!!hunt</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">fish</div>
+                <div class="Description">Go fishing! A chance to earn coins.</div>
+                <div class="Usage has-text-gray">!!fish</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">search</div>
+                <div class="Description">Search a place for some coins, maybe you'll find some.</div>
+                <div class="Usage has-text-gray">!!search</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">beg</div>
+                <div class="Description">Do a little begging, maybe someone will be kind enough to donate a few coins.</div>
+                <div class="Usage has-text-gray">!!beg</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">gift</div>
+                <div class="Description">Gift your coins to another member. There is a 4% tax on transfers.</div>
+                <div class="Usage has-text-gray">!!gift [@Member/ID] [number of coins]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">heist</div>
+                <div class="Description">Start a bank robbery and push through minigames and hard choices to go big or go home, potentially earning a lot of coins. This can be done once a day.</div>
+                <div class="Usage has-text-gray">!!heist</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">sell</div>
+                <div class="Description">Sell an item that you have in your inventory.</div>
+                <div class="Usage has-text-gray">!!sell [item ID]</div>
+            </div>
         </div>
 
-        <div class="container-item">
-            <div class="Name has-text-primary">addbot</div>
-            <div class="Description">Invite Rune to your server.</div>
-            <div class="Usage has-text-gray">!!addbot</div>
+        <div id='Information' class='hidden'>
+            <div class="container-item">
+                <div class="Name has-text-primary">serveravatar</div>
+                <div class="Description">Grab the current server's avatar icon.</div>
+                <div class="Usage has-text-gray">!!serveravatar</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">credits</div>
+                <div class="Description">Shows information on the developers of Rune.</div>
+                <div class="Usage has-text-gray">!!credits</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">whois</div>
+                <div class="Description">Shows details about you or a specified Discord account.</div>
+                <div class="Usage has-text-gray">!!whois (@Member/ID)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">avatar</div>
+                <div class="Description">Get a full sized image/gif avatar of a discord account.</div>
+                <div class="Usage has-text-gray">!!avatar (@User/ID)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">ping</div>
+                <div class="Description">Returns the bot's latency (response time), in miliseconds.</div>
+                <div class="Usage has-text-gray">!!ping</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">help</div>
+                <div class="Description">Shows the help selection menu, command categories, or information on a specific command.</div>
+                <div class="Usage has-text-gray">!!help (command)</div>
+            </div>
         </div>
 
-        <div class="container-item">
-            <div class="Name has-text-primary">coins</div>
-            <div class="Description">Shows the amount of coins a user has in their account.</div>
-            <div class="Usage has-text-gray">!!coins (@Member/ID)</div>
+
+        <div id='Moderator' class='hidden'>
+            <div class="container-item">
+                <div class="Name has-text-primary">sync</div>
+                <div class="Description">Synchronize permissions of the current channel to the category it is in.</div>
+                <div class="Usage has-text-gray">!!sync</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">say</div>
+                <div class="Description">Make the bot say a message.</div>
+                <div class="Usage has-text-gray">!!say [channel] [message]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">vote</div>
+                <div class="Description">Create a vote in a specified channel with automatically added yes/no reactions.</div>
+                <div class="Usage has-text-gray">!!vote [channel] [topic]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">settings</div>
+                <div class="Description">See the Rune customizations you have set for this server.</div>
+                <div class="Usage has-text-gray">!!settings</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">clean</div>
+                <div class="Description">Clean up Rune's messages in this channel.</div>
+                <div class="Usage has-text-gray">!!clean (number - default 10)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">stealemoji</div>
+                <div class="Description">Stealing is bad, but there are exceptions. Nitro users can add emojis from other servers with this command.</div>
+                <div class="Usage has-text-gray">!!stealemoji [emoji from another server]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">slowmode</div>
+                <div class="Description">Set or remove the current channel's slowmode.</div>
+                <div class="Usage has-text-gray">!!slowmode [time or 0]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">prefix</div>
+                <div class="Description">Customize Rune's prefix for this server.</div>
+                <div class="Usage has-text-gray">!!prefix (new prefix)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">logchannel</div>
+                <div class="Description">Set or remove Rune's logging channel.</div>
+                <div class="Usage has-text-gray">!!logchannel (#channel/clear)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">logmembers</div>
+                <div class="Description">Set whether Rune should log member joins and leaves in your server's logchannel.</div>
+                <div class="Usage has-text-gray">!!logmembers (enable/disable)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">logdeletes</div>
+                <div class="Description">Set whether Rune should log message deletions in your server's logchannel.</div>
+                <div class="Usage has-text-gray">!!logdeletes (enable/disable)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">logprofiles</div>
+                <div class="Description">Set whether Rune should profile updates in your server's logchannel, this applies to username, avatar, and discriminator changes.</div>
+                <div class="Usage has-text-gray">!!logprofiles (enable/disable)</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">ignorechannel</div>
+                <div class="Description">Manage which channels Rune's logs should ignore.</div>
+                <div class="Usage has-text-gray">!!ignorechannel [#channel/ID]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">role</div>
+                <div class="Description">Add 1 or multiple roles at once to a member.</div>
+                <div class="Usage has-text-gray">!!role [@Member/ID] [Roles]</div>
+            </div>
         </div>
 
-        <div class="container-item">
-            <div class="Name has-text-primary">shop</div>
-            <div class="Description">Displays the coins shop.</div>
-            <div class="Usage has-text-gray">!!shop</div>
+        <div id='Reddit' class='hidden'>
+            <div class="container-item">
+                <div class="Name has-text-primary">meme</div>
+                <div class="Description">Sends a button which you can continously press to receive memes.</div>
+                <div class="Usage has-text-gray">!!meme</div>
+            </div>
         </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">withdraw</div>
-            <div class="Description">Withdraw coins from your bank to your wallet.</div>
-            <div class="Usage has-text-gray">!!withdraw [number/all]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">meme</div>
-            <div class="Description">Sends a button which you can continously press to receive memes.</div>
-            <div class="Usage has-text-gray">!!meme</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">deposit</div>
-            <div class="Description">Deposit your coins from your wallet to the bank for safe-keeping.</div>
-            <div class="Usage has-text-gray">!!deposit [number/all]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">grenade</div>
-            <div class="Description">Use a grenade item and potentially explode another user, stealing their precious coins.</div>
-            <div class="Usage has-text-gray">!!grenade [@Member/ID]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">advice</div>
-            <div class="Description">Randomly generated advice using adviceslip.com API.</div>
-            <div class="Usage has-text-gray">!!advice</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">leaderboard</div>
-            <div class="Description">See the coins leaderboard.</div>
-            <div class="Usage has-text-gray">!!coinslb</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">credits</div>
-            <div class="Description">Shows information on the developers of Rune.</div>
-            <div class="Usage has-text-gray">!!credits</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">settings</div>
-            <div class="Description">See the Rune customizations you have set for this server.</div>
-            <div class="Usage has-text-gray">!!settings</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">clean</div>
-            <div class="Description">Clean up Rune's messages in this channel.</div>
-            <div class="Usage has-text-gray">!!clean (number - default 10)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">whois</div>
-            <div class="Description">Shows details about you or a specified Discord account.</div>
-            <div class="Usage has-text-gray">!!whois (@Member/ID)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">work</div>
-            <div class="Description">Working can be very tiring - not with Rune though! Work every 4 hours to earn coins.</div>
-            <div class="Usage has-text-gray">!!work</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">inventory</div>
-            <div class="Description">View your purchased items/perks inventory.</div>
-            <div class="Usage has-text-gray">!!inventory</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">stealemoji</div>
-            <div class="Description">Stealing is bad, but there are exceptions. Nitro users can add emojis from other servers with this command.</div>
-            <div class="Usage has-text-gray">!!stealemoji [emoji from another server]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">avatar</div>
-            <div class="Description">Get a full sized image/gif avatar of a discord account.</div>
-            <div class="Usage has-text-gray">!!avatar (@User/ID)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">upgrade</div>
-            <div class="Description">Upgrade your bank storage! Store more coins by increasing your maximum capacity.</div>
-            <div class="Usage has-text-gray">!!upgrade</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">slowmode</div>
-            <div class="Description">Set or remove the current channel's slowmode.</div>
-            <div class="Usage has-text-gray">!!slowmode [time or 0]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">use</div>
-            <div class="Description">Use an item from your inventory.</div>
-            <div class="Usage has-text-gray">!!use (item)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">hug</div>
-            <div class="Description">Use this to show your appreciation to a member by hugging them.</div>
-            <div class="Usage has-text-gray">!!hug [@Member/ID] (reason)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">prefix</div>
-            <div class="Description">Customize Rune's prefix for this server.</div>
-            <div class="Usage has-text-gray">!!prefix (new prefix)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">numberguesser</div>
-            <div class="Description">Guess the number to earn coins.</div>
-            <div class="Usage has-text-gray">!!guesser [bet or "none"]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">logchannel</div>
-            <div class="Description">Set or remove Rune's logging channel.</div>
-            <div class="Usage has-text-gray">!!logchannel (#channel/clear)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">logmembers</div>
-            <div class="Description">Set whether Rune should log member joins and leaves in your server's logchannel.</div>
-            <div class="Usage has-text-gray">!!logmembers (enable/disable)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">crime</div>
-            <div class="Description">Crime is fun, as long as it is legal! Commit a crime - high risk, high reward to earn coins.</div>
-            <div class="Usage has-text-gray">!!crime</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">tictactoe</div>
-            <div class="Description">Play a game of tic-tac-toe against a friend!</div>
-            <div class="Usage has-text-gray">!!tictactoe [@Member/ID]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">logdeletes</div>
-            <div class="Description">Set whether Rune should log message deletions in your server's logchannel.</div>
-            <div class="Usage has-text-gray">!!logdeletes (enable/disable)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">dig</div>
-            <div class="Description">Dig with a shovel! A chance to earn coins.</div>
-            <div class="Usage has-text-gray">!!dig</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">logprofiles</div>
-            <div class="Description">Set whether Rune should profile updates in your server's logchannel, this applies to username, avatar, and discriminator changes.</div>
-            <div class="Usage has-text-gray">!!logprofiles (enable/disable)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">hunt</div>
-            <div class="Description">Go hunting for animals! A chance to earn coins.</div>
-            <div class="Usage has-text-gray">!!hunt</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">ignorechannel</div>
-            <div class="Description">Manage which channels Rune's logs should ignore.</div>
-            <div class="Usage has-text-gray">!!ignorechannel [#channel/ID]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">fish</div>
-            <div class="Description">Go fishing! A chance to earn coins.</div>
-            <div class="Usage has-text-gray">!!fish</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">role</div>
-            <div class="Description">Add 1 or multiple roles at once to a member.</div>
-            <div class="Usage has-text-gray">!!role [@Member/ID] [Roles]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">search</div>
-            <div class="Description">Search a place for some coins, maybe you'll find some.</div>
-            <div class="Usage has-text-gray">!!search</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">beg</div>
-            <div class="Description">Do a little begging, maybe someone will be kind enough to donate a few coins.</div>
-            <div class="Usage has-text-gray">!!beg</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">gift</div>
-            <div class="Description">Gift your coins to another member. There is a 4% tax on transfers.</div>
-            <div class="Usage has-text-gray">!!gift [@Member/ID] [number of coins]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">heist</div>
-            <div class="Description">Start a bank robbery and push through minigames and hard choices to go big or go home, potentially earning a lot of coins. This can be done once a day.</div>
-            <div class="Usage has-text-gray">!!heist</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">sell</div>
-            <div class="Description">Sell an item that you have in your inventory.</div>
-            <div class="Usage has-text-gray">!!sell [item ID]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">sync</div>
-            <div class="Description">Synchronize permissions of the current channel to the category it is in.</div>
-            <div class="Usage has-text-gray">!!sync</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">ping</div>
-            <div class="Description">Returns the bot's latency (response time), in miliseconds.</div>
-            <div class="Usage has-text-gray">!!ping</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">help</div>
-            <div class="Description">Shows the help selection menu, command categories, or information on a specific command.</div>
-            <div class="Usage has-text-gray">!!help (command)</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">say</div>
-            <div class="Description">Make the bot say a message.</div>
-            <div class="Usage has-text-gray">!!say [channel] [message]</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">devserver</div>
-            <div class="Description">An invite to Rune's support server.</div>
-            <div class="Usage has-text-gray">!!devserver</div>
-        </div>
-
-        <div class="container-item">
-            <div class="Name has-text-primary">vote</div>
-            <div class="Description">Create a vote in a specified channel with automatically added yes/no reactions.</div>
-            <div class="Usage has-text-gray">!!vote [channel] [topic]</div>
-        </div>
+        
     </div>
 </div>
 
@@ -362,8 +439,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/now-ui-kit.min.js"></script>
-<script src='js/javascript.js'></script>
+<script src="../js/now-ui-kit.min.js"></script>
 </body>
 
 </html>

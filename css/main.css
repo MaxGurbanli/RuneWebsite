@@ -49,7 +49,10 @@ body {
     background-color: #2C2F33 !important
 }
 
-.btn-primary:hover{
+.btn-category {
+    background-color: #AD91FF !important
+}
+ .btn-category:hover {
     opacity: .89;
 }
 
@@ -73,7 +76,6 @@ body {
     font-size: 20px !important;
     font-family: 'Lato', sans-serif;
 }
-
 
 .features {
     text-align: center !important;
@@ -226,7 +228,7 @@ body {
     text-align:start;
     grid-auto-flow: row;
     grid-template-rows: 1fr;
-    row-gap: 24px;
+    row-gap: 25px;
     border: 2px solid lightgray;
     top: -180px;
     }
@@ -247,15 +249,23 @@ body {
     .Usage { grid-area: Usage; }
     .Name { grid-area: Name; }
 
+.final-item {
+    border-bottom: none;
+}
 
-.container-4item {
+.is-active {
+    background-color: rgb(119, 136, 153) !important;
+}
+
+.hidden{
+    display: none;
+}
+
+.container-header {
     display: grid;
-    background-color: #231d36;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 10px;
     grid-auto-flow: row;
-    grid-template-areas:
-        "Name Description Usage";
     font-size: 130%;
     }
 

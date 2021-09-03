@@ -43,11 +43,16 @@ body {
 }
 
 .btn-primary {
-    background-color: #AD91FF!important
+    background-color: #AD91FF !important
 }
 .btn-secondary {
     background-color: #2C2F33 !important
 }
+
+.btn-primary:hover{
+    opacity: .89;
+}
+
 .heading {
     padding: 160px 50px !important;
     color: #fff !important;
@@ -241,6 +246,18 @@ body {
     .Description { grid-area: Description; }
     .Usage { grid-area: Usage; }
     .Name { grid-area: Name; }
+
+
+.container-4item {
+    display: grid;
+    background-color: #231d36;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Name Description Usage";
+    font-size: 130%;
+    }
 
 .has-text-primary{
     color:lightgreen

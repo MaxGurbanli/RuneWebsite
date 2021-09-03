@@ -1685,70 +1685,7 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
   color: #FFFFFF;
 }
 
-.centered {
-  position:relative !important;
-  left: 700px !important;
-  top: -200px;
-}
-
-.container{
-  display: grid;
-  position: relative;
-  background-color: #231d36;
-  text-align:start;
-  grid-auto-flow: row;
-  grid-template-rows: 1fr;
-  row-gap: 25px;
-  border: 2px solid lightgray;
-  top: -180px;
-  }
-
-.container-item {
-  display: grid;
-  background-color: #231d36;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 15px;
-  grid-auto-flow: row;
-  grid-template-areas:
-      "Name Description Usage";
-  font-size: 130%;
-  border-bottom: 0.1mm solid gray;
-  }
-  
-  .Description { grid-area: Description; }
-  .Usage { grid-area: Usage; }
-  .Name { grid-area: Name; }
-
-.final-item {
-  border-bottom: none;
-}
-
-.is-active {
-  background-color: rgb(119, 136, 153) !important;
-}
-
-.hidden{
-  display: none;
-}
-
-.container-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 10px;
-  grid-auto-flow: row;
-  font-size: 130%;
-  }
-
-.has-text-primary{
-  color:lightgreen
-}
-
-.has-text-gray{
-  color: rgb(170, 163, 163)
-}
-
 .btn-primary:hover,
-.btn-category:hover,
 .btn-primary:focus,
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,

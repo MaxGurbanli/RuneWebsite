@@ -50,60 +50,7 @@
     </div>
 </nav>
 
-<script>
-function setgeneral() {
-    document.getElementById("Economy").style.display = "none";
-    document.getElementById("Moderator").style.display = "none";
-    document.getElementById("Information").style.display = "none";
-    document.getElementById("Reddit").style.display = "none";
-    document.getElementById("General").style.display = "block";
-    elements = document.getElementsByClassName('btn btn-category is-active');
-    for (element of elements) {element.className = 'btn btn-category';}
-    document.getElementById("generalbutton").className = 'btn btn-category is-active';
-}
 
-function seteconomy() {
-    document.getElementById("General").style.display = "none";
-    document.getElementById("Moderator").style.display = "none";
-    document.getElementById("Information").style.display = "none";
-    document.getElementById("Reddit").style.display = "none";
-    document.getElementById("Economy").style.display = "block";
-    elements = document.getElementsByClassName('btn btn-category is-active');
-    for (element of elements) {element.className = 'btn btn-category';}
-    document.getElementById("economybutton").className = 'btn btn-category is-active';
-}
-function setmoderator() {
-    document.getElementById("Economy").style.display = "none";
-    document.getElementById("General").style.display = "none";
-    document.getElementById("Information").style.display = "none";
-    document.getElementById("Reddit").style.display = "none";
-    document.getElementById("Moderator").style.display = "block";
-    elements = document.getElementsByClassName('btn btn-category is-active');
-    for (element of elements) {element.className = 'btn btn-category';}
-    document.getElementById("moderatorbutton").className = 'btn btn-category is-active';
-}
-function setinformation() {
-    document.getElementById("Economy").style.display = "none";
-    document.getElementById("Moderator").style.display = "none";
-    document.getElementById("General").style.display = "none";
-    document.getElementById("Reddit").style.display = "none";
-    document.getElementById("Information").style.display = "block";
-    elements = document.getElementsByClassName('btn btn-category is-active');
-    for (element of elements) {element.className = 'btn btn-category';}
-    document.getElementById("informationbutton").className = 'btn btn-category is-active';
-}
-
-function setreddit() {
-    document.getElementById("Economy").style.display = "none";
-    document.getElementById("Moderator").style.display = "none";
-    document.getElementById("Information").style.display = "none";
-    document.getElementById("General").style.display = "none";
-    document.getElementById("Reddit").style.display = "block";
-    elements = document.getElementsByClassName('btn btn-category is-active');
-    for (element of elements) {element.className = 'btn btn-category';}
-    document.getElementById("redditbutton").className = 'btn btn-category is-active';
-}
-</script>
 
 <div class="heading">
     <h1 class="title centered">Commands</h1>

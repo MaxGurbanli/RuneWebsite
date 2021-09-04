@@ -223,8 +223,7 @@ body {
     background-color: #231d36;
     text-align:start;
     grid-auto-flow: row;
-    grid-template-rows: 1fr;
-    row-gap: 25px;
+    row-gap: 15px;
     border: 2px solid lightgray;
     top: -180px;
     }
@@ -233,7 +232,6 @@ body {
     display: grid;
     background-color: #231d36;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 15px;
     grid-auto-flow: row;
     grid-template-areas:
         "Name Description Usage";
@@ -260,7 +258,7 @@ body {
 .container-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 1%;
     grid-auto-flow: row;
     font-size: 130%;
     }

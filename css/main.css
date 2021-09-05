@@ -8,6 +8,10 @@ body {
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .botlogo:hover {
     opacity: .89;
 }
@@ -58,9 +62,9 @@ body {
     padding: 160px 50px !important;
     color: #fff !important;
     background-image: url("../assets/wavy-purple-by-nouridio.svg") !important;
-    background-position: bottom !important;
+    background-position: bottom, center !important;
     background-size: 300% !important;
-    background-repeat: no-repeat !important;
+    background-repeat: repeat !important;
 }
 
 .title {

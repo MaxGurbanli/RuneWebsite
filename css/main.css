@@ -169,7 +169,7 @@ body {
 .commandspage_end {
     background-image: url("../assets/ad91ff.png") !important;
     background-position: bottom !important;
-    background-size: 500% !important;
+    background-size: 200% !important;
     background-repeat: repeat !important;
 }
 
@@ -205,12 +205,13 @@ body {
 
 .container{
     display: grid;
-    position: relative;
     background-color: #231d36;
-    text-align:start;
+    text-align: start;
+    align-items: center;
     grid-auto-flow: row;
     row-gap: 15px;
     /*border: 2px solid lightgray;*/
+    position: relative;
     top: -180px;
     }
 
@@ -218,7 +219,7 @@ body {
     display: grid;
     background-color: #231d36;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
+    grid-auto-flow:column;
     grid-template-areas:
         "Name Description Usage";
     font-size: 130%;
@@ -229,7 +230,7 @@ body {
     .Usage { grid-area: Usage; }
     .Name { grid-area: Name; }
 
-.final-item {
+.container .final-item {
     border-bottom: none;
 }
 

@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="https://botrune.herokuapp.com">Home</a>
+                <a class="nav-link" href="home.html">Home</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="">Commands <span class="sr-only">(current)</span></a>
@@ -113,7 +113,7 @@ function setreddit() {
 
     <div class='container'>
         <div class='container-header'>
-            <a id='generalbutton' class='btn-category btn is-active' onclick=setgeneral()>General</a>
+            <a id='generalbutton' class='btn-category btn is-active' onclick=setgeneral()>Fun</a>
             <a id='economybutton' class='btn-category btn' onclick=seteconomy()>Economy</a>
             <a id='moderatorbutton' class='btn-category btn' onclick=setmoderator()>Moderator</a>
             <a id='informationbutton' class='btn-category btn' onclick=setinformation()>Information</a>
@@ -121,12 +121,6 @@ function setreddit() {
         </div>
 
         <div id='General''>
-    
-            <div class="container-item">
-                <div class="Name has-text-primary">addbot</div>
-                <div class="Description">Invite Rune to your server.</div>
-                <div class="Usage has-text-gray">!!addbot</div>
-            </div>
     
             <div class="container-item">
                 <div class="Name has-text-primary">dadjoke</div>
@@ -287,7 +281,7 @@ function setreddit() {
                 <div class="Usage has-text-gray">!!heist</div>
             </div>
     
-            <div class="container-item">
+            <div class="container-item final-item">
                 <div class="Name has-text-primary">sell</div>
                 <div class="Description">Sell an item that you have in your inventory.</div>
                 <div class="Usage has-text-gray">!!sell [item ID]</div>
@@ -295,6 +289,13 @@ function setreddit() {
         </div>
 
         <div id='Information' class='hidden'>
+
+            <div class="container-item">
+                <div class="Name has-text-primary">addbot</div>
+                <div class="Description">Invite Rune to your server.</div>
+                <div class="Usage has-text-gray">!!addbot</div>
+            </div>
+
             <div class="container-item">
                 <div class="Name has-text-primary">serveravatar</div>
                 <div class="Description">Grab the current server's avatar icon.</div>
@@ -325,7 +326,7 @@ function setreddit() {
                 <div class="Usage has-text-gray">!!ping</div>
             </div>
     
-            <div class="container-item">
+            <div class="container-item final-item">
                 <div class="Name has-text-primary">help</div>
                 <div class="Description">Shows the help selection menu, command categories, or information on a specific command.</div>
                 <div class="Usage has-text-gray">!!help (command)</div>
@@ -412,7 +413,7 @@ function setreddit() {
                 <div class="Usage has-text-gray">!!ignorechannel [#channel/ID]</div>
             </div>
     
-            <div class="container-item">
+            <div class="container-item final-item">
                 <div class="Name has-text-primary">role</div>
                 <div class="Description">Add 1 or multiple roles at once to a member.</div>
                 <div class="Usage has-text-gray">!!role [@Member/ID] [Roles]</div>
@@ -420,7 +421,7 @@ function setreddit() {
         </div>
 
         <div id='Reddit' class='hidden'>
-            <div class="container-item">
+            <div class="container-item final-item">
                 <div class="Name has-text-primary">meme</div>
                 <div class="Description">Sends a button which you can continously press to receive memes.</div>
                 <div class="Usage has-text-gray">!!meme</div>

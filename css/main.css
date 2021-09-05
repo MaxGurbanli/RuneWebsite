@@ -163,14 +163,14 @@ body {
     background-image: url("../assets/wavy-light-by-nouridio.svg") !important;
     background-position: bottom !important;
     background-size: 200% !important;
-    background-repeat: no-repeat !important;
+    background-repeat: repeat !important;
 }
 
 .commandspage_end {
     background-image: url("../assets/ad91ff.png") !important;
     background-position: bottom !important;
     background-size: 500% !important;
-    background-repeat: no-repeat !important;
+    background-repeat: repeat !important;
 }
 
 .start {
@@ -190,21 +190,6 @@ body {
     padding: 5px 6px !important;
     color: #ecf2ff;
     padding: 30px 30px !important
-}
-
-.footer .nouridio {
-    font-family: 'Montserrat' !important;
-    font-style: normal !important;
-    font-weight: 600 !important;
-    font-size: 16px !important;
-    line-height: 5px !important;
-    letter-spacing: 0.15em !important;
-    font-variant: small-caps !important;
-}
-
-.footer .nouridio a {
-    color: #AD91FF !important;
-    text-decoration: none !important;
 }
 
 .footer .bot-footer {

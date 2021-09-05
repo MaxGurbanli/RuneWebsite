@@ -166,8 +166,8 @@ body {
     background-repeat: no-repeat !important;
 }
 
-.page_end {
-    background-image: url("../assets/FooterBackground.jpg") !important;
+.commandspage_end {
+    background-image: url("../assets/ad91ff.png") !important;
     background-position: bottom !important;
     background-size: 500% !important;
     background-repeat: no-repeat !important;
@@ -209,7 +209,7 @@ body {
 
 .footer .bot-footer {
     text-align: center !important;
-    color: #a2a8bd !important
+    color: #ffffff !important
 }
 
 .centered {

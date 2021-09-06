@@ -64,7 +64,7 @@ html {
     background-image: url("../assets/wavy-purple-by-nouridio.svg") !important;
     background-position: bottom, center !important;
     background-size: 300% !important;
-    background-repeat: repeat !important;
+    background-repeat: no-repeat !important;
 }
 
 .title {

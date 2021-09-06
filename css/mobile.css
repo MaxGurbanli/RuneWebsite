@@ -29,6 +29,10 @@
 		text-decoration: underline;
 		color: #660066;
 		}
+	
+	.container{
+		position: inherit;
+	}
 
 }
 /* iPhone-specific styles */

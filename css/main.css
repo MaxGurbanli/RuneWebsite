@@ -6,7 +6,6 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-size: 16px;
-    padding: 3px;
 }
 
 html {
@@ -200,12 +199,13 @@ html {
 }
 
 .centered {
-    position:relative !important;
+    position: relative;
     left: 42% !important;
     top: -200px !important;
 }
 
 .container{
+    overflow: auto;
     display: grid;
     background-color: #231d36;
     text-align: start;
@@ -258,8 +258,4 @@ html {
 
 .has-text-gray{
     color: rgb(170, 163, 163)
-}
-
-.mobile-navbar-fix{
-    min-width: 1% !important;
 }

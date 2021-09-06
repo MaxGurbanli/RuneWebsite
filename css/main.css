@@ -167,14 +167,14 @@ html {
     background-image: url("../assets/wavy-light-by-nouridio.svg") !important;
     background-position: bottom !important;
     background-size: 200% !important;
-    background-repeat: repeat !important;
+    background-repeat: no-repeat !important;
 }
 
 .commandspage_end {
     background-image: url("../assets/ad91ff.png") !important;
     background-position: bottom !important;
     background-size: 200% !important;
-    background-repeat: repeat !important;
+    background-repeat: no-repeat !important;
 }
 
 .start {

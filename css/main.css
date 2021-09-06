@@ -201,8 +201,8 @@ html {
 
 .centered {
     position: relative;
-    left: 42% !important;
-    top: -200px !important;
+    left: 42%;
+    top: -200px
 }
 
 .container{

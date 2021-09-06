@@ -1,7 +1,0 @@
-#!/bin/sh
-
-clear
-
-git add .
-git commit -am 1
-git push heroku main

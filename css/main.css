@@ -1,4 +1,4 @@
-body {
+html, body {
     font-family: 'Poppins', sans-serif !important;
     background-color: #1D1E28;
     color: #fff;
@@ -6,6 +6,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     font-size: 16px;
+    padding: 3px;
 }
 
 html {
@@ -171,10 +172,7 @@ html {
 }
 
 .commandspage_end {
-    background-image: url("../assets/ad91ff.png") !important;
-    background-position: bottom !important;
-    background-size: 200% !important;
-    background-repeat: no-repeat !important;
+    background: #ad91ff !important;
 }
 
 .start {
@@ -260,4 +258,8 @@ html {
 
 .has-text-gray{
     color: rgb(170, 163, 163)
+}
+
+.mobile-navbar-fix{
+    min-width: 1% !important;
 }

@@ -580,6 +580,8 @@ pre code {
 	margin-left: auto
 }
 
+
+/* large screens */
 @media (min-width:1200px) {
 	.container {
 		max-width: 1140px
@@ -10412,6 +10414,3 @@ a.text-dark:hover {
 		border-color: #dee2e6
 	}
 }
-
-
-/*# sourceMappingURL=bootstrap.min.css.map */

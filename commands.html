@@ -53,19 +53,19 @@
 </nav>
 
 <script>
-function setgeneral() {
+function setfun() {
     document.getElementById("Economy").style.display = "none";
     document.getElementById("Moderator").style.display = "none";
     document.getElementById("Information").style.display = "none";
     document.getElementById("Reddit").style.display = "none";
-    document.getElementById("General").style.display = "block";
+    document.getElementById("Fun").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
     document.getElementById("generalbutton").className = 'btn btn-category is-active';
 }
 
 function seteconomy() {
-    document.getElementById("General").style.display = "none";
+    document.getElementById("Fun").style.display = "none";
     document.getElementById("Moderator").style.display = "none";
     document.getElementById("Information").style.display = "none";
     document.getElementById("Reddit").style.display = "none";
@@ -76,7 +76,7 @@ function seteconomy() {
 }
 function setmoderator() {
     document.getElementById("Economy").style.display = "none";
-    document.getElementById("General").style.display = "none";
+    document.getElementById("Fun").style.display = "none";
     document.getElementById("Information").style.display = "none";
     document.getElementById("Reddit").style.display = "none";
     document.getElementById("Moderator").style.display = "block";
@@ -87,7 +87,7 @@ function setmoderator() {
 function setinformation() {
     document.getElementById("Economy").style.display = "none";
     document.getElementById("Moderator").style.display = "none";
-    document.getElementById("General").style.display = "none";
+    document.getElementById("Fun").style.display = "none";
     document.getElementById("Reddit").style.display = "none";
     document.getElementById("Information").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
@@ -99,7 +99,7 @@ function setreddit() {
     document.getElementById("Economy").style.display = "none";
     document.getElementById("Moderator").style.display = "none";
     document.getElementById("Information").style.display = "none";
-    document.getElementById("General").style.display = "none";
+    document.getElementById("Fun").style.display = "none";
     document.getElementById("Reddit").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
@@ -114,14 +114,14 @@ function setreddit() {
 
     <div class='container'>
         <div class='container-header' style='min-width: max-content !important'>
-            <a id='generalbutton' class='btn-category btn is-active' onclick=setgeneral()>Fun</a>
-            <a id='economybutton' class='btn-category btn' onclick=seteconomy()>Economy</a>
+            <a id='economybutton' class='btn-category btn is-active' onclick=seteconomy()>Economy</a>
             <a id='moderatorbutton' class='btn-category btn' onclick=setmoderator()>Moderator</a>
             <a id='informationbutton' class='btn-category btn' onclick=setinformation()>Information</a>
+            <a id='generalbutton' class='btn-category btn' onclick=setfun()>Fun</a>
             <a id='redditbutton' class='btn-category btn' onclick=setreddit()>Reddit</a>
         </div>
 
-        <div id='General''>
+        <div id='Fun' class='Hidden'>
     
             <div class="container-item">
                 <div class="Name has-text-primary">dadjoke</div>
@@ -155,7 +155,7 @@ function setreddit() {
     
         </div>
 
-        <div id='Economy' class='hidden'>
+        <div id='Economy'>
             <div class="container-item">
                 <div class="Name has-text-primary">coins</div>
                 <div class="Description">Shows the amount of coins a user has in their account.</div>

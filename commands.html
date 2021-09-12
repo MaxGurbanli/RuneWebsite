@@ -57,7 +57,7 @@ function setfun() {
     document.getElementById("Economy").style.display = "none";
     document.getElementById("Moderator").style.display = "none";
     document.getElementById("Information").style.display = "none";
-    document.getElementById("Reddit").style.display = "none";
+    document.getElementById("Logging").style.display = "none";
     document.getElementById("Fun").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
@@ -68,7 +68,7 @@ function seteconomy() {
     document.getElementById("Fun").style.display = "none";
     document.getElementById("Moderator").style.display = "none";
     document.getElementById("Information").style.display = "none";
-    document.getElementById("Reddit").style.display = "none";
+    document.getElementById("Logging").style.display = "none";
     document.getElementById("Economy").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
@@ -78,7 +78,7 @@ function setmoderator() {
     document.getElementById("Economy").style.display = "none";
     document.getElementById("Fun").style.display = "none";
     document.getElementById("Information").style.display = "none";
-    document.getElementById("Reddit").style.display = "none";
+    document.getElementById("Logging").style.display = "none";
     document.getElementById("Moderator").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
@@ -88,19 +88,19 @@ function setinformation() {
     document.getElementById("Economy").style.display = "none";
     document.getElementById("Moderator").style.display = "none";
     document.getElementById("Fun").style.display = "none";
-    document.getElementById("Reddit").style.display = "none";
+    document.getElementById("Logging").style.display = "none";
     document.getElementById("Information").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
     document.getElementById("informationbutton").className = 'btn btn-category is-active';
 }
 
-function setreddit() {
+function setlogging() {
     document.getElementById("Economy").style.display = "none";
     document.getElementById("Moderator").style.display = "none";
     document.getElementById("Information").style.display = "none";
     document.getElementById("Fun").style.display = "none";
-    document.getElementById("Reddit").style.display = "block";
+    document.getElementById("Logging").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
     document.getElementById("redditbutton").className = 'btn btn-category is-active';
@@ -118,11 +118,17 @@ function setreddit() {
             <a id='moderatorbutton' class='btn-category btn' onclick=setmoderator()>Moderator</a>
             <a id='informationbutton' class='btn-category btn' onclick=setinformation()>Information</a>
             <a id='generalbutton' class='btn-category btn' onclick=setfun()>Fun</a>
-            <a id='redditbutton' class='btn-category btn' onclick=setreddit()>Reddit</a>
+            <a id='redditbutton' class='btn-category btn' onclick=setlogging()>Logging</a>
         </div>
 
         <div id='Fun' class='Hidden'>
     
+            <div class="container-item">
+                <div class="Name has-text-primary">meme</div>
+                <div class="Description">Sends a button which you can continously press to receive memes.</div>
+                <div class="Usage has-text-gray">!!meme</div>
+            </div>
+
             <div class="container-item">
                 <div class="Name has-text-primary">dadjoke</div>
                 <div class="Description">Retrieves a randomly generated dad joke.</div>
@@ -378,12 +384,16 @@ function setreddit() {
                 <div class="Usage has-text-gray">!!slowmode [time or 0]</div>
             </div>
     
-            <div class="container-item">
+            <div class="container-item final-item">
                 <div class="Name has-text-primary">prefix</div>
                 <div class="Description">Customize Rune's prefix for this server.</div>
                 <div class="Usage has-text-gray">!!prefix (new prefix)</div>
             </div>
-    
+
+        </div>
+
+        <div id='Logging' class='hidden'>
+
             <div class="container-item">
                 <div class="Name has-text-primary">logchannel</div>
                 <div class="Description">Set or remove Rune's logging channel.</div>
@@ -409,19 +419,17 @@ function setreddit() {
             </div>
     
             <div class="container-item">
+                <div class="Name has-text-primary">logroles</div>
+                <div class="Description">Set whether Rune should log role changes in your server's logchannel.</div>
+                <div class="Usage has-text-gray">!!logroles (enable/disable)</div>
+            </div>
+
+            <div class="container-item final-item">
                 <div class="Name has-text-primary">ignorechannel</div>
                 <div class="Description">Manage which channels Rune's logs should ignore.</div>
                 <div class="Usage has-text-gray">!!ignorechannel [#channel/ID]</div>
             </div>
 
-        </div>
-
-        <div id='Reddit' class='hidden'>
-            <div class="container-item final-item">
-                <div class="Name has-text-primary">meme</div>
-                <div class="Description">Sends a button which you can continously press to receive memes.</div>
-                <div class="Usage has-text-gray">!!meme</div>
-            </div>
         </div>
         
     </div>

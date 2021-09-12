@@ -103,7 +103,7 @@ function setlogging() {
     document.getElementById("Logging").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
-    document.getElementById("redditbutton").className = 'btn btn-category is-active';
+    document.getElementById("loggingbutton").className = 'btn btn-category is-active';
 }
 </script>
 
@@ -118,10 +118,10 @@ function setlogging() {
             <a id='moderatorbutton' class='btn-category btn' onclick=setmoderator()>Moderator</a>
             <a id='informationbutton' class='btn-category btn' onclick=setinformation()>Information</a>
             <a id='generalbutton' class='btn-category btn' onclick=setfun()>Fun</a>
-            <a id='redditbutton' class='btn-category btn' onclick=setlogging()>Logging</a>
+            <a id='loggingbutton' class='btn-category btn' onclick=setlogging()>Logging</a>
         </div>
 
-        <div id='Fun' class='Hidden'>
+        <div id='Fun' class='hidden'>
     
             <div class="container-item">
                 <div class="Name has-text-primary">meme</div>

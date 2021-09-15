@@ -171,7 +171,7 @@ html {
     background-repeat: no-repeat !important;
 }
 
-.commandspage_end {
+.page_end {
     background: #ad91ff !important;
 }
 
@@ -257,4 +257,44 @@ html {
 
 .has-text-gray{
     color: rgb(170, 163, 163)
+}
+
+.premium-title{
+    text-align: center;
+    box-sizing: border-box;
+    border: 0px;
+    font-family: inherit;
+    outline: 0px;
+    vertical-align: baseline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 64px;
+    max-width: 100%;
+    letter-spacing: -1px;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(242, 244, 251);
+    text-transform: none;
+    width: auto;
+}
+
+.premium-subtitle{
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Maison Neue', sans-serif !important;
+    box-sizing: inherit;
+    padding: 0 !important;
+    font-size: 1.35rem !important;
+    color: #606a7b !important;
+    text-align: center;
+    max-width: 60%;
+    margin: 1em auto 1.5em;
+}
+
+.btn:hover {
+    opacity: .89 !important;
 }

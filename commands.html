@@ -25,7 +25,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     </button>
     <a class="botlogo" href="home.html">
-    <img src="assets/RuneIconCircle.png" width="80" height="80" role="button" style="min-width: 80px !important;">
+        <img src="assets/RuneIconCircle.png" width="70" height="70" role="button" style="min-width: 70px !important;">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
         <ul class="navbar-nav mr-auto">
@@ -390,10 +390,16 @@ function setlogging() {
                 <div class="Usage has-text-gray">!!slowmode [time or 0]</div>
             </div>
     
-            <div class="container-item final-item">
+            <div class="container-item">
                 <div class="Name has-text-primary">prefix</div>
                 <div class="Description">Customize Rune's prefix for this server.</div>
                 <div class="Usage has-text-gray">!!prefix (new prefix)</div>
+            </div>
+
+            <div class="container-item final-item">
+                <div class="Name has-text-primary">banNewAccounts</div>
+                <div class="Description">A setting for banning newly made accounts that try joining your server. Configurable to the number of days ago an account was made, or 0 to disable.</div>
+                <div class="Usage has-text-gray">!!banNewAccounts [account age in days]</div>
             </div>
 
         </div>

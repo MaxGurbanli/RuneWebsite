@@ -57,41 +57,33 @@
 
 <script>
 function setfun() {
-    document.getElementById("Economy").style.display = "none";
-    document.getElementById("Moderator").style.display = "none";
-    document.getElementById("Information").style.display = "none";
-    document.getElementById("Logging").style.display = "none";
+    cmdcategories = document.getElementsByClassName('cmdcategory');
+    for (element of cmdcategories) {element.style.display = 'none'}
     document.getElementById("Fun").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
-    document.getElementById("generalbutton").className = 'btn btn-category is-active';
+    document.getElementById("funbutton").className = 'btn btn-category is-active';
 }
 
 function seteconomy() {
-    document.getElementById("Fun").style.display = "none";
-    document.getElementById("Moderator").style.display = "none";
-    document.getElementById("Information").style.display = "none";
-    document.getElementById("Logging").style.display = "none";
+    cmdcategories = document.getElementsByClassName('cmdcategory');
+    for (element of cmdcategories) {element.style.display = 'none'}
     document.getElementById("Economy").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
     document.getElementById("economybutton").className = 'btn btn-category is-active';
 }
 function setmoderator() {
-    document.getElementById("Economy").style.display = "none";
-    document.getElementById("Fun").style.display = "none";
-    document.getElementById("Information").style.display = "none";
-    document.getElementById("Logging").style.display = "none";
+    cmdcategories = document.getElementsByClassName('cmdcategory');
+    for (element of cmdcategories) {element.style.display = 'none'}
     document.getElementById("Moderator").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
     document.getElementById("moderatorbutton").className = 'btn btn-category is-active';
 }
 function setinformation() {
-    document.getElementById("Economy").style.display = "none";
-    document.getElementById("Moderator").style.display = "none";
-    document.getElementById("Fun").style.display = "none";
-    document.getElementById("Logging").style.display = "none";
+    cmdcategories = document.getElementsByClassName('cmdcategory');
+    for (element of cmdcategories) {element.style.display = 'none'}
     document.getElementById("Information").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
@@ -99,19 +91,26 @@ function setinformation() {
 }
 
 function setlogging() {
-    document.getElementById("Economy").style.display = "none";
-    document.getElementById("Moderator").style.display = "none";
-    document.getElementById("Information").style.display = "none";
-    document.getElementById("Fun").style.display = "none";
+    cmdcategories = document.getElementsByClassName('cmdcategory');
+    for (element of cmdcategories) {element.style.display = 'none'}
     document.getElementById("Logging").style.display = "block";
     elements = document.getElementsByClassName('btn btn-category is-active');
     for (element of elements) {element.className = 'btn btn-category';}
     document.getElementById("loggingbutton").className = 'btn btn-category is-active';
 }
 
+function setmusic() {
+    cmdcategories = document.getElementsByClassName('cmdcategory');
+    for (element of cmdcategories) {element.style.display = 'none'}
+    document.getElementById("Music").style.display = "block";
+    elements = document.getElementsByClassName('btn btn-category is-active');
+    for (element of elements) {element.className = 'btn btn-category';}
+    document.getElementById("musicbutton").className = 'btn btn-category is-active';
+}
+
 </script>
 
-<!-- Code written by Maxikinz for Discord Bot Rune: botrune.herokuapp.com -->
+<!-- Written by Max for Discord Bot Rune: botrune.herokuapp.com -->
 
 <div class="heading">
     <h1 class="title centered">Commands</h1>
@@ -121,13 +120,14 @@ function setlogging() {
     <div class='container'>
         <div class='container-header' style='min-width: max-content !important'>
             <a id='economybutton' class='btn-category btn is-active' onclick=seteconomy()>Economy</a>
+            <a id='musicbutton' class='btn-category btn' onclick=setmusic()>Music</a>
+            <a id='funbutton' class='btn-category btn' onclick=setfun()>Fun</a>
             <a id='moderatorbutton' class='btn-category btn' onclick=setmoderator()>Moderator</a>
-            <a id='informationbutton' class='btn-category btn' onclick=setinformation()>Information</a>
-            <a id='generalbutton' class='btn-category btn' onclick=setfun()>Fun</a>
             <a id='loggingbutton' class='btn-category btn' onclick=setlogging()>Logging</a>
+            <a id='informationbutton' class='btn-category btn' onclick=setinformation()>Information</a>
         </div>
 
-        <div id='Fun' class='hidden'>
+        <div id='Fun' class='hidden cmdcategory'>
     
             <div class="container-item">
                 <div class="Name has-text-primary">meme</div>
@@ -167,7 +167,7 @@ function setlogging() {
     
         </div>
 
-        <div id='Economy'>
+        <div id='Economy' class='cmdcategory'>
             <div class="container-item">
                 <div class="Name has-text-primary">coins</div>
                 <div class="Description">Shows the amount of coins a user has in their account.</div>
@@ -301,7 +301,7 @@ function setlogging() {
             </div>
         </div>
 
-        <div id='Information' class='hidden'>
+        <div id='Information' class='hidden cmdcategory'>
 
             <div class="container-item">
                 <div class="Name has-text-primary">addbot</div>
@@ -347,7 +347,7 @@ function setlogging() {
         </div>
 
 
-        <div id='Moderator' class='hidden'>
+        <div id='Moderator' class='hidden cmdcategory'>
             <div class="container-item">
                 <div class="Name has-text-primary">sync</div>
                 <div class="Description">Synchronize permissions of the current channel to the category it is in.</div>
@@ -404,7 +404,7 @@ function setlogging() {
 
         </div>
 
-        <div id='Logging' class='hidden'>
+        <div id='Logging' class='hidden cmdcategory'>
 
             <div class="container-item">
                 <div class="Name has-text-primary">logchannel</div>
@@ -443,7 +443,52 @@ function setlogging() {
             </div>
 
         </div>
-        
+
+        <div id='Music' class='hidden cmdcategory'>
+
+            <div class="container-item">
+                <div class="Name has-text-primary">join</div>
+                <div class="Description">Connects Rune to your current or a specified voice channel to play music!</div>
+                <div class="Usage has-text-gray">!!join</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">disconnect</div>
+                <div class="Description">Disconnects Rune from the voice channel it is in.</div>
+                <div class="Usage has-text-gray">!!disconnect</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">play</div>
+                <div class="Description">Play a song!</div>
+                <div class="Usage has-text-gray">!!play [song title/URL]</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">song</div>
+                <div class="Description">View the currently playing song, if any.</div>
+                <div class="Usage has-text-gray">!!song</div>
+            </div>
+    
+            <div class="container-item">
+                <div class="Name has-text-primary">queue</div>
+                <div class="Description">View the current song queue, if any.</div>
+                <div class="Usage has-text-gray">!!queue</div>
+            </div>
+
+            <div class="container-item">
+                <div class="Name has-text-primary">pause</div>
+                <div class="Description">Pause/resume the currently playing song.</div>
+                <div class="Usage has-text-gray">!!pause</div>
+            </div>
+
+            <div class="container-item final-item">
+                <div class="Name has-text-primary">stop</div>
+                <div class="Description">End the currently playing or paused song.</div>
+                <div class="Usage has-text-gray">!!stop</div>
+            </div>
+        </div>
+
     </div>
 </div>
 

@@ -245,7 +245,7 @@ html {
 
 .container-header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 1%;
     grid-auto-flow: row;
     font-size: 130%;

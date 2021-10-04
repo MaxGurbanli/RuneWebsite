@@ -367,12 +367,6 @@ function setmusic() {
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">settings</div>
-                <div class="Description">See the Rune customizations you have set for this server.</div>
-                <div class="Usage has-text-gray">!!settings</div>
-            </div>
-    
-            <div class="container-item">
                 <div class="Name has-text-primary">clean</div>
                 <div class="Description">Clean up Rune's messages in this channel.</div>
                 <div class="Usage has-text-gray">!!clean (number - default 10)</div>
@@ -391,15 +385,27 @@ function setmusic() {
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">prefix</div>
+                <div class="Name has-text-primary">settings</div>
+                <div class="Description">The base command for all related commands, e.g. settings prefix or settings banNewAccounts. Using it without any keywords is the same as using !!settings view</div>
+                <div class="Usage has-text-gray">!!settings</div>
+            </div>
+
+            <div class="container-item">
+                <div class="Name has-text-primary">settings view</div>
+                <div class="Description">View the current Rune settings in place for this server.</div>
+                <div class="Usage has-text-gray">!!settings view</div>
+            </div>
+
+            <div class="container-item">
+                <div class="Name has-text-primary">settings prefix</div>
                 <div class="Description">Customize Rune's prefix for this server.</div>
-                <div class="Usage has-text-gray">!!prefix (new prefix)</div>
+                <div class="Usage has-text-gray">!!settings prefix (new prefix)</div>
             </div>
 
             <div class="container-item final-item">
-                <div class="Name has-text-primary">banNewAccounts</div>
+                <div class="Name has-text-primary">settings banNewAccounts</div>
                 <div class="Description">A setting for banning newly made accounts that try joining your server. Configurable to the number of days ago an account was made, or 0 to disable.</div>
-                <div class="Usage has-text-gray">!!banNewAccounts [account age in days]</div>
+                <div class="Usage has-text-gray">!!settings banNewAccounts [account age in days]</div>
             </div>
 
         </div>

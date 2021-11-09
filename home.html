@@ -27,7 +27,7 @@
 var request = new XMLHttpRequest()
 
   request.open('GET', 'https://top.gg/api/bots/632489295273394176/stats', true)
-  request.setRequestHeader("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjQ4OTI5NTI3MzM5NDE3NiIsImJvdCI6dHJ1ZSwiaWF0IjoxNjM2NDkzOTY4fQ.0-a6OQ9NfbOHbI0dVkC9F_JRMhsxYid-j5gKySysK9M")
+  request.setRequestHeader("Authorization", "e")
   request.onload = function () {
     var data = JSON.parse(this.response)
     document.getElementById("server_count").innerHTML = data.server_count
@@ -133,7 +133,7 @@ var request = new XMLHttpRequest()
     <div class="cards">
         <div class="card statistic" style="width: 18rem;">
             <div class="card-body">
-                <p id="server_count" class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">Loading...</h1>
+                <p id="server_count" class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">65</h1>
                 <p style="font-weight: bold !important;font-size: 20px !important;">servers</p>
             </div>
         </div>

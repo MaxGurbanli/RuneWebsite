@@ -9,7 +9,6 @@ var request = new XMLHttpRequest()
     } else {
       document.getElementById("server_count").innerHTML = "70+"
     }
-
     
   }
   request.send()

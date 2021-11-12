@@ -328,3 +328,17 @@ html {
     font-weight: bold;
 	text-transform: uppercase;
 }
+
+.closebtn {
+    margin-left: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.closebtn:hover {
+    opacity: .5;
+}

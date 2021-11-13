@@ -46,15 +46,13 @@
       return "";
     }
     
-    function checkCookie() {
-      let value = getCookie("closed prompt");
-      if (value) {
-        document.getElementById('popup').style.display='none'
-      }
+let value = getCookie("closed prompt");
+if (value) {
+    document.getElementById('popup').style.display='none'
     }
 </script>
 
-<body onload="checkCookie()"">
+<body>
     <div id='popup' class="alert-box">
         <span class="date-badge">November 7</span>
         <span class="alert-badge">Important Addition</span>

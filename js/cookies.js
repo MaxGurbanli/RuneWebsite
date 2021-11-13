@@ -23,7 +23,6 @@ function getCookie(cname) {
     
 function checkCookie() {
     let value = getCookie("closed prompt");
-    console.log(value)
     if (value == true) {
         //already seen and closed
       } else {

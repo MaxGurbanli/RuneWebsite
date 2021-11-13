@@ -44,14 +44,16 @@
       return "";
     }
     
-let value = getCookie("closed prompt");
-if (value) {
-    document.getElementById('commandspopup').style.display='none'
+    function checkCookie() {
+        let value = getCookie("closed prompt");
+        if (value) {
+            document.getElementById('popup').style.display='none'
+            }
     }
 </script>
 
-<body>
-    <div id='commandspopup' class="alert-box">
+<body onload='checkCookie()'>
+    <div id='popup' class="alert-box">
         <span class="date-badge">November 7</span>
         <span class="alert-badge">Important Addition</span>
         We recognize that malicious links have become a big issue on Discord. To combat this, starting from November 4th, a scan is done for messages containing links, deleting the message if it contains a phishing URL.

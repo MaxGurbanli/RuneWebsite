@@ -22,40 +22,8 @@
  
 <!-- By Max!#5056 for Discord Bot Rune: botrune.herokuapp.com -->
 
-<script>
-    function setCookie(cname,cvalue,exdays) {
-      const d = new Date();
-      d.setTime(d.getTime() + (exdays*24*60*60*1000));
-      let expires = "expires=" + d.toGMTString();
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
-    
-    function getCookie(cname) {
-      let name = cname + "=";
-      let decodedCookie = decodeURIComponent(document.cookie);
-      let ca = decodedCookie.split(';');
-      for(let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        }
-      }
-      return "";
-    }
-    
-    function checkCookie() {
-        let value = getCookie("closed prompt");
-        if (value) {
-            document.getElementById('popup').style.display='none'
-            }
-    }
-</script>
-
 <body onload='checkCookie()'>
-    <div id='popup' class="alert-box">
+    <div id='popup' class="alert-box" style="display: none">
         <span class="date-badge">November 7</span>
         <span class="alert-badge">Important Addition</span>
         We recognize that malicious links have become a big issue on Discord. To combat this, starting from November 4th, a scan is done for messages containing links, deleting the message if it contains a phishing URL.
@@ -82,14 +50,13 @@
                 <a class="nav-link" style='color: #FFD700' href="premium.html">Premium</a>
             </li> -->
         </ul>
-
-        <div class="nav-item dropdown hidden">
+        <div class="nav-item dropdown" style="cursor: pointer">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Documentation
+                Other
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="commands.html">Commands</a>
-                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="privacy.html">Privacy</a>
+                <!-- <div class="dropdown-divider"></div> -->
             </div>
         </div>
     </div>
@@ -151,7 +118,7 @@
         <div class="card statistic" style="width: 18rem;">
             
             <div class="card-body">
-                <p id="server_count" class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">Loading...</h1>
+                <p id="server_count" class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">70+</h1>
                 <p style="font-weight: bold !important;font-size: 20px !important;">servers</p>
             </div>
         </div>
@@ -186,11 +153,20 @@
         </div><br/>
     </div>
 </div>
+
+<div id="myCookieConsent">
+	<a id="cookieButton">Understood</a>
+	<div>We use cookies to remember your preferences.<a href="privacy.html">More&nbsp;details</a></div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/now-ui-kit.min.js"></script>
-<script src='js/scripts.js'></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- <script src='js/api call.js'></script> -->
+<script src='js/cookies.js'></script>
 <script src='https://requirejs.org/docs/release/2.1.17/r.js'></script>
 </body>
+
 </html>

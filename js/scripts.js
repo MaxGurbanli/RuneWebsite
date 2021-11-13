@@ -1,7 +1,7 @@
 var request = new XMLHttpRequest()
 
   request.open('GET', 'https://top.gg/api/bots/632489295273394176/stats', true)
-  request.setRequestHeader("Authorization", "NOTHING");
+  request.setRequestHeader("Authorization", "API_KEY");
   request.onload = function () {
     var data = JSON.parse(this.response)
     if (data.server_count) {

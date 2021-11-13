@@ -23,7 +23,7 @@ function getCookie(cname) {
     
 function checkCookie() {
     let value = getCookie("closed prompt");
-    if (value != true) {
+    if (value == null) {
         document.getElementById('popup').style.display='block'
         }
     }

@@ -23,11 +23,9 @@ function getCookie(cname) {
     
 function checkCookie() {
     let value = getCookie("closed prompt");
-    console.log(value == true)
-    if (value == true) {
+    if (value == 'true') {
       document.getElementById('popup').style.display = 'none'
       console.log('in statement')
-      console.log(value)
     } else {
       console.log('outside for some reason')
     }

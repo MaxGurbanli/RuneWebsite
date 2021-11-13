@@ -24,11 +24,9 @@ function getCookie(cname) {
 function checkCookie() {
     let value = getCookie("closed prompt");
     if (value == true) {
-        //already seen and closed
-      } else {
-        document.getElementById('popup').style.display = 'block'
-      }
+      document.getElementById('popup').style.display = 'none'
     }
+  }
   
 function getCompliancyCookie(name) {
   var arg=name+"=";

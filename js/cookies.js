@@ -23,13 +23,10 @@ function getCookie(cname) {
     
 function checkCookie() {
     let value = getCookie("closed prompt");
-    if (value == 'true') {
-      document.getElementById('popup').style.display = 'none'
-      console.log('in statement')
-    } else {
-      console.log('outside for some reason')
+    if (value != 'true') {
+      document.getElementById('popup').style.display = 'block'
+      }
     }
-  }
   
 function getCompliancyCookie(name) {
   var arg=name+"=";

@@ -22,10 +22,10 @@ function getCookie(cname) {
     }
     
 function checkCookie() {
-    let value = getCookie("closed prompt");
-    if (value != 'true') {
-      document.getElementById('popup').style.display = 'block'
-      }
+    // let value = getCookie("closed prompt");
+    // if (value != 'true') {
+    //   document.getElementById('popup').style.display = 'block'
+    //   }
     }
   
 function getCompliancyCookie(name) {

@@ -13,21 +13,13 @@ html {
     scroll-behavior: smooth;
   }
 
-/* large screens */
-@media (min-width:1200px) {
-	.container {
-		max-width: 1140px
-	}
-}
-
 /*small screens, for example laptops*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1115px) {
 
-	.container {
+	.commandcontainer {
 		position: absolute;
 		display: block !important;
-		left: -5%;
-		max-width: 100%;
+		left: -2%;
 		word-wrap: break-word !important;
 	}
 	.container-item {
@@ -41,39 +33,7 @@ html {
 	}
 
 	.container-header {
-		grid-template-columns: 1fr 1fr !important;
-		grid-auto-flow:dense !important;
-	}
-
-	.centered {
-		position: relative !important;
-		left: 10% !important;
-	}
-
-  }
-
-/*tablets*/
-@media screen and (max-width: 768px) {
-
-	.container {
-		position: absolute;
-		display: block !important;
-		left: -5%;
-		max-width: 100%;
-		word-wrap: break-word !important;
-	}
-	.container-item {
-		grid-template-columns: 1fr !important;
-		grid-auto-flow: column !important;
-		grid-template-areas: 
-			"Name"
-			"Description"
-			"Usage" !important;
-		padding: 1%;
-	}
-
-	.container-header {
-		grid-template-columns: 1fr 1fr !important;
+		grid-template-columns: 1fr 1fr 1fr !important;
 		grid-auto-flow:dense !important;
 	}
 
@@ -81,18 +41,41 @@ html {
 		position: relative !important;
 		left: 0% !important;
 	}
+  }
+
+/*tablets*/
+@media screen and (max-width: 768px) {
+
+	.commandcontainer {
+		position: absolute;
+		left: -5%;
+		word-wrap: break-word !important;
+	}
+	.container-item {
+		grid-template-columns: 1fr !important;
+		grid-auto-flow: column !important;
+		grid-template-areas: 
+			"Name"
+			"Description"
+			"Usage" !important;
+		padding: 1%;
+	}
+
+	.container-header {
+		grid-template-columns: 1fr 1fr !important;
+		grid-auto-flow:dense !important;
+	}
 
   }
 
 /*phones*/
 @media screen and (max-width: 480px) {
 
-	.container {
+	.commandcontainer {
 		position: absolute;
-		display: block !important;
-		left: -10% !important;
-		max-width: 100% !important;
+		left: -13% !important;
 		word-wrap: break-word !important;
+        min-width: 125%;
 	}
 	.container-item {
 		grid-template-columns: 1fr !important;
@@ -303,17 +286,16 @@ html {
 
 .centered {
     position: relative;
-    left: 42%;
+    text-align: center;
     top: -200px
 }
 
-.container{
+.commandcontainer {
     display: grid;
     background-color: #231d36;
     text-align: start;
     grid-auto-flow: row;
     row-gap: 15px;
-    /*border: 2px solid lightgray;*/
     position: relative;
     top: -180px;
     }
@@ -333,7 +315,7 @@ html {
     .Usage { grid-area: Usage; }
     .Name { grid-area: Name; }
 
-.container .final-item {
+.commandcontainer .final-item {
     border-bottom: none;
 }
 

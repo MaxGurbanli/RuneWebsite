@@ -36,11 +36,6 @@ html {
 		grid-template-columns: 1fr 1fr 1fr !important;
 		grid-auto-flow:dense !important;
 	}
-
-	.centered {
-		position: relative !important;
-		left: 0% !important;
-	}
   }
 
 /*tablets*/
@@ -90,11 +85,6 @@ html {
 	.container-header {
 		grid-template-columns: 1fr  !important;
 		grid-auto-flow:dense !important;
-	}
-
-	.centered {
-		position: relative !important;
-		left: 0% !important;
 	}
 
   }
@@ -276,7 +266,7 @@ html {
     text-align: center !important;
     padding: 5px 6px !important;
     color: #ecf2ff;
-    padding: 30px 30px !important
+    padding: 30px 30px !important;
 }
 
 .footer .bot-footer {
@@ -343,7 +333,7 @@ html {
     color: rgb(170, 163, 163)
 }
 
-.premium-title{
+.big-title{
     text-align: center;
     box-sizing: border-box;
     border: 0px;
@@ -352,7 +342,7 @@ html {
     vertical-align: baseline;
     font-style: normal;
     font-weight: bold;
-    font-size: 56px;
+    font-size: 50px;
     line-height: 64px;
     max-width: 100%;
     letter-spacing: -1px;
@@ -363,7 +353,7 @@ html {
     width: auto;
 }
 
-.premium-subtitle{
+.gray-subtitle{
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     text-size-adjust: 100%;
@@ -470,3 +460,75 @@ html {
 	color: #000;
 }
 
+.blogsgrid {
+    display:grid;
+    text-align: start;
+    grid-auto-flow: column !important;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    position: relative;
+    left: 10%;
+    justify-items: baseline;
+}
+
+.blogcontainer {
+    background-color: rgb(30, 46, 46);
+    border-color:rgb(30, 46, 46) !important;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: left !important;
+    line-height: 40px;
+    margin: 0;
+    width: 450px;
+    height: 15rem;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    border: 0 solid;
+    font-family: Inter,sans-serif;
+    text-align: inline-start;
+    border-radius: .5rem;
+    border-width: 1px;
+}
+
+.blogcontainer:hover {
+    text-decoration: none;
+    border-color: yellow !important;
+}
+
+.blogtitle {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.blogdate {
+    color:lightgray;
+    font-size: large;
+}
+
+.blogsubtitle {
+    font-size: 120%;
+    line-height: 25px;
+}
+
+.blogintro {
+    text-align: center;
+    font-size: large;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.blogbody {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: large;
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.separator {
+    margin: auto;   
+    border-bottom: 1px solid rgba(255,255,255,.25);
+    width: 75%;
+  }

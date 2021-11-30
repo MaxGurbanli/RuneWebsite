@@ -3507,15 +3507,7 @@
   small {
 	font-size: 60%;
   }
-  
-  a {
-	color: #f96332;
-  }
-  
-  a:hover,
-  a:focus {
-	color: #f96332;
-  }
+
   
   h1,
   .h1 {

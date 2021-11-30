@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/now-ui-kit.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/RuneIconCircle.png">
-    <title>Rune - Premium</title>
+    <title>Rune - Switching to a new bot</title>
     <meta content="Rune - The Discord Bot" property="og:title" />
     <meta content="Rune is a multi-purpose bot ready to skill up and boost your Discord server, easy and free." property="og:description" />
     <meta content="https://botrune.herokuapp.com/#" property="og:url" />
@@ -21,13 +21,19 @@
 
 <!-- Code written by Maxikinz for Discord Bot Rune: botrune.herokuapp.com -->
 
-<body>
+<body onload='checkCookie()'>
+    <div id='popup' class="alert-box" style="display: none">
+        <span class="date-badge">November 24</span>
+        <span class="alert-badge">ACTION NEEDED</span>
+        Rune is migrating to a new bot! It is already online and fully functioning, add it to your servers as soon as possible. The old bot will go offline December 7th. More information is <a href="https://discord.gg/FXCtPusXNb" target="_blank">in our Discord Server.</a> <a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=912812466377998396&permissions=274881440832&scope=applications.commands%20bot">Click here to add the bot</a>
+        <span class="closebtn" onclick="this.parentElement.style.display='none'; setCookie('closed new bot prompt', true, 14);">&times;</span>
+    </div>  
 <nav class="navbar navbar-expand-lg bg-transparent">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+        <img src="../assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
     </button>
     <a class="botlogo" href="https://botrune.herokuapp.com/home">
-        <img src="assets/RuneIconCircle.png" width="75" height="75" role="button" style="min-width: 75px !important;">
+        <img src="../assets/RuneIconCircle.png" width="75" height="75" role="button" style="min-width: 75px !important;">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
         <ul class="navbar-nav mr-auto">
@@ -43,6 +49,9 @@
             <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://discord.gg/FXCtPusXNb">Join Our Discord</a>
             </li>   
+            <!-- <li class="nav-item">
+                <a class="nav-link" style='color: #FFD700' href="">Premium</a>
+            </li> -->
         </ul>
 
         <div class="nav-item dropdown" style="cursor: pointer">
@@ -55,10 +64,20 @@
 </nav>
 
 <div class='heading'>
-    <h1 class='big-title'>Upgrade to Premium</h1>
-    <div class='gray-subtitle'>Unlock your server's true potential with Rune's extensive premium features.<br>Upgrading to Rune Premium helps support our development and growth.</div>
-    <br>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h1 class='big-title'>Switching to a new bot - the whole story</h1>
+    <div class='gray-subtitle'>On November 29th, 2021</div>
+    <div class='separator'></div>
+    <br /><br />
+    <div class='blogintro'>Rune had to migrate to a new bot due to a few technical issues during the verification process. But what exactly happened? Let's go into the details here.</div>
+    <br /><br />
+    <div class='blogbody'>
+        In September, Rune reached 50 servers. Then 60 in October. 70 in November. 75 just a few days later. When Discord bots reach 100 servers, they stop functioning properly until verified and approved manually by Discord staff. The verification process begins once you reach 75 servers to give developers time to submit their applications.
+        <br /><br />
+        When music was added, it was instantly loved by everyone. A way to listen to high quality songs with your friends, with no ads and completely free. Who wouldn't enjoy that? Discord, on the other hand, seemed to think otherwise... Rune's verification was denied, which sucks. On top of that, denials are non-appealable and the same bot can never be verified again in the future. This brings us to the bot switch, which was actually recommended by Discord themselves. I was told to redeploy my code on a different bot without the part that violated their Terms and Conditions - the music - and grow it naturally, then apply that for verification. 
+        <br /><br />
+        There was always a thought in the back of my mind, telling me "Don't add a music feature, it will bring trouble". I guess it did, and in one of the worst ways possible. But hey, at least I can keep doing what I love. I'm not upset that music had to be removed, but I am upset to inconvenience so many users by switching bots. I hope you can forgive me.
+        <br /><br /><br /><br /><br /><br />
+    </div>
     
 </div>
 
@@ -75,11 +94,11 @@
 	<div>We use cookies to remember your preferences.<a href="https://botrune.herokuapp.com/privacy">More&nbsp;details</a></div>
 </div>
 
-
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/now-ui-kit.min.js"></script>
+<script src="../js/now-ui-kit.min.js"></script>
+<script src='../js/cookies.js'></script>
 </body>
 
 </html>

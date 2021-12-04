@@ -105,15 +105,6 @@ function setlogging() {
     document.getElementById("loggingbutton").className = 'btn btn-category is-active';
 }
 
-function setmusic() {
-    cmdcategories = document.getElementsByClassName('cmdcategory');
-    for (element of cmdcategories) {element.style.display = 'none'}
-    document.getElementById("Music").style.display = "block";
-    elements = document.getElementsByClassName('btn btn-category is-active');
-    for (element of elements) {element.className = 'btn btn-category';}
-    document.getElementById("musicbutton").className = 'btn btn-category is-active';
-}
-
 </script>
 
 <div class="heading wavypurple">
@@ -124,7 +115,6 @@ function setmusic() {
     <div class='commandcontainer'>
         <div class='container-header' style='min-width: max-content !important'>
             <a id='economybutton' class='btn-category btn is-active' onclick=seteconomy()>Economy</a>
-            <!-- <a id='musicbutton' class='btn-category btn' onclick=setmusic()>Music</a> -->
             <a id='funbutton' class='btn-category btn' onclick=setfun()>Fun</a>
             <a id='moderatorbutton' class='btn-category btn' onclick=setmoderator()>Moderator</a>
             <a id='loggingbutton' class='btn-category btn' onclick=setlogging()>Logging</a>
@@ -188,7 +178,7 @@ function setmusic() {
             <div class="container-item">
                 <div class="Name has-text-primary">blackjack</div>
                 <div class="Description">Play a game of blackjack to earn coins.</div>
-                <div class="Usage has-text-gray">!!blackjack [bet or "none"]</div>
+                <div class="Usage has-text-gray">!!blackjack [amount to bet or 0]</div>
             </div>
         
             <div class="container-item">
@@ -248,7 +238,7 @@ function setmusic() {
             <div class="container-item">
                 <div class="Name has-text-primary">numberguesser</div>
                 <div class="Description">Play a game of guess the number and earn coins for guessing correctly!</div>
-                <div class="Usage has-text-gray">!!guesser [bet or "none"]</div>
+                <div class="Usage has-text-gray">!!guesser [amount to bet or 0]</div>
             </div>
     
             <div class="container-item">
@@ -293,10 +283,22 @@ function setmusic() {
                 <div class="Usage has-text-gray">!!gift [@Member/ID] [number of coins]</div>
             </div>
     
-            <div class="container-item final-item">
+            <div class="container-item">
                 <div class="Name has-text-primary">sell</div>
                 <div class="Description">Sell an item that you have in your inventory.</div>
                 <div class="Usage has-text-gray">!!sell [item ID]</div>
+            </div>
+
+            <div class="container-item">
+                <div class="Name has-text-primary">gamble</div>
+                <div class="Description">Roll two dice against a bot, whoever has the higher value wins.</div>
+                <div class="Usage has-text-gray">!!gamble [amount to bet or 0]</div>
+            </div>
+
+            <div class="container-item final-item">
+                <div class="Name has-text-primary">compare</div>
+                <div class="Description">Compare yourself to another member to settle who's better</div>
+                <div class="Usage has-text-gray">!!compare [@Member/ID]</div>
             </div>
         </div>
 
@@ -460,52 +462,6 @@ function setmusic() {
             </div>
 
         </div>
-
-        <div id='Music' class='hidden cmdcategory'>
-
-            <div class="container-item">
-                <div class="Name has-text-primary">join</div>
-                <div class="Description">Connects Rune to your current or a specified voice channel to play music!</div>
-                <div class="Usage has-text-gray">!!join</div>
-            </div>
-    
-            <div class="container-item">
-                <div class="Name has-text-primary">disconnect</div>
-                <div class="Description">Disconnects Rune from the voice channel it is in.</div>
-                <div class="Usage has-text-gray">!!disconnect</div>
-            </div>
-    
-            <div class="container-item">
-                <div class="Name has-text-primary">play</div>
-                <div class="Description">Play a song!</div>
-                <div class="Usage has-text-gray">!!play [song title/URL]</div>
-            </div>
-    
-            <div class="container-item">
-                <div class="Name has-text-primary">song</div>
-                <div class="Description">View the currently playing song, if any.</div>
-                <div class="Usage has-text-gray">!!song</div>
-            </div>
-    
-            <div class="container-item">
-                <div class="Name has-text-primary">queue</div>
-                <div class="Description">View the current song queue, if any.</div>
-                <div class="Usage has-text-gray">!!queue</div>
-            </div>
-
-            <div class="container-item">
-                <div class="Name has-text-primary">pause</div>
-                <div class="Description">Pause/resume the currently playing song.</div>
-                <div class="Usage has-text-gray">!!pause</div>
-            </div>
-
-            <div class="container-item final-item">
-                <div class="Name has-text-primary">stop</div>
-                <div class="Description">End the currently playing or paused song.</div>
-                <div class="Usage has-text-gray">!!stop</div>
-            </div>
-        </div>
-
     </div>
 </div>
 

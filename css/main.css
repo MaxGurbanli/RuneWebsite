@@ -465,7 +465,7 @@ html {
     display:grid;
     text-align: start;
     grid-auto-flow: column !important;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 15px;
     position: relative;
     left: 10%;

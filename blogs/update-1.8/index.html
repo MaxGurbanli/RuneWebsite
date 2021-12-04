@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/now-ui-kit.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/now-ui-kit.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="icon" href="../../assets/RuneIconCircle.png">
-    <title>Rune - Blogs</title>
+    <title>Rune - Switching to a new bot</title>
     <meta content="Rune - The Discord Bot" property="og:title" />
     <meta content="Rune is a multi-purpose bot ready to skill up and boost your Discord server, easy and free." property="og:description" />
     <meta content="https://botrune.herokuapp.com/#" property="og:url" />
@@ -30,10 +30,10 @@
     </div>  
 <nav class="navbar navbar-expand-lg bg-transparent">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="../assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+        <img src="../../assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
     </button>
     <a class="botlogo" href="https://botrune.herokuapp.com/home">
-        <img src="../assets/RuneIconCircle.png" width="75" height="75" role="button" style="min-width: 75px !important;">
+        <img src="../../assets/RuneIconCircle.png" width="75" height="75" role="button" style="min-width: 75px !important;">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
         <ul class="navbar-nav mr-auto">
@@ -44,7 +44,7 @@
                 <a class="nav-link" href="https://botrune.herokuapp.com/commands">Commands</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Blog</a>
+                <a class="nav-link" href="https://botrune.herokuapp.com/blogs/">Blog</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://discord.gg/FXCtPusXNb">Join Our Discord</a>
@@ -60,16 +60,45 @@
     </div>
 </nav>
 
-<div class='heading'>
-    <h1 class='big-title'>Blog posts</h1>
-    <div class='gray-subtitle'>Stay up to date with the latest developer written blogs focused on updates and news.</div>
-    <div class='blogsgrid'>
-        <a class='blogcontainer' href='https://botrune.herokuapp.com/blogs/switch-new-bot/'>
-            <div class='blogtitle'>Switching to a new bot - the whole story</div>
-            <div class='blogdate'>On December 1st, 2021</div>
-            <div class='blogsubtitle'>Read about the unexpected bot switch</div>
-        </a>
+<div class='heading' style='padding: 0 !important;'>
+    <h1 class='big-title'>Update v1.8</h1>
+    <div class='gray-subtitle'>On December 5th, 2021</div>
+    <div class='separator'></div>
+    <br /><br />
+    <div class='blogbody'>
+        This is an economy-focused update containing new features and commands, Quality of Life changes, as well as various bug fixes.<br><br>
+        <div class='bold'>Gamble: a new way to bet coins</div>
+        - Added <span class='command'>!!gamble [bet]</span> command.<br>
+        Roll two dice against a bot, the player who has a higher roll wins.<br>
+        This mini-game follows standard Rune betting rules, you win/lose 20% of your bet. <br>
+        The command supports "max" or "all" as your bet like all other betting-based commands.<br><br>
+        <div class='bold'>Compare: a new way to flex on your friends</div>
+        - Added <span class='command'>!!compare [@Member/ID]</span> command.<br>
+        Compare yourself with another member and see who is on top in terms of wallets, banks, bank levels, inventory worth and account worth.<br>
+        Flexing has never been easier.<br>
+        <img src='https://cdn.discordapp.com/attachments/890260678739378207/916697433671602176/unknown.png'>
+        <br><br>
+        <div class='bold'>Smart number parsing</div>
+        - Added recognition for other ways to represent numbers when entering a bet, for example <span class='command'>1k 1_000 1,000</span> are all equal to 1000.<br>
+        This should help some of you struggling with having to get the syntax correct for commands.<br>
+        The parsing is applied for all betting-based commands, which are currently: Blackjack, number-guesser, and gamble.
+        <br><br>
+        <div class='bold'>Removed ranking system</div>
+        - The ranking system, rank icons based on your bank level, was a rushed system that did not meet my quality standards of a feature that deserves to be in Rune. Therefore it has been removed for now, but may return in another form in the future.<br><br>
+        <div class='bold'>Bank level progress bar and coin icon emoji changes</div>
+        The emojis that display the Rune Coin and progress bar for your bank level in the <span class='command'>!!bal</span> command have been improved: <br>
+        <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96'> Updated Rune Coin emoji
+        <br>
+        <img src='https://cdn.discordapp.com/emojis/914856280244494336.png?size=96'>
+        <img src='https://cdn.discordapp.com/emojis/914856288788295711.png?size=96'>
+        <img src='https://cdn.discordapp.com/emojis/914856300981157929.png?size=96'>
+        Empty bank level progress bars<br>
+        <img src='https://cdn.discordapp.com/emojis/914856233620627477.gif?size=96'>
+        <img src='https://cdn.discordapp.com/emojis/914856249156329482.gif?size=96'>
+        <img src='https://cdn.discordapp.com/emojis/914856264058671165.gif?size=96'>
+        Full bank level progress bars
     </div>
+    
 </div>
 
 <div class="darkpage_end">
@@ -91,8 +120,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="../js/now-ui-kit.min.js"></script>
-<script src='../js/cookies.js'></script>
+<script src="../../js/now-ui-kit.min.js"></script>
+<script src='../../js/cookies.js'></script>
 </body>
 
 </html>

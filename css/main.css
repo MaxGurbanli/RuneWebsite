@@ -137,6 +137,9 @@ html {
 .heading {
     padding: 160px 50px !important;
     color: #fff !important;
+}
+
+.wavypurple {
     background-image: url("../assets/wavy-purple-by-nouridio.svg") !important;
     background-position: bottom, center !important;
     background-size: 300% !important;
@@ -239,14 +242,16 @@ html {
     color: #f7f7f7 !important;
 }
 
-.homepage_end {
+.darkpage_end {
+    background: #1D1E28;
+    border-radius: 22px !important;
     background-image: url("../assets/wavy-light-by-nouridio.svg") !important;
     background-position: bottom !important;
     background-size: 200% !important;
     background-repeat: no-repeat !important;
 }
 
-.page_end {
+.lightpage_end {
     background: #ad91ff !important;
 }
 
@@ -343,7 +348,6 @@ html {
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
-    line-height: 64px;
     max-width: 100%;
     letter-spacing: -1px;
     margin: 0px;
@@ -354,9 +358,6 @@ html {
 }
 
 .gray-subtitle{
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    text-size-adjust: 100%;
     font-weight: 400;
     line-height: 1.5;
     font-family: 'Maison Neue', sans-serif !important;
@@ -510,25 +511,25 @@ html {
     line-height: 25px;
 }
 
-.blogintro {
-    text-align: center;
-    font-size: large;
-    padding-left: 10%;
-    padding-right: 10%;
-    
-}
-
 .blogbody {
     box-sizing: border-box;
-    text-align: center;
     font-size: large;
     position: relative;
     padding-left: 10%;
     padding-right: 10%;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .separator {
     margin: auto;   
     border-bottom: 1px solid rgba(255,255,255,.25);
-    width: 75%;
+    width: 80%;
   }
+
+.command {
+    font-size: 1em;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+}

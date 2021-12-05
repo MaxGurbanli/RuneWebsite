@@ -519,10 +519,6 @@ html {
     padding-right: 10%;
 }
 
-.bold {
-    font-weight: bold;
-}
-
 .separator {
     margin: auto;   
     border-bottom: 1px solid rgba(255,255,255,.25);
@@ -532,4 +528,8 @@ html {
 .command {
     font-size: 1em;
     font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+}
+
+#submitted {
+    background-color: darkgoldenrod;
 }

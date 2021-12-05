@@ -62,3 +62,26 @@ $(document).ready(function(){
     });
 	testFirstCookie();
 });
+
+function sendMessage() {
+    const request = new XMLHttpRequest();
+    var feedback = document.getElementById('feedbackinput').value;
+    var name = document.getElementById('nameinput').value;
+    if (feedback == '' || name == '') {
+        alert("Please fill out both fields before submitting feedback.");
+        return;
+    }
+    request.open("POST", "https://discord.com/api/webhooks/917048615975931995/0u9APl2MKhUVLD5yV9voBbwcLoFlx-lwV03erOqJegNQEXpPHrfaulFrLulUBo4hal5I");
+
+    request.setRequestHeader('Content-type', 'application/json');
+
+    const params = {
+    content: 'Feedback: '+ feedback + '\nSubmitted by: ' + name
+    }
+
+    request.send(JSON.stringify(params));
+
+    document.getElementById('form').style.display = 'none';
+    document.getElementById('submitted').style.display = 'block';
+
+}

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/now-ui-kit.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/now-ui-kit.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="icon" href="../../assets/RuneIconCircle.png">
-    <title>Rune - Blogs</title>
+    <title>Rune - Update v1.9</title>
     <meta content="Rune - The Discord Bot" property="og:title" />
     <meta content="Rune is a multi-purpose bot ready to skill up and boost your Discord server, easy and free." property="og:description" />
     <meta content="https://botrune.herokuapp.com/#" property="og:url" />
@@ -31,10 +31,10 @@
     </div>  
 <nav class="navbar navbar-expand-lg bg-transparent">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="../assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+        <img src="../../assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
     </button>
     <a class="botlogo" href="https://botrune.herokuapp.com/home">
-        <img src="../assets/RuneIconCircle.png" width="75" height="75" role="button" style="min-width: 75px !important;">
+        <img src="../../assets/RuneIconCircle.png" width="75" height="75" role="button" style="min-width: 75px !important;">
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
         <ul class="navbar-nav mr-auto">
@@ -45,7 +45,7 @@
                 <a class="nav-link" href="https://botrune.herokuapp.com/commands">Commands</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Blog</a>
+                <a class="nav-link" href="https://botrune.herokuapp.com/blogs/">Blog</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://discord.gg/FXCtPusXNb">Join Our Discord</a>
@@ -61,25 +61,44 @@
     </div>
 </nav>
 
-<div class='heading'>
-    <h1 class='big-title moves-left'>Blog posts</h1>
-    <div class='gray-subtitle moves-left'>Stay up to date with the latest developer written blogs focused on updates and news.</div>
-    <div class='blogsgrid'>
-        <a class='blogcontainer' href='https://botrune.herokuapp.com/blogs/update-1.9/'>
-            <div class='blogtitle'>Update v1.9</div>
-            <div class='blogdate'>On December 9th, 2021</div>
-            <div class='blogsubtitle'>Another big economy-focused update with exciting additions and changes</div>
-        </a>
-        <a class='blogcontainer' href='https://botrune.herokuapp.com/blogs/update-1.8/'>
-            <div class='blogtitle'>Update v1.8</div>
-            <div class='blogdate'>On December 4th, 2021</div>
-            <div class='blogsubtitle'>A big economy-focused update with new features and QoL changes</div>
-        </a>
-        <a class='blogcontainer' href='https://botrune.herokuapp.com/blogs/switch-new-bot/'>
-            <div class='blogtitle'>Switching to a new bot - the whole story</div>
-            <div class='blogdate'>On December 1st, 2021</div>
-            <div class='blogsubtitle'>Read about the unexpected bot switch</div>
-        </a>
+<div class='heading' style='padding: 0 !important;'>
+    <h1 class='big-title'>Update v1.9</h1>
+    <div class='gray-subtitle'>On December 9th, 2021</div>
+    <div class='separator'></div>
+    <br /><br />
+    <div class='blogbody'>
+        This is another economy-focused update as a follow-up to v1.8, bringing even more exciting additions!<br><br>
+        <b>Shield: Protect yourself from grenades</b><br>
+        - New <span class='command'>shield</span> item now in the shop.<br>
+        Description: Protect yourself from grenades<br>
+        Duration: 30 days after activation, or if broken by a grenade earlier<br>
+        Cost: 150 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
+        <img src='https://cdn.discordapp.com/attachments/811623272810676284/918616089938771978/unknown.png'><br><br>
+        The "Shield active" status is displayed when using the <span class='command'>!!balance</span> command, meaning you can check if someone has a shield active before throwing a grenade at them by using the balance command on them (<span class='command'>!!balance @Member/ID</span>)<br>
+        <img src='https://cdn.discordapp.com/attachments/811623272810676284/918616385624633394/unknown.png'><br><br>
+        The target is now notified in DMs whenever someone throws a grenade at them. This happens despite the outcome of the grenade.<br>
+        <img src='https://cdn.discordapp.com/attachments/811623272810676284/918617479339724800/unknown.png'><br><br>
+        <b>Lots of price changes!</b><br>
+        The following changes have been made to buy and sell prices of items:<br>
+        - Grenade price reduced: 300 -> 200 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
+        - Hunting rifle price reduced: 200 -> 100 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
+        - Fishing pole price reduced: 200 -> 100 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
+        - Shovel price reduced: 200 -> 100 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
+        - The sell price of all items has been increased to their buy price<br><br>
+        That's all for now! A lot of this comes from your feedback - feel free to share your thoughts in the boxes below.
+        <br><br>
+        <b>Whatcha think?</b>
+        <div id='wholeform'>
+            <form onsubmit="return false;" id='form'>
+                <label for="feedbackinput">Feedback:</label><br>
+                <textarea id='feedbackinput' name="feedbackinput" cols="50" rows="10"></textarea><br>
+                <!-- <input type="text" id="feedbackinput" name="feedbackinput" style='width: 150%'><br><br> -->
+                <label for="nameinput">Name:</label><br>
+                <input type="text" id="nameinput" name="nameinput" ><br><br>
+                <input type="submit" value="Submit" onclick="sendMessage()" >
+            </form>
+            <div id='submitted' style='width: 36%; display: none'>Your feedback has been recorded! Thank you for sharing.</div>
+        </div>
     </div>
 </div>
 
@@ -102,8 +121,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="../js/now-ui-kit.min.js"></script>
-<script src='../js/main.js'></script>
+<script src="../../js/now-ui-kit.min.js"></script>
+<script src='../../js/main.js'></script>
 </body>
 
 </html>

@@ -13,6 +13,16 @@ html {
     scroll-behavior: smooth;
   }
 
+
+@media screen and (max-width: 1450px) {
+    .blogsgrid {
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr;
+        position: relative !important;
+        left: 0%
+    }
+}
+
 /*small screens, for example laptops*/
 @media screen and (max-width: 1115px) {
 
@@ -36,6 +46,24 @@ html {
 		grid-template-columns: 1fr 1fr 1fr !important;
 		grid-auto-flow:dense !important;
 	}
+
+    .blogsgrid {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr 1fr;
+        position: relative !important;
+        left: 0%
+    }
+
+    .blogcontainer {
+        word-wrap:normal!important;
+        max-width: 80%;
+    }
+
+    .moves-left {
+        text-align: left !important;
+        left: 0% !important;
+        margin: 0.5rem !important;
+    }
   }
 
 /*tablets*/
@@ -86,7 +114,6 @@ html {
 		grid-template-columns: 1fr  !important;
 		grid-auto-flow:dense !important;
 	}
-
   }
 
 .botlogo:hover {
@@ -463,12 +490,11 @@ html {
 
 .blogsgrid {
     display:grid;
-    text-align: start;
     grid-auto-flow: column !important;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 15px;
+    column-gap: 10px;
     position: relative;
-    left: 10%;
     justify-items: baseline;
 }
 
@@ -479,7 +505,6 @@ html {
     padding: 1.5rem;
     text-align: left !important;
     line-height: 40px;
-    margin: 0;
     width: 450px;
     height: 15rem;
     box-sizing: border-box;

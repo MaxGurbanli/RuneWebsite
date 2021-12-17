@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/now-ui-kit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../assets/RuneIconCircle.png">
+    <title>Rune - Update v1.10</title>
+    <meta content="Rune - The Discord Bot" property="og:title" />
+    <meta content="Rune is a multi-purpose bot ready to skill up and boost your Discord server, easy and free." property="og:description" />
+    <meta content="https://botrune.herokuapp.com/#" property="og:url" />
+    <meta content="https://media.discordapp.net/attachments/811623272810676284/880034059525455882/rune_icon3.png" property="og:image" />
+    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+    <script data-ad-client="ca-pub-1542335863465634" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+
+<!-- Code written by Max!#5056 for Discord Bot Rune: botrune.herokuapp.com -->
+
+<body onload='checkCookie()'>
+    <div id='popup' class="alert-box" style="display: none">
+        <span class="date-badge">November 24</span>
+        <span class="alert-badge">ACTION NEEDED</span>
+        Rune has migrated to a different bot! More information is <a href="https://discord.gg/FXCtPusXNb" target="_blank">in our Discord Server.</a> <a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=912812466377998396&permissions=274881440832&scope=applications.commands%20bot">Click here to add the bot</a>
+        <span class="closebtn" onclick="this.parentElement.style.display='none'; setCookie('closed new bot prompt', true, 14);">&times;</span>
+    </div>  
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="../../assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+    </button>
+    <a class="botlogo" href="https://botrune.herokuapp.com/home">
+        <img src="../../assets/RuneIconCircle.png" width="75" height="75" role="button" style="min-width: 75px !important;">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://botrune.herokuapp.com/home">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="https://botrune.herokuapp.com/commands">Commands</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://botrune.herokuapp.com/blogs/">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://discord.gg/FXCtPusXNb">Join Our Discord</a>
+            </li>   
+        </ul>
+
+        <div class="nav-item dropdown" style="cursor: pointer">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">Other</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://botrune.herokuapp.com/privacy">Privacy</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class='heading' style='padding: 0 !important;'>
+    <h1 class='big-title'>Update v1.10</h1>
+    <div class='gray-subtitle'>On December 18th, 2021</div>
+    <div class='separator'></div>
+    <br /><br />
+    <div class='blogbody'>
+        With winter exams over, Rune wastes no time to bring new features as soon as possible.<br>
+        This is a big general update introducing new Moderator and Economy additions.<br><br>
+        <b>Auto-role: It's finally here!</b><br>
+        Sharpen up your servers with an easily configurable new <span class='command'>!!settings autorole [add/remove/list]</span> command.<br><br>
+        See your current auto-role list with <span class='command'>!!settings autorole list</span><br>
+        <img src='https://cdn.discordapp.com/attachments/799932188165537793/921525351694352425/unknown.png'><br><br>
+        Add a new role to the list with <span class='command'>!!settings autorole add [@Role/ID]</span><br>
+        <img src="https://cdn.discordapp.com/attachments/799932188165537793/921525014862376990/unknown.png"><br><br>
+        Similarly, removing roles works using <span class='command'>!!settings autorole remove [@Role/ID]</span><br>
+        <img src='https://cdn.discordapp.com/attachments/799932188165537793/921524906288640090/unknown.png'><br><br>
+        In addition, if an existing role is deleted, it is automatically removed from the auto-role!<br><br>
+        <b>Search is getting a revamp!</b><br>
+        The moment you have all been waiting for, the <span class='command'>!!search</span> command now uses buttons instead of messages!<br>
+        <img src='https://cdn.discordapp.com/attachments/799932188165537793/921536375180886026/unknown.png'><br><br>
+        <b>Other Economy changes</b><br>
+        - Maximum amount of coins you can bet was increased 750 -> 1000 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
+        - The reward for guessing correctly on <span class='command'>!!numberguesser</span> on your 6th (last) attempt tried giving you 0.5 coins if you had no bet. Rune stopped using decimals a while ago, so this value has been increased 0.5 -> 1 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br><br>
+        <b>General bug fixes</b><br>
+        - The <span class='command'>!!compare</span> returned an error when trying to compare yourself with someone who has never used Rune before. This is now fixed. Oops!<br>
+        - The <span class='command'>!!balance</span> command got confused and showed your inventory worth when used on another member. This is also fixed. Yuck!<br>
+        - Member profile update logs weren't sent to your log channel! They are now.<br><br>
+        And probably many other minor improvements and bug fixes that I forgot to mention! Lastly, a lot of code for commands such as blackjack, buy, sell, etc. was also optimized to make it easier to build on top of in the future.<br><br>
+        That's all for now! A lot of this comes from your feedback - feel free to share your thoughts in the boxes below.
+        <br><br>
+        <b>Whatcha think?</b>
+        <div id='wholeform'>
+            <form onsubmit="return false;" id='form'>
+                <label for="feedbackinput">Feedback:</label><br>
+                <textarea id='feedbackinput' name="feedbackinput" cols="50" rows="10"></textarea><br>
+                <!-- <input type="text" id="feedbackinput" name="feedbackinput" style='width: 150%'><br><br> -->
+                <label for="nameinput">Name:</label><br>
+                <input type="text" id="nameinput" name="nameinput" ><br><br>
+                <input type="submit" value="Submit" onclick="sendMessage()" >
+            </form>
+            <div id='submitted' style='width: 36%; display: none'>Your feedback has been recorded! Thank you for sharing.</div>
+        </div>
+    </div>
+</div>
+
+<div class="darkpage_end">
+    <div class="start"><br></div>
+    <div class="footer">
+        <div class="bot-footer">
+            Copyright © Max!#5056 - 2021
+            <br>
+            <a href='mailto:gurbanlimaksud@gmail.com' style='color: white; text-decoration: underline;' target="_blank">Contact</a>
+        </div><br/>
+    </div>
+</div>
+
+<div id="myCookieConsent">
+	<a id="cookieButton">Understood</a>
+	<div>We use cookies to remember your preferences.<a href="https://botrune.herokuapp.com/privacy">More&nbsp;details</a></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../../js/now-ui-kit.min.js"></script>
+<script src='../../js/main.js'></script>
+</body>
+
+</html>

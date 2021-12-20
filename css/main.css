@@ -87,8 +87,7 @@ html {
 	.container-header {
 		grid-template-columns: 1fr 1fr !important;
 		grid-auto-flow:dense !important;
-	}
-
+    }
   }
 
 /*phones*/

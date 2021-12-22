@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="icon" href="../../assets/RuneIconCircle.png">
-    <title>Rune - Update v1.9</title>
+    <title>Rune - Update v1.11</title>
     <meta content="Rune - The Discord Bot" property="og:title" />
     <meta content="Rune is a multi-purpose bot ready to skill up and boost your Discord server, easy and free." property="og:description" />
     <meta content="https://botrune.herokuapp.com/#" property="og:url" />
@@ -62,42 +62,34 @@
 </nav>
 
 <div class='heading' style='padding: 0 !important;'>
-    <h1 class='big-title'>Update v1.9</h1>
-    <div class='gray-subtitle'>On December 9th, 2021</div>
+    <h1 class='big-title'>Update v1.11</h1>
+    <div class='gray-subtitle'>On December 22nd, 2021</div>
     <div class='separator'></div>
     <br /><br />
     <div class='blogbody'>
-        This is another economy-focused update as a follow-up to v1.8, bringing even more exciting additions!<br><br>
-        <b>Shield: Protect yourself from grenades</b><br>
-        - New <span class='cmd'>shield</span> item now in the shop.<br>
-        Description: Protect yourself from grenades<br>
-        Duration: 30 days after activation, or if broken by a grenade earlier<br>
-        Cost: 150 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
-        <img src='https://cdn.discordapp.com/attachments/811623272810676284/918616089938771978/unknown.png'><br><br>
-        The "Shield active" status is displayed when using the <span class='cmd'>!!balance</span> command, meaning you can check if someone has a shield active before throwing a grenade at them by using the balance command on them (<span class='cmd'>!!balance @Member/ID</span>)<br>
-        <img src='https://cdn.discordapp.com/attachments/811623272810676284/918616385624633394/unknown.png'><br><br>
-        The target is now notified in DMs whenever someone throws a grenade at them. This happens despite the outcome of the grenade.<br>
-        <img src='https://cdn.discordapp.com/attachments/811623272810676284/918617479339724800/unknown.png'><br><br>
-        <b>Lots of price changes!</b><br>
-        The following changes have been made to buy and sell prices of items:<br>
-        - Grenade price reduced: 300 -> 200 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
-        - Hunting rifle price reduced: 200 -> 100 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
-        - Fishing pole price reduced: 200 -> 100 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
-        - Shovel price reduced: 200 -> 100 <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96', width="25px", height="25px"><br>
-        - The sell price of all items has been increased to their buy price<br><br>
+        This is a moderator-focused update implementing Discord's very recently released timeout system.<br><br>
+        <b>Mute: show your server members who's boss</b><br>
+        - Added <span class='cmd'>!!mute [@Member/ID] [Duration]</span> command<br>
+        --> To timeout a member<br>
+        - Added <span class='cmd'>!!unmute [@Member/ID]</span> command<br>
+        --> To unmute a timed out member<br>
+        - Added <span class='cmd'>!!mutes</span> command<br>
+        --> To view all the currently timed out members<br><br>
+        <img src='https://cdn.discordapp.com/attachments/811623272810676284/923336770404368475/unknown.png'><br><br>
+        <img src='https://cdn.discordapp.com/attachments/811623272810676284/923340749431533618/unknown.png'><br><br>
+        The mute command has arrived! Take advantage of Discord's new Member Timeout feature to prevent members from chat or react in text channels, and connect to voice or Stage channels.<br><br>
+        The duration option in the <span class='cmd'>!!mute</span> command uses smart time parsing to process the timeout duration. Accepted values are <span class='cmd'>s</span> for seconds, <span class='cmd'>m</span> for minutes, <span class='cmd'>h</span> for hours, and <span class='cmd'>d</span> for days. For example, to mute a member for 12 hours, use <span class='cmd'>!!mute @Member 12h</span>. If you want to mute them for 10 minutes, use <span class='cmd'>!!mute @member 10m</span>.<br><br>
+        Timeouts can last up to (not including) 28 days. This means the longest possible timeout time is 671 hours, or just under 28 days. Technically you can go even closer by converting into minutes or seconds.<br><br>
+        Members in timeout receive the following effects:<br>
+        -> Disables posting or reacting to messages in text chat<br>
+        -> Prevents them from connecting to voice or stage channels<br>
+        -> Automatically disconnects them from a voice or stage channel, if they are in one<br><br>
+        When using mute/unmute commands, special moderation logs are sent to your server's log channels!<br>
+        <img src='https://cdn.discordapp.com/attachments/811623272810676284/923336821440643072/unknown.png'><br><br>
+        <b>More bug fixes</b><br>
+        - Fixed logging related commands not working<br>
+        - Fixed <span class='cmd'>!!balance</span> bank level progress bars not being displayed on mobile<br><br>
         That's all for now! A lot of this comes from your feedback - feel free to share your thoughts in our Discord server.
-        <br><br>
-        <!-- <b>Whatcha think?</b>
-        <div id='wholeform'>
-            <form onsubmit="return false;" id='form'>
-                <label for="feedbackinput">Feedback:</label><br>
-                <textarea id='feedbackinput' name="feedbackinput" cols="50" rows="10"></textarea><br>
-                <label for="nameinput">Name:</label><br>
-                <input type="text" id="nameinput" name="nameinput" ><br><br>
-                <input type="submit" value="Submit" onclick="sendMessage()" >
-            </form>
-            <div id='submitted' style='width: 36%; display: none'>Your feedback has been recorded! Thank you for sharing.</div>
-        </div> -->
     </div>
 </div>
 

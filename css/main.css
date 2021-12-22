@@ -550,7 +550,7 @@ html {
     width: 80%;
   }
 
-.command {
+.cmd {
     font-size: 1em;
     font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
 }

@@ -13,11 +13,10 @@ html {
     scroll-behavior: smooth;
   }
 
-
 @media screen and (max-width: 1450px) {
     .blogsgrid {
         grid-template-columns: 1fr 1fr !important;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr !important;
         position: relative !important;
         left: 0%
     }
@@ -48,8 +47,7 @@ html {
 	}
 
     .blogsgrid {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: 1fr 1fr 1fr 1fr !important;
+        grid-template-rows: repeat(5, 1fr) !important;
         position: relative !important;
         left: 0%
     }
@@ -490,7 +488,7 @@ html {
 .blogsgrid {
     display:grid;
     grid-auto-flow: column !important;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 15px;
     column-gap: 10px;

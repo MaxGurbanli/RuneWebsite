@@ -85,3 +85,4 @@ function sendMessage() {
     document.getElementById('submitted').style.display = 'block';
 
 }
+

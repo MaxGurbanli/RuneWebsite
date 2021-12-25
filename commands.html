@@ -113,37 +113,37 @@ function setlogging() {
     <br />
 
     <div class='commandcontainer'>
-        <div class='container-header' style='min-width: max-content !important'>
-            <a id='economybutton' class='btn-category btn is-active' onclick=seteconomy()>Economy</a>
-            <a id='funbutton' class='btn-category btn' onclick=setfun()>Fun</a>
-            <a id='moderatorbutton' class='btn-category btn' onclick=setmoderator()>Moderator</a>
-            <a id='loggingbutton' class='btn-category btn' onclick=setlogging()>Logging</a>
-            <a id='informationbutton' class='btn-category btn' onclick=setinformation()>Information</a>
+        <div class='container-header' style='width: 100%'>
+            <a id='economybutton' class='btn-category btn is-active' onclick=seteconomy() style='width: 100%'>Economy</a>
+            <a id='funbutton' class='btn-category btn' onclick=setfun() style='width: 100%'>Fun</a>
+            <a id='moderatorbutton' class='btn-category btn' onclick=setmoderator() style='width: 100%'>Moderator</a>
+            <a id='loggingbutton' class='btn-category btn' onclick=setlogging() style='width: 100%'>Logging</a>
+            <a id='informationbutton' class='btn-category btn' onclick=setinformation() style='width: 100%'>Information</a>
         </div>
 
         <div id='Fun' class='hidden cmdcategory'>
     
             <div class="container-item">
-                <div class="Name has-text-primary">meme</div>
-                <div class="Description">Catch up on the latest trending memes.</div>
+                <div class="has-text-primary">meme</div>
+                <div>Catch up on the latest trending memes.</div>
                 <div class="Usage has-text-gray">!!meme</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">dadjoke</div>
-                <div class="Description">Get a randomly generated dad joke for a good laugh.</div>
+                <div class="has-text-primary">dadjoke</div>
+                <div>Get a randomly generated dad joke for a good laugh.</div>
                 <div class="Usage has-text-gray">!!dadjoke</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">hug</div>
-                <div class="Description">Show your appreciation to another member.</div>
+                <div class="has-text-primary">hug</div>
+                <div>Show your appreciation to another member.</div>
                 <div class="Usage has-text-gray">!!hug [@Member/ID] (reason)</div>
             </div>
     
             <div class="container-item final-item">
-                <div class="Name has-text-primary">advice</div>
-                <div class="Description">Feeling down or in need of advice? Try this command.</div>
+                <div class="has-text-primary">advice</div>
+                <div>Feeling down or in need of advice? Try this command.</div>
                 <div class="Usage has-text-gray">!!advice</div>
             </div>
     
@@ -151,146 +151,146 @@ function setlogging() {
 
         <div id='Economy' class='cmdcategory'>
             <div class="container-item">
-                <div class="Name has-text-primary">coins</div>
-                <div class="Description">Shows the amount of coins a user has in their account.</div>
+                <div class="has-text-primary">coins</div>
+                <div>Shows the amount of coins a user has in their account.</div>
                 <div class="Usage has-text-gray">!!coins (@Member/ID)</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">withdraw</div>
-                <div class="Description">Withdraw coins from your bank to your wallet.</div>
+                <div class="has-text-primary">withdraw</div>
+                <div>Withdraw coins from your bank to your wallet.</div>
                 <div class="Usage has-text-gray">!!withdraw [number/all]</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">deposit</div>
-                <div class="Description">Deposit your coins from your wallet to the bank for safe-keeping.</div>
+                <div class="has-text-primary">deposit</div>
+                <div>Deposit your coins from your wallet to the bank for safe-keeping.</div>
                 <div class="Usage has-text-gray">!!deposit [number/all]</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">blackjack</div>
-                <div class="Description">Play a game of blackjack to earn coins.</div>
+                <div class="has-text-primary">blackjack</div>
+                <div>Play a game of blackjack to earn coins.</div>
                 <div class="Usage has-text-gray">!!blackjack [amount to bet or 0]</div>
             </div>
         
             <div class="container-item">
-                <div class="Name has-text-primary">trivia</div>
-                <div class="Description">Play a multiple choice trivia and earn coins for answering correctly!</div>
+                <div class="has-text-primary">trivia</div>
+                <div>Play a multiple choice trivia and earn coins for answering correctly!</div>
                 <div class="Usage has-text-gray">!!trivia</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">heist</div>
-                <div class="Description">Start a bank robbery and push through minigames and hard choices to go big or go home, potentially earning a lot of coins. This can be done once a day.</div>
+                <div class="has-text-primary">heist</div>
+                <div>Start a bank robbery and push through minigames and hard choices to go big or go home, potentially earning a lot of coins. This can be done once a day.</div>
                 <div class="Usage has-text-gray">!!heist</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">leaderboard</div>
-                <div class="Description">See the leaderboard for coins, bank, and ranks.</div>
+                <div class="has-text-primary">leaderboard</div>
+                <div>See the leaderboard for coins, bank, and ranks.</div>
                 <div class="Usage has-text-gray">!!leaderboard</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">shop</div>
-                <div class="Description">Displays the coins Shop.</div>
+                <div class="has-text-primary">shop</div>
+                <div>Displays the coins Shop.</div>
                 <div class="Usage has-text-gray">!!shop</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">work</div>
-                <div class="Description">Work once every 2 hours to earn coins.</div>
+                <div class="has-text-primary">work</div>
+                <div>Work once every 2 hours to earn coins.</div>
                 <div class="Usage has-text-gray">!!work</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">inventory</div>
-                <div class="Description">View your purchased items inventory.</div>
+                <div class="has-text-primary">inventory</div>
+                <div>View your purchased items inventory.</div>
                 <div class="Usage has-text-gray">!!inventory</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">upgrade</div>
-                <div class="Description">Upgrade your bank storage! Store more coins by increasing your maximum capacity.</div>
+                <div class="has-text-primary">upgrade</div>
+                <div>Upgrade your bank storage! Store more coins by increasing your maximum capacity.</div>
                 <div class="Usage has-text-gray">!!upgrade</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">use</div>
-                <div class="Description">Use an item from your inventory.</div>
+                <div class="has-text-primary">use</div>
+                <div>Use an item from your inventory.</div>
                 <div class="Usage has-text-gray">!!use (item)</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">grenade</div>
-                <div class="Description">Use a grenade item and potentially explode another user, stealing their precious coins.</div>
+                <div class="has-text-primary">grenade</div>
+                <div>Use a grenade item and potentially explode another user, stealing their precious coins.</div>
                 <div class="Usage has-text-gray">!!grenade [@Member/ID]</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">numberguesser</div>
-                <div class="Description">Play a game of guess the number and earn coins for guessing correctly!</div>
+                <div class="has-text-primary">numberguesser</div>
+                <div>Play a game of guess the number and earn coins for guessing correctly!</div>
                 <div class="Usage has-text-gray">!!guesser [amount to bet or 0]</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">crime</div>
-                <div class="Description">Crime is fun, just don't get caught! Commit a crime - high risk, high reward.</div>
+                <div class="has-text-primary">crime</div>
+                <div>Crime is fun, just don't get caught! Commit a crime - high risk, high reward.</div>
                 <div class="Usage has-text-gray">!!crime</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">search</div>
-                <div class="Description">Search for some coins, maybe you'll find some.</div>
+                <div class="has-text-primary">search</div>
+                <div>Search for some coins, maybe you'll find some.</div>
                 <div class="Usage has-text-gray">!!search</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">beg</div>
-                <div class="Description">Do a little begging, maybe someone will be kind enough to donate a few coins.</div>
+                <div class="has-text-primary">beg</div>
+                <div>Do a little begging, maybe someone will be kind enough to donate a few coins.</div>
                 <div class="Usage has-text-gray">!!beg</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">dig</div>
-                <div class="Description">Dig with a shovel! A chance to earn coins.</div>
+                <div class="has-text-primary">dig</div>
+                <div>Dig with a shovel! A chance to earn coins.</div>
                 <div class="Usage has-text-gray">!!dig</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">hunt</div>
-                <div class="Description">Go hunting for animals! A chance to earn coins.</div>
+                <div class="has-text-primary">hunt</div>
+                <div>Go hunting for animals! A chance to earn coins.</div>
                 <div class="Usage has-text-gray">!!hunt</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">fish</div>
-                <div class="Description">Go fishing! A chance to earn coins.</div>
+                <div class="has-text-primary">fish</div>
+                <div>Go fishing! A chance to earn coins.</div>
                 <div class="Usage has-text-gray">!!fish</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">gift</div>
-                <div class="Description">Gift your coins to another member. There is a 4% tax applied.</div>
+                <div class="has-text-primary">gift</div>
+                <div>Gift your coins to another member. There is a 4% tax applied.</div>
                 <div class="Usage has-text-gray">!!gift [@Member/ID] [number of coins]</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">sell</div>
-                <div class="Description">Sell an item that you have in your inventory.</div>
+                <div class="has-text-primary">sell</div>
+                <div>Sell an item that you have in your inventory.</div>
                 <div class="Usage has-text-gray">!!sell [item ID]</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">gamble</div>
-                <div class="Description">Roll two dice against a bot, whoever has the higher value wins.</div>
+                <div class="has-text-primary">gamble</div>
+                <div>Roll two dice against a bot, whoever has the higher value wins.</div>
                 <div class="Usage has-text-gray">!!gamble [amount to bet or 0]</div>
             </div>
 
             <div class="container-item final-item">
-                <div class="Name has-text-primary">compare</div>
-                <div class="Description">Compare yourself to another member to settle who's better.</div>
+                <div class="has-text-primary">compare</div>
+                <div>Compare yourself to another member to settle who's better.</div>
                 <div class="Usage has-text-gray">!!compare [@Member/ID]</div>
             </div>
         </div>
@@ -298,56 +298,56 @@ function setlogging() {
         <div id='Information' class='hidden cmdcategory'>
 
             <div class="container-item">
-                <div class="Name has-text-primary">invite</div>
-                <div class="Description">Add Rune to your server.</div>
+                <div class="has-text-primary">invite</div>
+                <div>Add Rune to your server.</div>
                 <div class="Usage has-text-gray">!!invite</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">website</div>
-                <div class="Description">Get a link to this website.</div>
+                <div class="has-text-primary">website</div>
+                <div>Get a link to this website.</div>
                 <div class="Usage has-text-gray">!!website</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">serveravatar</div>
-                <div class="Description">Grab the current server's avatar.</div>
+                <div class="has-text-primary">serveravatar</div>
+                <div>Grab the current server's avatar.</div>
                 <div class="Usage has-text-gray">!!serveravatar</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">credits</div>
-                <div class="Description">Shows this bot's developers.</div>
+                <div class="has-text-primary">credits</div>
+                <div>Shows this bot's developers.</div>
                 <div class="Usage has-text-gray">!!credits</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">whois</div>
-                <div class="Description">Shows details about you or another specified Discord account.</div>
+                <div class="has-text-primary">whois</div>
+                <div>Shows details about you or another specified Discord account.</div>
                 <div class="Usage has-text-gray">!!whois (@Member/ID)</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">avatar</div>
-                <div class="Description">Get a full sized avatar of a discord account (image/GIF).</div>
+                <div class="has-text-primary">avatar</div>
+                <div>Get a full sized avatar of a discord account (image/GIF).</div>
                 <div class="Usage has-text-gray">!!avatar (@User/ID)</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">ping</div>
-                <div class="Description">Returns the bot's latency (response time), in miliseconds.</div>
+                <div class="has-text-primary">ping</div>
+                <div>Returns the bot's latency (response time), in miliseconds.</div>
                 <div class="Usage has-text-gray">!!ping</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">devserver</div>
-                <div class="Description">An invite to Rune's support Discord server.</div>
+                <div class="has-text-primary">devserver</div>
+                <div>An invite to Rune's support Discord server.</div>
                 <div class="Usage has-text-gray">!!devserver</div>
             </div>
 
             <div class="container-item final-item">
-                <div class="Name has-text-primary">help</div>
-                <div class="Description">Shows the help selection menu, command categories, or information on a specific command.</div>
+                <div class="has-text-primary">help</div>
+                <div>Shows the help selection menu, command categories, or information on a specific command.</div>
                 <div class="Usage has-text-gray">!!help (command/category)</div>
             </div>
         </div>
@@ -355,111 +355,111 @@ function setlogging() {
 
         <div id='Moderator' class='hidden cmdcategory'>
             <div class="container-item">
-                <div class="Name has-text-primary">sync</div>
-                <div class="Description">Synchronize permissions of the current channel to the category it is in.</div>
+                <div class="has-text-primary">sync</div>
+                <div>Synchronize permissions of the current channel to the category it is in.</div>
                 <div class="Usage has-text-gray">!!sync</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">say</div>
-                <div class="Description">Make the bot say a message.</div>
+                <div class="has-text-primary">say</div>
+                <div>Make the bot say a message.</div>
                 <div class="Usage has-text-gray">!!say [#channel] [message]</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">vote</div>
-                <div class="Description">Create a vote in a specified channel with automatically added yes/no reactions.</div>
+                <div class="has-text-primary">vote</div>
+                <div>Create a vote in a specified channel with automatically added yes/no reactions.</div>
                 <div class="Usage has-text-gray">!!vote [#channel] [topic]</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">clean</div>
-                <div class="Description">Clean up Rune's messages in this channel.</div>
+                <div class="has-text-primary">clean</div>
+                <div>Clean up Rune's messages in this channel.</div>
                 <div class="Usage has-text-gray">!!clean (number - default 10)</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">stealemoji</div>
-                <div class="Description">Nitro users can use this command to steal emojis from other servers.</div>
+                <div class="has-text-primary">stealemoji</div>
+                <div>Nitro users can use this command to steal emojis from other servers.</div>
                 <div class="Usage has-text-gray">!!stealemoji [emoji]</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">slowmode</div>
-                <div class="Description">Set, change, or remove the channel's slowmode.</div>
+                <div class="has-text-primary">slowmode</div>
+                <div>Set, change, or remove the channel's slowmode.</div>
                 <div class="Usage has-text-gray">!!slowmode [time or 0]</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">settings</div>
-                <div class="Description">The base command for all related commands, e.g. settings prefix or settings deletescams. Using it without any keywords is the same as using !!settings view</div>
+                <div class="has-text-primary">settings</div>
+                <div>The base command for all related commands, e.g. settings prefix or settings deletescams. Using it without any keywords is the same as using !!settings view</div>
                 <div class="Usage has-text-gray">!!settings</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">settings view</div>
-                <div class="Description">View the current Rune settings in place for this server.</div>
+                <div class="has-text-primary">settings view</div>
+                <div>View the current Rune settings in place for this server.</div>
                 <div class="Usage has-text-gray">!!settings view</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">settings prefix</div>
-                <div class="Description">Customize Rune's prefix for this server.</div>
+                <div class="has-text-primary">settings prefix</div>
+                <div>Customize Rune's prefix for this server.</div>
                 <div class="Usage has-text-gray">!!settings prefix (new prefix)</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">settings deletescams</div>
-                <div class="Description">Automatically detect and delete phishing scam links from your server. Enabled by default to protect your members from dangeorus/malicious links.</div>
+                <div class="has-text-primary">settings deletescams</div>
+                <div>Automatically detect and delete phishing scam links from your server. Enabled by default to protect your members from dangeorus/malicious links.</div>
                 <div class="Usage has-text-gray">!!settings deletescams [enable/disable]</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">settings banNewAccounts</div>
-                <div class="Description">A setting for banning newly made accounts that try joining your server. Configurable to the number of days ago an account was made, or 0 to disable.</div>
+                <div class="has-text-primary">settings banNewAccounts</div>
+                <div>A setting for banning newly made accounts that try joining your server. Configurable to the number of days ago an account was made, or 0 to disable.</div>
                 <div class="Usage has-text-gray">!!settings banNewAccounts [account age in days]</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">settings autorole</div>
-                <div class="Description">Manage a list of roles that are given upon joining. The base command for all autorole related commands, e.g. list or add.</div>
+                <div class="has-text-primary">settings autorole</div>
+                <div>Manage a list of roles that are given upon joining. The base command for all autorole related commands, e.g. list or add.</div>
                 <div class="Usage has-text-gray">!!settings autorole</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">settings autorole list</div>
-                <div class="Description">Manage a list of roles that are given upon joining.</div>
+                <div class="has-text-primary">settings autorole list</div>
+                <div>Manage a list of roles that are given upon joining.</div>
                 <div class="Usage has-text-gray">!!settings autorole list</div>
             </div>
             
             <div class="container-item">
-                <div class="Name has-text-primary">settings autorole add</div>
-                <div class="Description">Add a role to auto-role.</div>
+                <div class="has-text-primary">settings autorole add</div>
+                <div>Add a role to auto-role.</div>
                 <div class="Usage has-text-gray">!!settings autorole add [@Role/ID]
                 </div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">settings autorole remove</div>
-                <div class="Description">Remove a role from auto-role.</div>
+                <div class="has-text-primary">settings autorole remove</div>
+                <div>Remove a role from auto-role.</div>
                 <div class="Usage has-text-gray">!!settings autorole remove [@Role/ID]</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">mute</div>
-                <div class="Description">Timeout a member for a specified duration of time.</div>
+                <div class="has-text-primary">mute</div>
+                <div>Timeout a member for a specified duration of time.</div>
                 <div class="Usage has-text-gray">!!mute [@Member/ID] [Duration]</div>
             </div>
 
             <div class="container-item">
-                <div class="Name has-text-primary">unmute</div>
-                <div class="Description">Unmutes a user in timeout.</div>
+                <div class="has-text-primary">unmute</div>
+                <div>Unmutes a user in timeout.</div>
                 <div class="Usage has-text-gray">!!unmute [@Member/ID]</div>
             </div>
 
             <div class="container-item final-item">
-                <div class="Name has-text-primary">mutes</div>
-                <div class="Description">List all the currently timed out members.</div>
+                <div class="has-text-primary">mutes</div>
+                <div>List all the currently timed out members.</div>
                 <div class="Usage has-text-gray">!!mutes</div>
             </div>
 
@@ -468,38 +468,38 @@ function setlogging() {
         <div id='Logging' class='hidden cmdcategory'>
 
             <div class="container-item">
-                <div class="Name has-text-primary">logchannel</div>
-                <div class="Description">Set or remove Rune's logging channel.</div>
+                <div class="has-text-primary">logchannel</div>
+                <div>Set or remove Rune's logging channel.</div>
                 <div class="Usage has-text-gray">!!logchannel (#channel/clear)</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">logmembers</div>
-                <div class="Description">Set whether Rune should log member joins and leaves in your server's logchannel.</div>
+                <div class="has-text-primary">logmembers</div>
+                <div>Set whether Rune should log member joins and leaves in your server's logchannel.</div>
                 <div class="Usage has-text-gray">!!logmembers (enable/disable)</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">logdeletes</div>
-                <div class="Description">Set whether Rune should log message deletions in your server's logchannel.</div>
+                <div class="has-text-primary">logdeletes</div>
+                <div>Set whether Rune should log message deletions in your server's logchannel.</div>
                 <div class="Usage has-text-gray">!!logdeletes (enable/disable)</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">logprofiles</div>
-                <div class="Description">Set whether Rune should log profile updates in your server's logchannel, this applies to username, avatar, and discriminator changes.</div>
+                <div class="has-text-primary">logprofiles</div>
+                <div>Set whether Rune should log profile updates in your server's logchannel, this applies to username, avatar, and discriminator changes.</div>
                 <div class="Usage has-text-gray">!!logprofiles (enable/disable)</div>
             </div>
     
             <div class="container-item">
-                <div class="Name has-text-primary">logroles</div>
-                <div class="Description">Set whether Rune should log role changes in your server's logchannel.</div>
+                <div class="has-text-primary">logroles</div>
+                <div>Set whether Rune should log role changes in your server's logchannel.</div>
                 <div class="Usage has-text-gray">!!logroles (enable/disable)</div>
             </div>
 
             <div class="container-item final-item">
-                <div class="Name has-text-primary">ignorechannel</div>
-                <div class="Description">Manage which channels Rune's logs should ignore.</div>
+                <div class="has-text-primary">ignorechannel</div>
+                <div>Manage which channels Rune's logs should ignore.</div>
                 <div class="Usage has-text-gray">!!ignorechannel [#channel/ID]</div>
             </div>
 

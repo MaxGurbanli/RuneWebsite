@@ -239,11 +239,13 @@ main {
   transform: rotate(-180deg);
 }
 
+/* Change media queries to be based on dimensions, not specific cases */
+
 /* Command container adjustments for smaller laptops and regular ipads*/
 @media only screen and (max-width: 1200px) {
   .containerbuttons {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    row-gap: 1rem;
   }
 
   .container-item {
@@ -277,7 +279,8 @@ main {
   }
 
   .containerbuttons {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    row-gap: 0.5rem;
   }
 }
 
@@ -493,10 +496,9 @@ main {
 }
 
 .containerbuttons {
-  display: flex;
-  justify-content: space-evenly;
-  column-gap: 1vh;
-  grid-auto-flow: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 2vh;
   font-size: 130%;
   margin-bottom: 1vh;
 }

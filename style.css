@@ -5,6 +5,7 @@
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
+  --main-bg: #1D1E28;
   --bg-secondary: #141418;
   --transition-speed: 600ms;
   --blue: #007bff;
@@ -33,7 +34,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1D1E28;
+  background-color: var(--main-bg);
 }
 
 .hoverable {
@@ -51,7 +52,7 @@ body {
   display: grid;
   place-content: center;
   text-align: center;
-  background-color: #1D1E28;
+  background-color: var(--main-bg);
   max-width: 100%;
 }
 

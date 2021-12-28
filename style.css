@@ -318,18 +318,13 @@ main {
   transform: rotate(-180deg);
 }
 
-/* Change media queries to be based on dimensions, not specific cases */
+/* TODO: Change media queries to be based on dimensions, not specific cases */
 
 /* Command container adjustments for smaller laptops and regular ipads*/
 @media only screen and (max-width: 1200px) {
   .containerbuttons {
     grid-template-columns: 1fr 1fr 1fr !important;
     row-gap: 1rem;
-  }
-
-  .container-item {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr 1fr !important;
   }
 
   .blogsgrid {
@@ -561,25 +556,24 @@ main {
   border-bottom: none;
 }
 
-.container-item {
-  display: grid;
-  background-color: #231d36;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-flow:column;
-  font-size: 130%;
-  border-bottom: 0.1mm solid gray;
-  }
-
-.is-active {
-  background-color: rgb(119, 136, 153) !important;
-}
-
 .containerbuttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 2vh;
   font-size: 130%;
   margin-bottom: 1vh;
+}
+
+.container-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #231d36;
+  font-size: 1.2rem;
+  border-bottom: 0.1mm solid gray;
+  }
+
+.is-active {
+  background-color: rgb(119, 136, 153) !important;
 }
 
 .has-text-primary{

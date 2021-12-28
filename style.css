@@ -273,15 +273,31 @@ main {
   color: #df49a6;
 }
 
-.commandspage-svg {
+.spaceship-svg {
   width: 2em;
   height: 2em;
 }
 
-.commandspage-svg path,
-.commandspage-svg polygon,
-.commandspage-svg rect {
+.spaceship-svg path,
+.spaceship-svg polygon,
+.spaceship-svg rect {
   fill: #df49a6;
+}
+
+.r2d2-svg {
+  width: 2em;
+  height: 2em;
+}
+
+.r2d2-svg path,
+.r2d2-svg polygon,
+.r2d2-svg rect {
+  fill: #df49a6;
+}
+
+.r2d2-svg circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
 
 .fa-primary,

@@ -117,6 +117,7 @@ body {
 }
 
 .hoverable {
+  background-color: transparent;
 	transition: .4s ease-out;
 }
 

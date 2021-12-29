@@ -27,7 +27,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --bg-color: rgb(0, 0, 0);
-  --typewriterSpeed: 6s;
+  --typewriterSpeed: 4s;
   --typewriterCharacters: 35;
   --neon: hsl(317 100% 54%);
   }

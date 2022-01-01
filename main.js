@@ -86,3 +86,11 @@ function sendMessage() {
 
 }
 
+function setcategory(category, button) {
+  cmdcategories = document.getElementsByClassName('cmdcategory');
+  for (element of cmdcategories) {element.style.display = 'none'}
+  document.getElementById(category).style.display = "block";
+  elements = document.getElementsByClassName('button blurple is-active');
+  for (element of elements) {element.className = 'button blurple';}
+  document.getElementById(button).className = 'button blurple is-active';
+}

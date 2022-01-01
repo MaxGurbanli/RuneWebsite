@@ -339,7 +339,7 @@ main {
 
 /* Command container adjustments for smaller laptops and regular ipads*/
 @media only screen and (max-width: 1200px) {
-  .containerbuttons {
+  .cmdcontainerbuttons {
     grid-template-columns: 1fr 1fr 1fr !important;
     row-gap: 1rem;
   }
@@ -369,7 +369,7 @@ main {
     max-width: 75%;
   }
 
-  .containerbuttons {
+  .cmdcontainerbuttons {
     grid-template-columns: 1fr !important;
     row-gap: 0.5rem;
   }
@@ -561,30 +561,32 @@ main {
 
 /* Start commands page */
 
-.commandcontainer {
-  margin-top: 2vh;
+.cmdcontainer {
   display: grid;
   background-color: #231d36;
-  grid-auto-flow: row;
-  row-gap: 15px;
+  row-gap: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   }
 
-.commandcontainer .final-item {
+.cmdcontainer .final-item {
   border-bottom: none;
 }
 
-.containerbuttons {
+.cmdcontainerbuttons {
+  background-color: #231d36;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 2vh;
   font-size: 130%;
-  margin-bottom: 1vh;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
 }
 
-.container-item {
+.cmdcontaineritem {
   display: flex;
   flex-direction: column;
-  background-color: #231d36;
   font-size: 1.2rem;
   border-bottom: 0.1mm solid gray;
   }
@@ -764,12 +766,12 @@ img {
     font-weight: bold;
 }
 #myCookieConsent div {
-    padding: 5px 0 0;
+    padding: 0.5rem 0 0;
 }
 #myCookieConsent a {
     color: #ffba55;
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 1rem;
 }
 #myCookieConsent a:hover {
 	color: #fda016;
@@ -780,7 +782,7 @@ img {
 	background: #ffba55;
     text-decoration: none;
     cursor: pointer;
-    padding: 2px 20px;
+    padding: 0.2rem 1.2rem;
     float: right;
     border-radius: 20px;
 }

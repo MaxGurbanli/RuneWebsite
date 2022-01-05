@@ -354,11 +354,12 @@ main {
 
   .features .title, 
   .features .subtitle {
-    text-align: left !important;
+    text-align: center !important;
   }
 
   .cards {
     flex-direction: column;
+    align-items: center;
   }
 
   .features {

@@ -274,36 +274,25 @@ main {
   color: #df49a6;
 }
 
-.spaceship-svg {
-  width: 2em;
-  height: 2em;
-}
-
-.spaceship-svg path,
-.spaceship-svg polygon,
-.spaceship-svg rect {
-  fill: #df49a6;
-}
-
-.r2d2-svg {
-  width: 2em;
-  height: 2em;
-}
-
-.r2d2-svg path,
-.r2d2-svg polygon,
-.r2d2-svg rect {
-  fill: #df49a6;
-}
-
-.r2d2-svg circle {
-  stroke: #4691f6;
-  stroke-width: 1;
-}
-
 .fa-primary,
 .fa-secondary {
   transition: var(--transition-speed);
+}
+
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
 
 .logo {

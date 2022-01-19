@@ -254,432 +254,573 @@
 
     <div class='cmdcontainer'>
 
-        <div id='Fun' class='hidden cmdcategory'>
-    
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">trending</div>
-                <div>See the latest trending posts from your favourite subreddits.</div>
-                <div class="has-text-gray">!!trending [subreddit]</div>
-            </div>
+      <div id='Economy' class='cmdcategory'>
 
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">dadjoke</div>
-                <div>Get a randomly generated dad joke for a good laugh.</div>
-                <div class="has-text-gray">!!dadjoke</div>
-            </div>
-    
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">hug</div>
-                <div>Show your appreciation to another member.</div>
-                <div class="has-text-gray">!!hug [@Member/ID] (reason)</div>
-            </div>
-    
-            <div class="cmdcategoryitem final-item">
-                <div class="has-text-primary">advice</div>
-                <div>Feeling down or in need of advice? Try this command.</div>
-                <div class="has-text-gray">!!advice</div>
-            </div>
-    
+
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">blackjack</div>
+            <div>Play a game of blackjack to earn coins.</div>
+            <div class="has-text-gray">!!blackjack [amount to bet or 0]</div>
         </div>
-
-        <div id='Economy' class='cmdcategory'>
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">coins</div>
-              <div>Shows the amount of coins a user has in their account.</div>
-              <div class="has-text-gray">!!coins (@Member/ID)</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">withdraw</div>
-              <div>Withdraw coins from your bank to your wallet.</div>
-              <div class="has-text-gray">!!withdraw [number/all]</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">deposit</div>
-              <div>Deposit your coins from your wallet to the bank for safe-keeping.</div>
-              <div class="has-text-gray">!!deposit [number/all]</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">blackjack</div>
-              <div>Play a game of blackjack to earn coins.</div>
-              <div class="has-text-gray">!!blackjack [amount to bet or 0]</div>
-          </div>
-      
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">trivia</div>
-              <div>Play a multiple choice trivia and earn coins for answering correctly!</div>
-              <div class="has-text-gray">!!trivia</div>
-          </div>
-
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">heist</div>
-              <div>Start a bank robbery and push through minigames and hard choices to go big or go home, potentially earning a lot of coins. This can be done once a day.</div>
-              <div class="has-text-gray">!!heist</div>
-          </div>
-
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">leaderboard</div>
-              <div>See the leaderboard for coins, bank, and ranks.</div>
-              <div class="has-text-gray">!!leaderboard</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">shop</div>
-              <div>Displays the coins Shop.</div>
-              <div class="has-text-gray">!!shop</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">work</div>
-              <div>Work once every 2 hours to earn coins.</div>
-              <div class="has-text-gray">!!work</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">inventory</div>
-              <div>View your purchased items inventory.</div>
-              <div class="has-text-gray">!!inventory</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">upgrade</div>
-              <div>Upgrade your bank storage! Store more coins by increasing your maximum capacity.</div>
-              <div class="has-text-gray">!!upgrade</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">use</div>
-              <div>Use an item from your inventory.</div>
-              <div class="has-text-gray">!!use (item)</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">grenade</div>
-              <div>Use a grenade item and potentially explode another user, stealing their precious coins.</div>
-              <div class="has-text-gray">!!grenade [@Member/ID]</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">numberguesser</div>
-              <div>Play a game of guess the number and earn coins for guessing correctly!</div>
-              <div class="has-text-gray">!!guesser [amount to bet or 0]</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">crime</div>
-              <div>Crime is fun, just don't get caught! Commit a crime - high risk, high reward.</div>
-              <div class="has-text-gray">!!crime</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">search</div>
-              <div>Search for some coins, maybe you'll find some.</div>
-              <div class="has-text-gray">!!search</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">beg</div>
-              <div>Do a little begging, maybe someone will be kind enough to donate a few coins.</div>
-              <div class="has-text-gray">!!beg</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">dig</div>
-              <div>Dig with a shovel! A chance to earn coins.</div>
-              <div class="has-text-gray">!!dig</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">hunt</div>
-              <div>Go hunting for animals! A chance to earn coins.</div>
-              <div class="has-text-gray">!!hunt</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-              <div class="has-text-primary">fish</div>
-              <div>Go fishing! A chance to earn coins.</div>
-              <div class="has-text-gray">!!fish</div>
-          </div>
-
-          <div class="cmdcategoryitem">
-            <div class="has-text-primary">mine</div>
-            <div>Use your pickaxe to go mining for ores. Then sell them from your backpack..</div>
+        
+        
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">withdraw</div>
+            <div>Withdraw coins from your bank to your wallet.</div>
+            <div class="has-text-gray">!!withdraw [number/all]</div>
+        </div>
+        
+        
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">deposit</div>
+            <div>Deposit your coins from your wallet to the bank for safe-keeping.</div>
+            <div class="has-text-gray">!!deposit [number/all]</div>
+        </div>
+        
+        
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">grenade</div>
+            <div>Potentially explode another user, stealing their precious coins.</div>
+            <div class="has-text-gray">!!grenade [@Member/ID]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">balance</div>
+            <div>Show the amount of coins a user has in their account.</div>
+            <div class="has-text-gray">!!coins (@Member/ID)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">leaderboard</div>
+            <div>See the global bank and wallet leaderboards.</div>
+            <div class="has-text-gray">!!leaderboard</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">shop</div>
+            <div>Displays the coins shop.</div>
+            <div class="has-text-gray">!!shop</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">buy</div>
+            <div>Buy an item from the shop.</div>
+            <div class="has-text-gray">!!buy (item)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">inventory</div>
+            <div>View your purchased items inventory.</div>
+            <div class="has-text-gray">!!inventory</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">upgrade</div>
+            <div>Upgrade your bank storage! Store more coins by increasing your maximum capacity.</div>
+            <div class="has-text-gray">!!upgrade</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">use</div>
+            <div>Use an item from your inventory.</div>
+            <div class="has-text-gray">!!use (item)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">numberguesser</div>
+            <div>Guess the number to earn coins.</div>
+            <div class="has-text-gray">!!numberguesser [amount to bet or 0]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">work</div>
+            <div>Work every 2 hours to earn coins.</div>
+            <div class="has-text-gray">!!work</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">crime</div>
+            <div>Commit a crime! High risk, high reward to earn or possibly lose coins.</div>
+            <div class="has-text-gray">!!crime</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">dig</div>
+            <div>Dig with a shovel! A chance to earn coins.</div>
+            <div class="has-text-gray">!!dig</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">hunt</div>
+            <div>Go hunting for animals! A chance to earn coins.</div>
+            <div class="has-text-gray">!!hunt</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">fish</div>
+            <div>Go fishing! A chance to earn coins.</div>
             <div class="has-text-gray">!!fish</div>
-          </div>
-
-          <div class="cmdcategoryitem">
-            <div class="has-text-primary">ores view</div>
-            <div>View ores collected from your mining trips.</div>
-            <div class="has-text-gray">!!fish</div>
-          </div>
-
-          <div class="cmdcategoryitem">
-            <div class="has-text-primary">ores sell</div>
-            <div>Sell all ores collected from your mining trips.</div>
-            <div class="has-text-gray">!!fish</div>
-          </div>
-
-          <div class="cmdcategoryitem">
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">search</div>
+            <div>Search a place for some coins, maybe you'll find some.</div>
+            <div class="has-text-gray">!!search</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">beg</div>
+            <div>Maybe someone will be kind enough to donate a few coins.</div>
+            <div class="has-text-gray">!!beg</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">gift</div>
-            <div>Gift your coins to another member. There is a 4% tax applied.</div>
+            <div>Gift your coins to another member with a 4% tax.</div>
             <div class="has-text-gray">!!gift [@Member/ID] [number of coins]</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">sell</div>
-            <div>Sell an item that you have in your inventory.</div>
+            <div>Sell an item from your inventory.</div>
             <div class="has-text-gray">!!sell [item ID]</div>
-          </div>
-
-          <div class="cmdcategoryitem">
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">heist</div>
+            <div>Start a bank robbery: Push through minigames and hard choices, potentially earning a lot of coins.</div>
+            <div class="has-text-gray">!!heist</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">gamble</div>
             <div>Roll two dice against a bot, whoever has the higher value wins.</div>
             <div class="has-text-gray">!!gamble [amount to bet or 0]</div>
-          </div>
-
-          <div class="cmdcategoryitem final-item">
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">compare</div>
             <div>Compare yourself to another member to settle who's better.</div>
             <div class="has-text-gray">!!compare [@Member/ID]</div>
-          </div>
         </div>
-
-        <div id='Information' class='hidden cmdcategory'>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">invite</div>
-                <div>Add Rune to your server.</div>
-                <div class="has-text-gray">!!invite</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">website</div>
-                <div>Get a link to this website.</div>
-                <div class="has-text-gray">!!website</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">serveravatar</div>
-                <div>Grab the current server's avatar.</div>
-                <div class="has-text-gray">!!serveravatar</div>
-            </div>
     
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">credits</div>
-                <div>Shows this bot's developers.</div>
-                <div class="has-text-gray">!!credits</div>
-            </div>
     
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">whois</div>
-                <div>Shows details about you or another specified Discord account.</div>
-                <div class="has-text-gray">!!whois (@Member/ID)</div>
-            </div>
     
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">avatar</div>
-                <div>Get a full sized avatar of a discord account (image/GIF).</div>
-                <div class="has-text-gray">!!avatar (@User/ID)</div>
-            </div>
-    
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">ping</div>
-                <div>Returns the bot's latency (response time), in miliseconds.</div>
-                <div class="has-text-gray">!!ping</div>
-            </div>
-    
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">devserver</div>
-                <div>An invite to Rune's support Discord server.</div>
-                <div class="has-text-gray">!!devserver</div>
-            </div>
-
-            <div class="cmdcategoryitem final-item">
-                <div class="has-text-primary">help</div>
-                <div>Shows the help selection menu, command categories, or information on a specific command.</div>
-                <div class="has-text-gray">!!help (command/category)</div>
-            </div>
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">mine</div>
+            <div>Use your pickaxe to go mining for ores. Then sell them from your backpack.</div>
+            <div class="has-text-gray">!!mine</div>
         </div>
-
-
-        <div id='Moderator' class='hidden cmdcategory'>
     
-            <div class="cmdcategoryitem">
-              <div class="has-text-primary">purge</div>
-              <div>Purge a specified number of messages in this channel.</div>
-              <div class="has-text-gray">!!purge [number]</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">clean</div>
-                <div>Clean up Rune's messages in this channel, default 10.</div>
-                <div class="has-text-gray">!!clean (number)</div>
-            </div>
     
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">stealemoji</div>
-                <div>Nitro users can use this command to steal emojis from other servers.</div>
-                <div class="has-text-gray">!!stealemoji [emoji]</div>
-            </div>
     
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">slowmode</div>
-                <div>Set, change, or remove the channel's slowmode.</div>
-                <div class="has-text-gray">!!slowmode [time or 0]</div>
-            </div>
-  
-            <div class="cmdcategoryitem">
-              <div class="has-text-primary">say</div>
-              <div>Make the bot say a message.</div>
-              <div class="has-text-gray">!!say [#channel] [message]</div>
-            </div>
-  
-            <div class="cmdcategoryitem">
-              <div class="has-text-primary">vote</div>
-              <div>Create a vote in a specified channel with automatically added yes/no reactions.</div>
-              <div class="has-text-gray">!!vote [#channel] [topic]</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">settings view</div>
-                <div>View the current Rune settings in place for this server.</div>
-                <div class="has-text-gray">!!settings view</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">settings prefix</div>
-                <div>Customize Rune's prefix for this server.</div>
-                <div class="has-text-gray">!!settings prefix (new prefix)</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">settings deletescams</div>
-                <div>Automatically detect and delete phishing scam links from your server. Enabled by default to protect your members from dangeorus/malicious links.</div>
-                <div class="has-text-gray">!!settings deletescams [enable/disable]</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">settings banNewAccounts</div>
-                <div>A setting for banning newly made accounts that try joining your server. Configurable to the number of days ago an account was made, or 0 to disable.</div>
-                <div class="has-text-gray">!!settings banNewAccounts [account age in days]</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">settings autorole</div>
-                <div>Manage a list of roles that are given upon joining. The base command for all autorole related commands, e.g. list or add.</div>
-                <div class="has-text-gray">!!settings autorole</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">settings autorole list</div>
-                <div>Manage a list of roles that are given upon joining.</div>
-                <div class="has-text-gray">!!settings autorole list</div>
-            </div>
-            
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">settings autorole add</div>
-                <div>Add a role to auto-role.</div>
-                <div class="has-text-gray">!!settings autorole add [@Role/ID]
-                </div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">settings autorole remove</div>
-                <div>Remove a role from auto-role.</div>
-                <div class="has-text-gray">!!settings autorole remove [@Role/ID]</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">mute</div>
-                <div>Timeout a member for a specified duration of time.</div>
-                <div class="has-text-gray">!!mute [@Member/ID] [Duration]</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">unmute</div>
-                <div>Unmutes a user in timeout.</div>
-                <div class="has-text-gray">!!unmute [@Member/ID]</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-                <div class="has-text-primary">mutes</div>
-                <div>List all the currently timed out members.</div>
-                <div class="has-text-gray">!!mutes</div>
-            </div>
-
-            <div class="cmdcategoryitem">
-              <div class="has-text-primary">sync</div>
-              <div>Synchronize permissions of the current channel to the category it is in.</div>
-              <div class="has-text-gray">!!sync</div>
-          </div>
-
-          <div class="cmdcategoryitem final-item">
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">view</div>
+            <div>View ores collected from your mining trips.</div>
+            <div class="has-text-gray">!!ores view</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">sell</div>
+            <div>Sell all ores collected from your mining trips.</div>
+            <div class="has-text-gray">!!ores sell</div>
+        </div>
+    
+    
+    </div>
+    <div id='Fun' class='hidden cmdcategory'>
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">trending</div>
+            <div>See the latest trending posts on your favourite subreddits.</div>
+            <div class="has-text-gray">!!trending [subreddit]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">dadjoke</div>
+            <div>Gives you a random dad joke.</div>
+            <div class="has-text-gray">!!dadjoke</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">advice</div>
+            <div>Randomly generated advice!</div>
+            <div class="has-text-gray">!!advice</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">trivia</div>
+            <div>Play a multiple choice trivia and earn coins for answering correctly!</div>
+            <div class="has-text-gray">!!trivia</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">hug</div>
+            <div>Use this to show your appreciation to a member by hugging them.</div>
+            <div class="has-text-gray">!!hug [@Member/ID] (reason)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">kill</div>
+            <div>Use this to show your appreciation to a member by... killing them.</div>
+            <div class="has-text-gray">!!kill [@Member/ID]</div>
+        </div>
+    
+    
+    </div>
+    <div id='Moderator' class='hidden cmdcategory'>
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">say</div>
+            <div>Make the bot say a message.</div>
+            <div class="has-text-gray">!!say [channel] [message]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">vote</div>
+            <div>Create a vote in a specified channel with yes/no reactions.</div>
+            <div class="has-text-gray">!!vote [channel] [topic]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">sync</div>
+            <div>Synchronize permissions of the current channel to the category it is in.</div>
+            <div class="has-text-gray">!!sync</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">purge</div>
+            <div>Purge a specified number of messages in this channel.</div>
+            <div class="has-text-gray">!!purge [number]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">clean</div>
+            <div>Clean up Rune's messages in this channel.</div>
+            <div class="has-text-gray">!!clean (number)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">stealemoji</div>
+            <div>Add emojis directly from other servers you are in.</div>
+            <div class="has-text-gray">!!stealemoji [emoji]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">slowmode</div>
+            <div>Set or remove the current channel's slowmode.</div>
+            <div class="has-text-gray">!!slowmode [time or 0]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">bannewaccounts</div>
+            <div>Ban accounts that join the server created less than x days ago, or 0 to disable.</div>
+            <div class="has-text-gray">!!settings banNewAccounts [days] (message)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">prefix</div>
+            <div>Customize Rune's prefix for this server.</div>
+            <div class="has-text-gray">!!settings prefix (new prefix)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">deletescams</div>
+            <div>Automatically detect and delete phishing scam links from your server.</div>
+            <div class="has-text-gray">!!settings deletescams (enable/disable)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">view</div>
+            <div>View the Rune settings in place for this server.</div>
+            <div class="has-text-gray">!!settings view</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">remove</div>
+            <div>Remove a role from auto-role.</div>
+            <div class="has-text-gray">!!settings autorole remove [@Role/ID]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">add</div>
+            <div>Add a role to auto-role.</div>
+            <div class="has-text-gray">!!settings autorole add [@Role/ID]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">list</div>
+            <div>View the current auto-role settings.</div>
+            <div class="has-text-gray">!!settings autorole list</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">mute</div>
+            <div>Timeout a member for a specified duration of time.</div>
+            <div class="has-text-gray">!!mute [@Member/ID] [Duration]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">mutes</div>
+            <div>List all the currently timed out members.</div>
+            <div class="has-text-gray">!!mutes</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">unmute</div>
+            <div>Unmutes a user in timeout.</div>
+            <div class="has-text-gray">!!unmute [@Member/ID]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">rolemembers</div>
             <div>Lists up to 100 members that have the specified role.</div>
             <div class="has-text-gray">!!rolemembers [@Role/ID]</div>
-          </div>
-
         </div>
-
-        <div id='Logging' class='hidden cmdcategory'>
     
-          <div class="cmdcategoryitem">
-            <div class="has-text-primary">logchannel commands</div>
-            <div>Set, change, or remove the channel Rune should send command logs to.</div>
-            <div class="has-text-gray">!!logchannel commands [#channel/clear]</div>
-          </div>
-
-          <div class="cmdcategoryitem">
-            <div class="has-text-primary">logchannel members</div>
-            <div>Set, change, or remove the channel Rune should send member related logs to.</div>
-            <div class="has-text-gray">!!logchannel members [#channel/clear]</div>
-          </div>
-
-          <div class="cmdcategoryitem">
-            <div class="has-text-primary">logchannel messages</div>
-            <div>Set, change, or remove the channel Rune should send message related logs to.</div>
-            <div class="has-text-gray">!!logchannel messages [#channel/clear]</div>
-          </div>
-
-          <div class="cmdcategoryitem">
+    
+    </div>
+    <div id='Logging' class='hidden cmdcategory'>
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">commands</div>
+            <div>Set or change the log channel for Rune to send command logs to</div>
+            <div class="has-text-gray">!!logchannel commands [#Channel/ID]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">members</div>
+            <div>Set or change the log channel for Rune to send member related logs to</div>
+            <div class="has-text-gray">!!logchannel members [#Channel/ID]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">messages</div>
+            <div>Set or change the log channel for Rune to send message related logs to</div>
+            <div class="has-text-gray">!!logchannel messages [#Channel/ID]</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">logmembers</div>
-            <div>Set whether Rune should log member joins and leaves in your server's logchannel.</div>
+            <div>Whether Rune should log member joins and leaves in your server's logchannel.</div>
             <div class="has-text-gray">!!logmembers (enable/disable)</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
-            <div class="has-text-primary">logdeletes</div>
-            <div>Set whether Rune should log message deletions in your server's logchannel.</div>
-            <div class="has-text-gray">!!logdeletes (enable/disable)</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">logedits</div>
-            <div>Set whether Rune should log edits deletions in your server's logchannel.</div>
+            <div>Whether Rune should log message edits in your server's logchannel.</div>
             <div class="has-text-gray">!!logedits (enable/disable)</div>
-          </div>
-
-          <div class="cmdcategoryitem">
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">logdeletes</div>
+            <div>Whether Rune should log message deletions in your server's logchannel.</div>
+            <div class="has-text-gray">!!logdeletes (enable/disable)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">logprofiles</div>
-            <div>Set whether Rune should log profile updates in your server's logchannel, this applies to username, avatar, and discriminator changes.</div>
+            <div>Whether Rune should log profile updates in your server's logchannel, this applies to username, avatar, and discriminator changes.</div>
             <div class="has-text-gray">!!logprofiles (enable/disable)</div>
-          </div>
-  
-          <div class="cmdcategoryitem">
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">logroles</div>
-            <div>Set whether Rune should log role changes in your server's logchannel.</div>
+            <div>Whether Rune should log role changes in your server's logchannel.</div>
             <div class="has-text-gray">!!logroles (enable/disable)</div>
-          </div>
-
-          <div class="cmdcategoryitem final-item">
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
             <div class="has-text-primary">ignorechannel</div>
             <div>Manage which channels Rune's logs should ignore.</div>
             <div class="has-text-gray">!!ignorechannel [#channel/ID]</div>
-          </div>
-
         </div>
+    
+    
+    </div>
+    <div id='Information' class='hidden cmdcategory'>
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">help</div>
+            <div>Shows the help selection menu, command categories, or information on a specific command.</div>
+            <div class="has-text-gray">!!help (command or category)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">ping</div>
+            <div>Returns the bot's latency (response time), in miliseconds.</div>
+            <div class="has-text-gray">!!ping</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">credits</div>
+            <div>Shows information on the developers of Rune.</div>
+            <div class="has-text-gray">!!credits</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">whois</div>
+            <div>Shows details about you or a specified Discord account.</div>
+            <div class="has-text-gray">!!whois (@Member/ID)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">avatar</div>
+            <div>Get a full sized image/gif avatar of a discord account.</div>
+            <div class="has-text-gray">!!avatar (@User/ID)</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">serveravatar</div>
+            <div>Grab the current server's avatar icon.</div>
+            <div class="has-text-gray">!!serveravatar</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">devserver</div>
+            <div>Get an invite to Rune's support server.</div>
+            <div class="has-text-gray">!!devserver</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">invite</div>
+            <div>Add Rune to your server.</div>
+            <div class="has-text-gray">!!invite</div>
+        </div>
+    
+    
+    
+        <div class="cmdcategoryitem">
+            <div class="has-text-primary">website</div>
+            <div>Visit Rune's website!</div>
+            <div class="has-text-gray">!!website</div>
+        </div>
+    
+    
+    </div>
     </div>
 
 

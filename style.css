@@ -8,23 +8,8 @@
   --main-bg: #1D1E28;
   --bg-secondary: #141418;
   --transition-speed: 600ms;
-  --blue: #007bff;
   --lightblue: #AD91FF;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
   --gray: #2C2F33;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
   --light: #f8f9fa;
   --bg-color: rgb(0, 0, 0);
   --typewriterSpeed: 3.5s;
@@ -42,6 +27,8 @@ body {
   padding: 0;
   background-color: var(--main-bg);
 }
+
+/* Start typewriter */
 
 .hoverable {
   background-color: transparent;
@@ -126,12 +113,16 @@ body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
+/* End typewriter */
+
 main {
   font-size: 1.7vh;
   margin-left: 5rem;
   padding: 1rem;
   color: white;
 }
+
+/* Start navbar */
 
 .navbar {
   position: fixed;
@@ -207,7 +198,7 @@ main {
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #4691f6;
+  fill: #df49a6;
 }
 
 .svg-icon circle {
@@ -244,7 +235,7 @@ main {
   transform: rotate(-180deg);
 }
 
-/* TODO: Change media queries to be based on dimensions, not specific cases */
+/* End navbar */
 
 /* Command container adjustments for smaller laptops and regular ipads*/
 @media only screen and (max-width: 1200px) {
@@ -288,7 +279,7 @@ main {
   .footer .couple {
     grid-template-columns: 1fr !important;
     justify-items: normal !important;
-    align-items: center;
+    gap: 0 !important;
   }
 
 }
@@ -317,6 +308,13 @@ main {
     margin: 0;
     margin-bottom: 5rem;
   }
+
+  /* Reduce text area for forms */
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
 }
 
 /* Large screens */
@@ -490,6 +488,8 @@ main {
 .footer .couple {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
 }
 
 .footer .row {
@@ -738,3 +738,58 @@ img {
 }
 
 /* End cookies */
+
+/* Start forms - https://www.w3schools.com/howto/howto_css_responsive_form.asp */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #2a2121;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* End forms */

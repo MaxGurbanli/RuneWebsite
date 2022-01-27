@@ -1,21 +1,21 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Rune - The Discord Bot" property="og:title">
-    <link rel="icon" href="../../assets/RuneIconCircle.png">
+    <meta content="Rune - Privacy" property="og:title">
+    <link rel="icon" href="assets/RuneIconCircle.png">
     <meta content="Rune is a multi-purpose bot ready to skill up and boost your Discord server, easy and free." property="og:description">
     <meta content="https://media.discordapp.net/attachments/811623272810676284/880034059525455882/rune_icon3.png" property="og:image">
     <meta content="https://botrune.herokuapp.com/#" property="og:url">
     <meta name="theme-color" content="#00ff00">
-    <title>Rune - Update v1.8</title>
-    <script defer src="../../theme.js"></script>
-    <link rel="stylesheet" href="../../style.css" />
+    <title>Rune - Privacy</title>
+    <script defer src="theme.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
     <meta charset="utf-8"/>
 </head>
   
-<!-- Code written by Max!#5056 for Discord Bot Rune: botrune.herokuapp.com -->
+<!-- By Max!#5056 for Discord Bot Rune: botrune.herokuapp.com --> 
 
-  <body>
+<body>
     <nav class="navbar">
       <ul class="navbar-nav">
         <li class="logo">
@@ -115,7 +115,7 @@
             <span class="link-text">Blogs</span>
           </a>
         </li>
-  
+
         <li class="nav-item">
           <a href="https://botrune.herokuapp.com/privacy" class="nav-link">
             <svg class="svg-icon" viewBox="0 0 20 20">
@@ -239,47 +239,45 @@
         </li>
       </ul>
     </nav>
-  
-    <main>
 
-        <h1 class='big-title'>Update v1.8</h1>
-        <div class='gray-subtitle'>On December 4th, 2021</div>
-        <div class='separator'></div>
-        <br /><br />
-        <div class='blogbody'>
-            This is an economy-focused update containing new features and commands, Quality of Life changes, as well as various bug fixes.<br><br>
-            <b>Gamble: a new way to bet coins</b><br>
-            - Added <span class='cmd'>!!gamble [bet]</span> command.<br>
-            Roll two dice against a bot, the player who has a higher roll wins.<br>
-            This mini-game follows standard Rune betting rules, you win/lose 20% of your bet. <br>
-            The command supports "max" or "all" as your bet like all other betting-based commands.<br><br>
-            <b>Compare: a new way to flex on your friends</b><br>
-            - Added <span class='cmd'>!!compare [@Member/ID]</span> command.<br>
-            Compare yourself with another member and see who is on top in terms of wallets, banks, bank levels, inventory worth and account worth.<br>
-            Flexing has never been easier.<br>
-            <img src='https://cdn.discordapp.com/attachments/890260678739378207/916697433671602176/unknown.png'>
-            <br><br>
-            <b>Smart number parsing</b><br>
-            - Added recognition for other ways to represent numbers when entering a bet, for example <span class='cmd'>1k 1_000 1,000</span> are all equal to 1000.<br>
-            This should help some of you struggling with having to get the syntax correct for commands.<br>
-            The parsing is applied for all betting-based commands, which are currently: Blackjack, number-guesser, and gamble.
-            <br><br>
-            <b>Removed ranking system</b><br>
-            - The ranking system, rank icons based on your bank level, was a rushed system that did not meet my quality standards of a feature that deserves to be in Rune. Therefore it has been removed for now, but may return in another form in the future.<br><br>
-            <b>Bank level progress bar and coin icon emoji changes</b><br>
-            The emojis that display the Rune Coin and progress bar for your bank level in the <span class='cmd'>!!bal</span> command have been improved: <br>
-            <img src='https://cdn.discordapp.com/emojis/914864380548628520.png?size=96'>
-            <br>
-            <img src='https://cdn.discordapp.com/emojis/914856280244494336.png?size=96'>
-            <img src='https://cdn.discordapp.com/emojis/914856288788295711.png?size=96'>
-            <img src='https://cdn.discordapp.com/emojis/914856300981157929.png?size=96'>
-            <br>
-            <img src='https://cdn.discordapp.com/emojis/914856233620627477.gif?size=96'>
-            <img src='https://cdn.discordapp.com/emojis/914856249156329482.gif?size=96'>
-            <img src='https://cdn.discordapp.com/emojis/914856264058671165.gif?size=96'>
-            <br><br>
+    <main>
+        <h1 class="title">Bug Report</h1>
+        <div class="container">
+          <form onsubmit="reportBug()">
+
+            <div class="row">
+              <div class="col-25">
+                <label for="username">Discord username</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="username" placeholder="Your username...">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="bugtitle">Title</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="bugtitle" placeholder="Give the issue a title...">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="maintext">Description</label>
+              </div>
+              <div class="col-75">
+                <textarea id="bugdescription" placeholder="Tell us what the issue is.." style="height:200px"></textarea>
+              </div>
+            </div>
+
+            <div class="row" style='margin-top: 1rem;'>
+              <input type="submit" value="Submit">
+            </div>
+
+          </form>
         </div>
-    
       <div class="footer">
 
         <div class="row">
@@ -299,7 +297,7 @@
             <ul>
               <li><a href="https://botrune.herokuapp.com/privacy">Privacy</a></li>
               <li><a href='mailto:gurbanlimaksud@gmail.com' target="_blank">Contact</a></li>
-              <li><a href="https://botrune.herokuapp.com/bug">Report a Bug</a></li>
+              <li><a href="https://botrune.herokuapp.com/bug">Report Bug</a></li>
               <!-- <li><a href="https://botrune.herokuapp.com/appeal">Appeal</a></li> -->
             </ul>
           </div>
@@ -315,8 +313,6 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src='../../main.js'></script>
+    <script src='main.js'></script>
 
-  </body>
-
-</html>
+</body>

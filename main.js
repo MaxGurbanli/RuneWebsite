@@ -63,27 +63,26 @@ $(document).ready(function(){
 	testFirstCookie();
 });
 
-function sendMessage() {
+function reportBug() {
     const request = new XMLHttpRequest();
-    var feedback = document.getElementById('feedbackinput').value;
-    var name = document.getElementById('nameinput').value;
-    if (feedback == '' || name == '') {
-        alert("Please fill out both fields before submitting feedback.");
+    var username = document.getElementById('username').value;
+    var bugtitle = document.getElementById('bugtitle').value;
+    var bugdescription = document.getElementById('bugdescription').value;
+    if (username == '' || bugtitle == '' || bugdescription == '') {
+        alert("Please fill out all fields before submitting the bug report.");
         return;
     }
-    request.open("POST", "https://discord.com/api/webhooks/917048615975931995/0u9APl2MKhUVLD5yV9voBbwcLoFlx-lwV03erOqJegNQEXpPHrfaulFrLulUBo4hal5I");
+    request.open("POST", "https://discord.com/api/webhooks/936370237530599546/F7M9cxARvnJYBexUNmDsHXIvGzoC3I2RHrRUT1uBGE_1t0TXMyRTOyaFacQjl-eBgHzc");
 
     request.setRequestHeader('Content-type', 'application/json');
 
     const params = {
-    content: 'Feedback: '+ feedback + '\nSubmitted by: ' + name
+    content: 'Title: '+ bugtitle + '\nDescription: ' + bugdescription + '\nSubmitted by: ' + username
     }
 
     request.send(JSON.stringify(params));
 
-    document.getElementById('form').style.display = 'none';
-    document.getElementById('submitted').style.display = 'block';
-
+    confirm('Bug report submitted! It will be reviewed and handled appropriate within a day.')
 }
 
 function setcategory(category, button) {

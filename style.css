@@ -122,6 +122,11 @@ main {
   color: white;
 }
 
+.content {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 /* Start navbar */
 
 .navbar {
@@ -249,6 +254,14 @@ main {
 }
 }
 
+/* Typewriter adjustments to prevent double lines */
+@media only screen and (max-width: 1022px) {
+  .typewriter h1::before,
+  .typewriter h1::after {
+    position: static !important;
+  }
+}
+
 /* Flexbox and command container adjustments on smaller screens to prevent horizontal scroll */
 @media only screen and (max-width: 965px) {
 
@@ -281,7 +294,6 @@ main {
     justify-items: normal !important;
     gap: 0 !important;
   }
-
 }
 
 /* Small screens */
@@ -402,7 +414,6 @@ main {
   font-weight: 600;
   text-transform: uppercase;
   margin: 0.2vh 0.6vh;
-  border: none;
   cursor: pointer;
   padding: 1.5vh 4vh;
   text-decoration: none;
@@ -503,51 +514,61 @@ main {
 /* End footer */
 
 .hidden{
-  display: none;
+  display: none !important;
 }
 
 /* Start commands page */
 
-.cmdcontainer {
-  display: grid;
-  background-color: #231d36;
-  row-gap: 10rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  }
-
-.cmdcontainer .final-item {
-  border-bottom: none;
+.textbutton {
+  display: inline-block;
+  color: white;
+  font-size: 1.75vh;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1vh 1vh;
+  text-decoration: none;
 }
 
 .cmdcontainerbuttons {
   background-color: #231d36;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 2vh;
-  font-size: 130%;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
   padding: 1rem;
 }
 
+.cmdcategory {
+  display: grid;
+  row-gap: 1rem;
+}
+
 .cmdcategoryitem {
-  display: flex;
-  flex-direction: column;
+  cursor: pointer;
+  background-color: #231d36;
   font-size: 1.2rem;
-  border-bottom: 0.1mm solid gray;
+  border: 0 solid;
+  border-color: #231d36;
+  border-radius: 1rem;
+  border-width: .01rem;
+  padding: 1rem 1rem
+  }
+
+.cmdcategoryitem:hover {
+  border-color: yellow !important;
   }
 
 .is-active {
-  background-color: rgb(119, 136, 153) !important;
+  color: rgb(125, 255, 38) !important;
 }
 
-.has-text-primary{
-  color:lightgreen
+.has-text-primary {
+  color:lightgreen;
 }
 
-.has-text-gray{
-  color: rgb(170, 163, 163)
+.has-text-gray {
+  color: rgb(170, 163, 163);
+  display: none;
 }
 
 /* End commands page */

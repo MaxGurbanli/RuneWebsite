@@ -82,14 +82,58 @@ function reportBug() {
 
     request.send(JSON.stringify(params));
 
-    confirm('Bug report submitted! It will be reviewed and handled appropriate within a day.')
+    confirm('Are you sure you would like to submit the bug report form?')
 }
 
-function setcategory(category, button) {
+var categoryStore = {
+  "economybutton": "Economy",
+  "moderatorbutton": "Moderator",
+  "funbutton": "Fun",
+  "informationbutton": "Information",
+  "loggingbutton": "Logging"
+}
+
+function setcategory(event) {
   cmdcategories = document.getElementsByClassName('cmdcategory');
   for (element of cmdcategories) {element.style.display = 'none'}
-  document.getElementById(category).style.display = "block";
-  elements = document.getElementsByClassName('button blurple is-active');
-  for (element of elements) {element.className = 'button blurple';}
-  document.getElementById(button).className = 'button blurple is-active';
+  document.getElementById(categoryStore[event.target.id]).setAttribute('style', 'display: grid !important');
+  elements = document.getElementsByClassName('textbutton is-active');
+  for (element of elements) {element.className = 'textbutton';}
+  document.getElementById(event.target.id).className = 'textbutton is-active';
+}
+
+function toggleinfo(e) {
+  if (e.target.parentElement.className == "cmdcategoryitem") {
+    elem = e.target.parentElement.getElementsByClassName('has-text-gray')[0]
+  }
+  else {
+    elem = e.target.getElementsByClassName('has-text-gray')[0]
+  }
+  if (elem.style.display == 'none' || elem.style.display == '') {
+    elem.style.display = 'block';
+  }
+  else {
+    elem.style.display = ''
+  }
+}
+
+function searchCommands(currently_active) {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById(categoryStore[currently_active]);
+  tr = table.getElementsByClassName("cmdcategoryitem");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByClassName("has-text-primary")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
 }

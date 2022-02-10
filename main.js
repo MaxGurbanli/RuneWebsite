@@ -95,11 +95,19 @@ var categoryStore = {
 
 function setcategory(event) {
   cmdcategories = document.getElementsByClassName('cmdcategory');
-  for (element of cmdcategories) {element.style.display = 'none'}
-  document.getElementById(categoryStore[event.target.id]).setAttribute('style', 'display: grid !important');
-  elements = document.getElementsByClassName('textbutton is-active');
-  for (element of elements) {element.className = 'textbutton';}
+  for (element of cmdcategories) {element.className = 'cmdcategory hidden'}
+  document.getElementById(categoryStore[event.target.id]).className = 'cmdcategory';
+  active = document.getElementsByClassName('textbutton is-active')[0];
+  if (active) {active.className = 'textbutton'}
   document.getElementById(event.target.id).className = 'textbutton is-active';
+}
+
+function showall() {
+  cmdcategories = document.getElementById('cmdcontainer');
+  for (element of cmdcategories.children) {element.className = 'cmdcategory'}
+  active = document.getElementsByClassName('textbutton is-active')[0];
+  if (active) {active.className = 'textbutton'}
+  document.getElementById('allbutton').className = 'textbutton is-active';
 }
 
 function toggleinfo(e) {
@@ -117,12 +125,30 @@ function toggleinfo(e) {
   }
 }
 
-function searchCommands(currently_active) {
-  var input, filter, table, tr, td, i, txtValue;
+var cmdcontainer, tr
+
+function loadCommands() {
+  cmdcontainer = document.getElementById("cmdcontainer")
+  tr = []
+  for (child of cmdcontainer.children) {
+    eachtable = child.getElementsByClassName("cmdcategoryitem")
+    for (element of eachtable) {tr.push(element)}
+  }
+}
+
+function searchCommands() {
+  buttons = document.getElementById('cmdcontainerbuttons')
+  active = buttons.getElementsByClassName('is-active')[0];
+  if (active) {active.className = 'textbutton'}
+  document.getElementById('allbutton').className = 'textbutton is-active';
+
+  for (cmdcategory of cmdcontainer.children) {
+    cmdcategory.className = 'cmdcategory'
+  }
+
+  var input, filter, td, i, txtValue;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
-  table = document.getElementById(categoryStore[currently_active]);
-  tr = table.getElementsByClassName("cmdcategoryitem");
 
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {

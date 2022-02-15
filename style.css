@@ -249,9 +249,6 @@ main {
     row-gap: 1rem;
   }
 
-  .blogsgrid {
-    flex-direction:column;
-}
 }
 
 /* Typewriter adjustments to prevent double lines */
@@ -577,9 +574,10 @@ main {
 
 .blogsgrid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 3vh;
-  row-gap: 1vh;
+  row-gap: 2vh;
   column-gap: 1vh;
 }
 
@@ -589,6 +587,7 @@ main {
   border-color:rgb(30, 46, 46) !important;
   color: #fff;
   padding: 1.5rem;
+  max-width: 30rem;
   text-align: left !important;
   line-height: 3rem;
   overflow-wrap: break-word;
@@ -628,9 +627,10 @@ main {
   border-bottom: 0.1rem solid rgba(255,255,255,.25);
 }
 
-.cmd {
+cmd {
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
 }
+
 
 #submitted {
   background-color: darkgoldenrod;

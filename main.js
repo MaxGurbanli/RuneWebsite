@@ -90,7 +90,8 @@ var categoryStore = {
   "moderatorbutton": "Moderator",
   "funbutton": "Fun",
   "informationbutton": "Information",
-  "loggingbutton": "Logging"
+  "loggingbutton": "Logging",
+  "utilitybutton": "Utility"
 }
 
 function setcategory(event) {

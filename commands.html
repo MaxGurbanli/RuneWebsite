@@ -251,435 +251,384 @@
       <a id='funbutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Fun</a>
       <a id='moderatorbutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Moderator</a>
       <a id='loggingbutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Logging</a>
+      <a id='utilitybutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Utility</a>
       <a id='informationbutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Information</a>
       <input type="text" id="myInput" onkeyup="searchCommands()" placeholder="🔍 Search for a command" style='width: 15rem; background-color: inherit; color: white; border: 0 solid; font-size: 1rem'>
     </div>
 
     <div class='cmdcontainer' id='cmdcontainer'>
 
-      <div id='Economy' class='cmdcategory'>
+      <!-- Input commands from below -->
 
+      <div id='Economy' class='cmdcategory'>
 
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">blackjack</div>
             <div>Play a game of blackjack to earn coins.</div>
             <div class="has-text-gray">!!blackjack [amount to bet or 0]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">withdraw</div>
             <div>Withdraw coins from your bank to your wallet.</div>
             <div class="has-text-gray">!!withdraw [number/all]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">deposit</div>
             <div>Deposit your coins from your wallet to the bank for safe-keeping.</div>
             <div class="has-text-gray">!!deposit [number/all]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">grenade</div>
             <div>Potentially explode another user, stealing their precious coins.</div> 
             <div class="has-text-gray">!!grenade [@Member/ID]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">balance</div>
             <div>Show the amount of coins a user has in their account.</div>
             <div class="has-text-gray">!!coins (@Member/ID)</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">leaderboard</div>
             <div>See the global bank and wallet leaderboards.</div>
             <div class="has-text-gray">!!leaderboard</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">shop</div>
             <div>Displays the coins shop.</div>
             <div class="has-text-gray">!!shop</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">buy</div>
             <div>Buy an item from the shop.</div>
             <div class="has-text-gray">!!buy (item)</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">inventory</div>
             <div>View your purchased items inventory.</div>
             <div class="has-text-gray">!!inventory</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">upgrade</div>
             <div>Upgrade your bank storage! Store more coins by increasing your maximum capacity.</div>
             <div class="has-text-gray">!!upgrade</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">use</div>
             <div>Use an item from your inventory.</div>
             <div class="has-text-gray">!!use (item)</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">numberguesser</div>
             <div>Guess the number to earn coins.</div>
             <div class="has-text-gray">!!numberguesser [amount to bet or 0]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">work</div>
             <div>Work every 2 hours to earn coins.</div>
             <div class="has-text-gray">!!work</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">crime</div>
             <div>Commit a crime! High risk, high reward to earn or possibly lose coins.</div>
             <div class="has-text-gray">!!crime</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">dig</div>
             <div>Dig with a shovel! A chance to earn coins.</div>
             <div class="has-text-gray">!!dig</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">hunt</div>
             <div>Go hunting for animals! A chance to earn coins.</div>
             <div class="has-text-gray">!!hunt</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">fish</div>
             <div>Go fishing! A chance to earn coins.</div>
             <div class="has-text-gray">!!fish</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">search</div>
             <div>Search a place for some coins, maybe you'll find some.</div>
             <div class="has-text-gray">!!search</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">beg</div>
             <div>Maybe someone will be kind enough to donate a few coins.</div>
             <div class="has-text-gray">!!beg</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">gift</div>
             <div>Gift your coins to another member with a 4% tax.</div>
             <div class="has-text-gray">!!gift [@Member/ID] [number of coins]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">sell</div>
             <div>Sell an item from your inventory.</div>
             <div class="has-text-gray">!!sell [item ID]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">heist</div>
             <div>Start a bank robbery: Push through minigames and hard choices, potentially earning a lot of coins.</div>
             <div class="has-text-gray">!!heist</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">compare</div>
             <div>Compare yourself to another member to settle who's better.</div>
             <div class="has-text-gray">!!compare [@Member/ID]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">mine</div>
             <div>Use your pickaxe to go mining for ores. Then sell them from your backpack.</div>
             <div class="has-text-gray">!!mine</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">ores view</div>
             <div>View ores collected from your mining trips.</div>
             <div class="has-text-gray">!!ores view</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">ores sell</div>
             <div>Sell all ores collected from your mining trips.</div>
             <div class="has-text-gray">!!ores sell</div>
         </a>
     </div>
-    <div id='Fun' class='hidden cmdcategory'>
     
+    <div id='Fun' class='cmdcategory'>
     
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">trending</div>
             <div>See the latest trending posts on your favourite subreddits.</div>
             <div class="has-text-gray">!!trending [subreddit]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">dadjoke</div>
             <div>Gives you a random dad joke.</div>
             <div class="has-text-gray">!!dadjoke</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">trivia</div>
             <div>Play a multiple choice trivia and earn coins for answering correctly!</div>
             <div class="has-text-gray">!!trivia</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">advice</div>
             <div>Randomly generated advice!</div>
             <div class="has-text-gray">!!advice</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">hug</div>
             <div>Use this to show your appreciation to a member by hugging them.</div>
             <div class="has-text-gray">!!hug [@Member/ID] (reason)</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">kill</div>
             <div>Use this to show your appreciation to a member by... killing them.</div>
             <div class="has-text-gray">!!kill [@Member/ID]</div>
         </a>
     </div>
-    <div id='Moderator' class='hidden cmdcategory'>
     
+    <div id='Moderator' class='cmdcategory'>
     
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">say</div>
             <div>Make the bot say a message.</div>
             <div class="has-text-gray">!!say [channel] [message]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">vote</div>
             <div>Create a vote in a specified channel with yes/no reactions.</div>
             <div class="has-text-gray">!!vote [channel] [topic]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">sync</div>
             <div>Synchronize permissions of the current channel to the category it is in.</div>
             <div class="has-text-gray">!!sync</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">purge</div>
             <div>Purge a specified number of messages in this channel.</div>
             <div class="has-text-gray">!!purge [number]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">clean</div>
             <div>Clean up Rune's messages in this channel.</div>
             <div class="has-text-gray">!!clean (number)</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">stealemoji</div>
             <div>Add emojis directly from other servers you are in.</div>
             <div class="has-text-gray">!!stealemoji [emoji]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">slowmode</div>
             <div>Set or remove the current channel's slowmode.</div>
             <div class="has-text-gray">!!slowmode [time or 0]</div>
         </a>
-    
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">settings bannewaccounts</div>
-            <div>Ban accounts that join the server created less than x days ago (0 days = disabled).</div>
-            <div class="has-text-gray">!!settings banNewAccounts [days] (message)</div>
-        </a>
-    
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">settings prefix</div>
-            <div>Customize Rune's prefix for this server.</div>
-            <div class="has-text-gray">!!settings prefix (new prefix)</div>
-        </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">settings deletescams</div>
             <div>Automatically detect and delete phishing scam links from your server.</div>
             <div class="has-text-gray">!!settings deletescams [enable/disable]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">settings view</div>
             <div>View the Rune settings in place for this server.</div>
             <div class="has-text-gray">!!settings view</div>
         </a>
-    
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">settings autorole add</div>
-            <div>Add a role to auto-role.</div>
-            <div class="has-text-gray">!!settings autorole add [@Role/ID]</div>
-        </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">settings autorole remove</div>
             <div>Remove a role from auto-role.</div>
             <div class="has-text-gray">!!settings autorole remove [@Role/ID]</div>
         </a>
-    
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">settings autorole add</div>
+            <div>Add a role to auto-role.</div>
+            <div class="has-text-gray">!!settings autorole add [@Role/ID]</div>
+        </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">settings autorole list</div>
             <div>View the current auto-role settings.</div>
             <div class="has-text-gray">!!settings autorole list</div>
         </a>
-    
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">settings bannewaccounts</div>
+            <div>Ban accounts that join the server created less than x days ago (0 days = disabled).</div>
+            <div class="has-text-gray">!!settings banNewAccounts [days] (message)</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">settings prefix</div>
+            <div>Customize Rune's prefix for this server.</div>
+            <div class="has-text-gray">!!settings prefix (new prefix)</div>
+        </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">mute</div>
             <div>Timeout a member for a specified duration of time.</div>
             <div class="has-text-gray">!!mute [@Member/ID] [Duration]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">mutes</div>
             <div>List all the currently timed out members.</div>
             <div class="has-text-gray">!!mutes</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">unmute</div>
             <div>Unmutes a user in timeout.</div>
             <div class="has-text-gray">!!unmute [@Member/ID]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">rolemembers</div>
             <div>Lists (up to 100) members that have the specified role.</div>
             <div class="has-text-gray">!!rolemembers [@Role/ID]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">unbanall</div>
             <div>Unban all currently banned members from this server.</div>
             <div class="has-text-gray">!!unbanall</div>
         </a>
     </div>
-    <div id='Logging' class='hidden cmdcategory'>
     
-    
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">logchannel channels</div>
-            <div>Set or change the log channel for Rune to send channel related logs to</div>
-            <div class="has-text-gray">!!logchannel channels [#Channel/ID]</div>
-        </a>
-    
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">logchannel members</div>
-            <div>Set or change the log channel for Rune to send member related logs to</div>
-            <div class="has-text-gray">!!logchannel members [#Channel/ID]</div>
-        </a>
+    <div id='Logging' class='cmdcategory'>
     
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">logchannel messages</div>
             <div>Set or change the log channel for Rune to send message related logs to</div>
             <div class="has-text-gray">!!logchannel messages [#Channel/ID]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">logchannel roles</div>
             <div>Set or change the log channel for Rune to send role related logs to</div>
             <div class="has-text-gray">!!logchannel roles [#Channel/ID]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">logchannel commands</div>
             <div>Set or change the log channel for Rune to send command logs to</div>
             <div class="has-text-gray">!!logchannel commands [#Channel/ID]</div>
         </a>
-    
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">logchannel channels</div>
+            <div>Set or change the log channel for Rune to send channel related logs to</div>
+            <div class="has-text-gray">!!logchannel channels [#Channel/ID]</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">logchannel members</div>
+            <div>Set or change the log channel for Rune to send member related logs to</div>
+            <div class="has-text-gray">!!logchannel members [#Channel/ID]</div>
+        </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">ignorechannel</div>
             <div>Manage which channels Rune's logs should ignore.</div>
             <div class="has-text-gray">!!ignorechannel [#channel/ID]</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">logging</div>
             <div>Manage your action log by customizing which events Rune should log in your logchannel.</div>
             <div class="has-text-gray">!!logging</div>
         </a>
     </div>
-    <div id='Information' class='hidden cmdcategory'>
     
+    <div id='Information' class='cmdcategory'>
     
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">help</div>
             <div>Shows the help selection menu, command categories, or information on a specific command.</div>
             <div class="has-text-gray">!!help (command or category)</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">ping</div>
             <div>Returns the bot's latency (response time), in miliseconds.</div>
             <div class="has-text-gray">!!ping</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">credits</div>
             <div>Shows information on the developers of Rune.</div>
             <div class="has-text-gray">!!credits</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">whois</div>
             <div>Shows details about you or a specified Discord account.</div>
             <div class="has-text-gray">!!whois (@Member/ID)</div>
         </a>
-    
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">avatar</div>
-            <div>Get a full sized image/gif avatar of a discord account.</div>
-            <div class="has-text-gray">!!avatar (@User/ID)</div>
-        </a>
-    
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">serveravatar</div>
-            <div>Grab the current server's avatar icon.</div>
-            <div class="has-text-gray">!!serveravatar</div>
-        </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">devserver</div>
             <div>Get an invite to Rune's support server.</div>
             <div class="has-text-gray">!!devserver</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">invite</div>
             <div>Add Rune to your server.</div>
             <div class="has-text-gray">!!invite</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">website</div>
             <div>Visit Rune's website!</div>
             <div class="has-text-gray">!!website</div>
         </a>
-    
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">stats</div>
             <div>See what your most used commands are.</div>
             <div class="has-text-gray">!!stats</div>
         </a>
     </div>
+    
+    <div id='Utility' class='cmdcategory'>
+    
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">buildembed</div>
+            <div>Build your own embed using a modal!</div>
+            <div class="has-text-gray">!!buildembed</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">avatar</div>
+            <div>Get a full sized image/gif avatar of a discord account.</div>
+            <div class="has-text-gray">!!avatar (@User/ID)</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">serveravatar</div>
+            <div>Grab the current server's avatar icon.</div>
+            <div class="has-text-gray">!!serveravatar</div>
+        </a>
+    </div>
+    <!-- Input commands from above -->
     </div>
   </div>
     

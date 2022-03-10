@@ -359,7 +359,7 @@
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">gift</div>
-            <div>Gift your coins to another member with a 4% tax.</div>
+            <div>Gift your coins to another member.</div>
             <div class="has-text-gray">!!gift [@Member/ID] [number of coins]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
@@ -383,14 +383,14 @@
             <div class="has-text-gray">!!mine</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">ores view</div>
-            <div>View ores collected from your mining trips.</div>
-            <div class="has-text-gray">!!ores view</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">ores sell</div>
             <div>Sell all ores collected from your mining trips.</div>
             <div class="has-text-gray">!!ores sell</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">ores view</div>
+            <div>View ores collected from your mining trips.</div>
+            <div class="has-text-gray">!!ores view</div>
         </a>
     </div>
     
@@ -466,24 +466,14 @@
             <div class="has-text-gray">!!slowmode [time or 0]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">settings deletescams</div>
-            <div>Automatically detect and delete phishing scam links from your server.</div>
-            <div class="has-text-gray">!!settings deletescams [enable/disable]</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">settings view</div>
-            <div>View the Rune settings in place for this server.</div>
-            <div class="has-text-gray">!!settings view</div>
+            <div class="has-text-primary">settings autorole add</div>
+            <div>Add a role to auto-role.</div>
+            <div class="has-text-gray">!!settings autorole add [@Role/ID]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">settings autorole remove</div>
             <div>Remove a role from auto-role.</div>
             <div class="has-text-gray">!!settings autorole remove [@Role/ID]</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">settings autorole add</div>
-            <div>Add a role to auto-role.</div>
-            <div class="has-text-gray">!!settings autorole add [@Role/ID]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">settings autorole list</div>
@@ -499,6 +489,16 @@
             <div class="has-text-primary">settings prefix</div>
             <div>Customize Rune's prefix for this server.</div>
             <div class="has-text-gray">!!settings prefix (new prefix)</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">settings deletescams</div>
+            <div>Automatically detect and delete phishing scam links from your server.</div>
+            <div class="has-text-gray">!!settings deletescams [enable/disable]</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">settings view</div>
+            <div>View the Rune settings in place for this server.</div>
+            <div class="has-text-gray">!!settings view</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">mute</div>
@@ -530,16 +530,6 @@
     <div id='Logging' class='cmdcategory'>
     
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">logchannel messages</div>
-            <div>Set or change the log channel for Rune to send message related logs to</div>
-            <div class="has-text-gray">!!logchannel messages [#Channel/ID]</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">logchannel roles</div>
-            <div>Set or change the log channel for Rune to send role related logs to</div>
-            <div class="has-text-gray">!!logchannel roles [#Channel/ID]</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">logchannel commands</div>
             <div>Set or change the log channel for Rune to send command logs to</div>
             <div class="has-text-gray">!!logchannel commands [#Channel/ID]</div>
@@ -553,6 +543,16 @@
             <div class="has-text-primary">logchannel members</div>
             <div>Set or change the log channel for Rune to send member related logs to</div>
             <div class="has-text-gray">!!logchannel members [#Channel/ID]</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">logchannel messages</div>
+            <div>Set or change the log channel for Rune to send message related logs to</div>
+            <div class="has-text-gray">!!logchannel messages [#Channel/ID]</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">logchannel roles</div>
+            <div>Set or change the log channel for Rune to send role related logs to</div>
+            <div class="has-text-gray">!!logchannel roles [#Channel/ID]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">ignorechannel</div>

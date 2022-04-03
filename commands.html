@@ -285,12 +285,12 @@
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">balance</div>
-            <div>Show the amount of coins a user has in their account.</div>
+            <div>Displays information about a user's economy.</div>
             <div class="has-text-gray">!!coins (@Member/ID)</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">leaderboard</div>
-            <div>See the global bank and wallet leaderboards.</div>
+            <div>View the richest people in your server!</div>
             <div class="has-text-gray">!!leaderboard</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
@@ -409,6 +409,11 @@
             <div class="has-text-gray">!!business buy [ID]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">business upgrade</div>
+            <div>Upgrade an owned business to increase revenue.</div>
+            <div class="has-text-gray">!!business upgrade [ID]</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">business view</div>
             <div>View your currently owned businesses.</div>
             <div class="has-text-gray">!!business view</div>
@@ -487,6 +492,16 @@
             <div class="has-text-gray">!!slowmode [time or 0]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">settings bannewaccounts</div>
+            <div>Ban accounts that join the server created less than x days ago (0 days = disabled).</div>
+            <div class="has-text-gray">!!settings banNewAccounts [days] (message)</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">settings prefix</div>
+            <div>Customize Rune's prefix for this server.</div>
+            <div class="has-text-gray">!!settings prefix (new prefix)</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">settings deletescams</div>
             <div>Automatically detect and delete phishing scam links from your server.</div>
             <div class="has-text-gray">!!settings deletescams [enable/disable]</div>
@@ -510,16 +525,6 @@
             <div class="has-text-primary">settings view</div>
             <div>View the Rune settings in place for this server.</div>
             <div class="has-text-gray">!!settings view</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">settings bannewaccounts</div>
-            <div>Ban accounts that join the server created less than x days ago (0 days = disabled).</div>
-            <div class="has-text-gray">!!settings banNewAccounts [days] (message)</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">settings prefix</div>
-            <div>Customize Rune's prefix for this server.</div>
-            <div class="has-text-gray">!!settings prefix (new prefix)</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">mute</div>
@@ -600,9 +605,9 @@
     <div id='Surveys' class='cmdcategory'>
     
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">survey blacklist</div>
-            <div>Blacklist a member from sending responses to this server's surveys.</div>
-            <div class="has-text-gray">!!blacklist [@Member/ID]</div>
+            <div class="has-text-primary">survey responsechannel</div>
+            <div>The channel survey submissions will be posted to.</div>
+            <div class="has-text-gray">!!survey responsechannel [#channel/ID]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">survey delete</div>
@@ -610,14 +615,14 @@
             <div class="has-text-gray">!!survey delete</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">survey responsechannel</div>
-            <div>The channel survey submissions will be posted to.</div>
-            <div class="has-text-gray">!!survey responsechannel [#channel/ID]</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">survey unlock</div>
             <div>Unlock the survey from new responses.</div>
             <div class="has-text-gray">!!survey unlock</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">survey removequestion</div>
+            <div>Remove a question from this server's survey.</div>
+            <div class="has-text-gray">!!survey removequestion [number of the question]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">survey addquestion</div>
@@ -630,16 +635,6 @@
             <div class="has-text-gray">!!unblacklist [@Member/ID]</div>
         </a>
         <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">survey create</div>
-            <div>Create a survey for this server.</div>
-            <div class="has-text-gray">!!survey create</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-            <div class="has-text-primary">survey removequestion</div>
-            <div>Remove a question from this server's survey.</div>
-            <div class="has-text-gray">!!survey removequestion [number of the question]</div>
-        </a>
-        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
             <div class="has-text-primary">survey lock</div>
             <div>Lock the survey from new responses.</div>
             <div class="has-text-gray">!!survey lock</div>
@@ -648,6 +643,16 @@
             <div class="has-text-primary">survey view</div>
             <div>View an already created survey in this server, if any.</div>
             <div class="has-text-gray">!!survey view</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">survey blacklist</div>
+            <div>Blacklist a member from sending responses to this server's surveys.</div>
+            <div class="has-text-gray">!!blacklist [@Member/ID]</div>
+        </a>
+        <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+            <div class="has-text-primary">survey create</div>
+            <div>Create a survey for this server.</div>
+            <div class="has-text-gray">!!survey create</div>
         </a>
     </div>
     

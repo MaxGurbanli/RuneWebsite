@@ -596,6 +596,8 @@ main {
   padding-right: 10vh;
 }
 
+.blogbody h2{color: lightblue}
+
 .separator {
   margin: auto;   
   border-bottom: 0.1rem solid rgba(255,255,255,.25);

@@ -25,7 +25,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--main-bg);
+  background-image: url("../bg.png");
+  background-size: 40%;
 }
 
 /* Start typewriter */
@@ -69,16 +70,16 @@ body {
 }
 
 .typewriter h1::before {
-  background-color: #1D1E28;
+  background-color: #03141f;
   animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) 1s forwards;
+    steps(var(--typewriterCharacters)) .5s forwards;
 }
 
 .typewriter h1::after {
   width: 0.125em;
   background: rgb(255, 255, 255);
   animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) 1s forwards,
+      steps(var(--typewriterCharacters)) .5s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 

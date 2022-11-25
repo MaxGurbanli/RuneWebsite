@@ -3,6 +3,7 @@ h1{
 }
 
 #game-board {
+  zoom: 1.5;
   display: flex;
   align-items: center;
   flex-direction: column;

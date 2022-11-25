@@ -33,7 +33,7 @@ function shadeKeyBoard(letter, color) {
                 return
             } 
 
-            if (oldColor === 'yellow' && color !== 'green') {
+            if (oldColor === 'orange' && color !== 'green') {
                 return
             }
 
@@ -90,7 +90,7 @@ function checkGuess () {
                 letterColor = 'green'
             } else {
                 // shade box yellow
-                letterColor = 'yellow'
+                letterColor = 'orange'
             }
 
             rightGuess[letterPosition] = "#"

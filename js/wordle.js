@@ -173,7 +173,8 @@ document.addEventListener("keyup", (e) => {
         return
     }
 
-    let found = pressedKey.match(/[a-z]/gi)
+    // only allow letters
+    let found = pressedKey.match(/^[a-z]+$/)
     if (!found || found.length > 1) {
         return
     } else {

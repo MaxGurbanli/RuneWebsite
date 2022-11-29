@@ -53,15 +53,15 @@ function testFirstCookie(){
 	   }		
 	}
 }
-$(document).ready(function(){
-    $("#cookieButton").click(function(){
-		var expire=new Date();
-		expire=new Date(expire.getTime()+7776000000);
-		document.cookie="cookieCompliancyAccepted=here; expires="+expire+";path=/";
-        $("#myCookieConsent").hide(400);
-    });
-	testFirstCookie();
-});
+// $(document).ready(function(){
+//     $("#cookieButton").click(function(){
+// 		var expire=new Date();
+// 		expire=new Date(expire.getTime()+7776000000);
+// 		document.cookie="cookieCompliancyAccepted=here; expires="+expire+";path=/";
+//         $("#myCookieConsent").hide(400);
+//     });
+// 	testFirstCookie();
+// });
 
 function reportBug() {
     const request = new XMLHttpRequest();

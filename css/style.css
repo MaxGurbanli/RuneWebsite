@@ -286,6 +286,10 @@ main {
     height: 5rem;
   }
 
+  .nav-item:last-child {
+    display: none;
+  }
+
   .logo {
     display: none;
   }

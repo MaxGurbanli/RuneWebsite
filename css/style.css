@@ -4,9 +4,8 @@
   font-family: 'Open Sans';
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --main-bg: #1D1E28;
-  --bg-secondary: #141418;
+  --bg-primary: rgb(8, 8, 8);
+  --bg-secondary: rgb(20, 20, 20);
   --transition-speed: 600ms;
   --lightblue: #AD91FF;
   --gray: #2C2F33;
@@ -70,7 +69,7 @@ body {
 }
 
 .typewriter h1::before {
-  background-color: #03141f;
+  background-image: url("../assets/bg.png");
   animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) .5s forwards;
 }
@@ -346,47 +345,6 @@ main {
   }
 }
 
-.dark {
-  --text-primary: #b6b6b6;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-}
-
-.light {
-  --text-primary: #1f1f1f;
-  --text-secondary: #000000;
-  --bg-primary: #ffffff;
-  --bg-secondary: #e4e4e4;
-}
-
-.solar {
-  --text-primary: #576e75;
-  --text-secondary: #35535c;
-  --bg-primary: #fdf6e3;
-  --bg-secondary: #f5e5b8;
-}
-
-.theme-icon {
-  display: none;
-}
-
-.dark #darkIcon {
-  display: block;
-}
-
-.light #lightIcon {
-  display: block;
-}
-
-.solar #solarIcon {
-  display: block;
-}
-
-#themeButton {
-  cursor: pointer;
-}
-
 .button {
   display: inline-block;
   color: white;
@@ -503,7 +461,7 @@ main {
 }
 
 .cmdcontainerbuttons {
-  background-color: #231d36;
+  background-color: var(--bg-secondary);
   column-gap: 2vh;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
@@ -517,7 +475,7 @@ main {
 
 .cmdcategoryitem {
   cursor: pointer;
-  background-color: #231d36;
+  background-color: var(--bg-secondary);
   font-size: 1.2rem;
   border: 0 solid;
   border-color: #231d36;
@@ -557,8 +515,8 @@ main {
 
 .blogcontainer {
   text-decoration: none;
-  background-color: rgb(30, 46, 46);
-  border-color:rgb(30, 46, 46) !important;
+  background-color: var(--bg-secondary);
+  border-color: var(--bg-secondary) !important;
   color: #fff;
   padding: 1.5rem;
   max-width: 30rem;
@@ -596,7 +554,9 @@ main {
   padding-right: 10vh;
 }
 
-.blogbody h2{color: lightblue}
+.blogbody h2{
+  color: lightblue
+}
 
 .separator {
   margin: auto;   
@@ -606,7 +566,6 @@ main {
 cmd {
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
 }
-
 
 #submitted {
   background-color: darkgoldenrod;

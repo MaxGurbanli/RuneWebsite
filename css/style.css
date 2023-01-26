@@ -29,115 +29,6 @@ body {
   margin: 0rem;
 }
 
-.title {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  background-color: black;
-  margin: 0rem;
-  overflow: hidden;
-}
-
-.title h1 {
-  font-family: 'Space Mono', monospace;
-  font-size: clamp(3rem, 10vw, 10rem);
-  color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
-}
-
-.title h1:hover {
-  background-color: white;
-  color: black;
-}
-
-/* Start typewriter */
-
-/* .hoverable {
-  background-color: transparent;
-	transition: .4s ease-out;
-  text-decoration: none;
-  color: white
-}
-
-.hoverable:hover {
-  color: rgb(72, 255, 0);
-}
-
-.typewriter {
-  margin: 0;
-  font-family: "Source Sans Pro", sans-serif;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  text-align: center;
-  max-width: 100%;
-}
-
-.typewriter h1 {
-  font-size: clamp(1rem, 3vw + 1rem, 4rem);
-  position: relative;
-  font-family: "Source Code Pro", monospace;
-  width: fit-content;
-}
-
-.typewriter h1::before,
-.typewriter h1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.typewriter h1::before {
-  background-color: rgb(5, 5, 5);
-  animation: typewriter var(--typewriterSpeed)
-    steps(var(--typewriterCharacters)) .5s forwards;
-}
-
-.typewriter h1::after {
-  width: 0.125em;
-  background: rgb(255, 255, 255);
-  animation: typewriter var(--typewriterSpeed)
-      steps(var(--typewriterCharacters)) .5s forwards,
-    blink 750ms steps(var(--typewriterCharacters)) infinite;
-}
-
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes blink {
-  to {
-    background: transparent;
-  }
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-} */
-
-/* End typewriter */
-
 main {
   font-size: 1.7vh;
   margin-left: 5rem;
@@ -148,6 +39,32 @@ main {
 .content {
   min-height: 100vh;
   overflow: hidden;
+}
+
+.title {
+  display: grid;
+  place-items: center;
+  background-color: black;
+  height: 100vh
+}
+
+.title h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(3rem, 10vw, 10rem);
+  color: white;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+.title h2 {
+  font-family: 'Space Mono', monospace;
+  color: lightgray;
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.title h1:hover {
+  background-color: white;
+  color: black;
 }
 
 /* Start navbar */
@@ -410,21 +327,35 @@ main {
 }
 
 .features {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
 }
 
-.feature h1 {
-  color: #f0f0f0;
+.feature {
+  padding: 1.5rem;
+  background-color: #282828;
+  border-radius: 1rem;
 }
 
-.features .feature img {
-  margin-bottom: 1rem;
-  object-fit: contain;
+.features .feature h1 {
+  color: white;
 }
 
-.features .feature p {
+.features .feature {
   color: var(--text-secondary);
+}
+
+.features .feature .feature-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.link-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 /* Start footer */

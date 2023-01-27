@@ -62,7 +62,7 @@ main {
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
-.title h1:hover, .title h2:hover, .introduction h1:hover{
+.title h1:hover, .title h2:hover{
   background-color: white;
   color: black;
 }
@@ -224,8 +224,6 @@ main {
 
 .introduction h1 {
   font-size: 2.2rem;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
 .features {

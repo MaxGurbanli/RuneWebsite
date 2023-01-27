@@ -11,8 +11,6 @@
   --gray: #2C2F33;
   --light: #f8f9fa;
   --bg-color: rgb(0, 0, 0);
-  --typewriterSpeed: 3.5s;
-  --typewriterCharacters: 35;
   }
 
 *,
@@ -58,11 +56,13 @@ main {
 
 .title h2 {
   font-family: 'Space Mono', monospace;
-  color: lightgray;
   font-size: clamp(1rem, 2vw, 2rem);
+  color: lightgray;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
-.title h1:hover {
+.title h1:hover, .title h2:hover, .introduction h1:hover{
   background-color: white;
   color: black;
 }
@@ -184,6 +184,86 @@ main {
 
 /* End navbar */
 
+.button {
+  display: inline-block;
+  color: white;
+  border-radius: 1.2vh;
+  font-size: 1.75vh;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0.2vh 0.6vh;
+  cursor: pointer;
+  padding: 1.5vh 4vh;
+  text-decoration: none;
+}
+
+.blurple {
+  background-color: var(--lightblue);
+}
+
+.gray {
+  background-color: var(--gray);
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+/* Start home page */
+
+.homebody {
+  margin-left: 10.5rem;
+  margin-right: 10.5rem;
+  font-size: 1.5rem;
+}
+
+.introduction {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.introduction h1 {
+  font-size: 2.2rem;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.feature {
+  padding: 1.5rem;
+  background-color: #282828;
+  border-radius: 1rem;
+}
+
+.features .feature h1 {
+  color: white;
+}
+
+.features .feature {
+  color: var(--text-secondary);
+}
+
+.features .feature .feature-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.link-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* End home page */
+
+/* Start media queries */
+
 /* Command container adjustments for smaller laptops and regular ipads*/
 @media only screen and (max-width: 1200px) {
   .cmdcontainerbuttons {
@@ -191,14 +271,6 @@ main {
     row-gap: 1rem;
   }
 
-}
-
-/* Typewriter adjustments to prevent double lines */
-@media only screen and (max-width: 1022px) {
-  .typewriter h1::before,
-  .typewriter h1::after {
-    position: static !important;
-  }
 }
 
 /* Flexbox and command container adjustments on smaller screens to prevent horizontal scroll */
@@ -215,13 +287,18 @@ main {
     justify-items: normal !important;
     gap: 0 !important;
   }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     height: 5rem;
   }
 
@@ -285,78 +362,7 @@ main {
   }
 }
 
-.button {
-  display: inline-block;
-  color: white;
-  border-radius: 1.2vh;
-  font-size: 1.75vh;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 0.2vh 0.6vh;
-  cursor: pointer;
-  padding: 1.5vh 4vh;
-  text-decoration: none;
-}
-
-.blurple {
-  background-color: var(--lightblue);
-}
-
-.gray {
-  background-color: var(--gray);
-}
-
-.button:hover {
-  opacity: 0.85;
-}
-
-.homebody {
-  margin-left: 10.5rem;
-  margin-right: 10.5rem;
-  font-size: 1.5rem;
-}
-
-.introduction {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.introduction h1 {
-  font-size: 2.2rem;
-  line-height: 5vh;
-}
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.5rem;
-}
-
-.feature {
-  padding: 1.5rem;
-  background-color: #282828;
-  border-radius: 1rem;
-}
-
-.features .feature h1 {
-  color: white;
-}
-
-.features .feature {
-  color: var(--text-secondary);
-}
-
-.features .feature .feature-icon {
-  width: 3.5rem;
-  height: 3.5rem;
-  margin-right: 1rem;
-}
-
-.link-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
+/* End media queries */
 
 /* Start footer */
 

@@ -167,6 +167,7 @@ function searchCommands() {
 }
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lowercaseletters = "abcdefghijklmnopqrstuvwxyz";
 
 let interval = null;
 

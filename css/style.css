@@ -374,6 +374,7 @@ main {
 
 .footer {
   color:#f0f9ff;
+  background-color:  #1e1e1e;
   margin-top: 1rem;
 }
 
@@ -395,15 +396,15 @@ main {
 .footer .couple {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  justify-items: center;
+  align-items: center;
+  justify-items: stretch;
+  gap: 2rem
 }
 
 .footer .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem;
-  align-items: center;
   justify-items: center;
 }
 

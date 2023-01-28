@@ -246,10 +246,18 @@ main {
   color: var(--text-secondary);
 }
 
-.features .feature .feature-icon {
+.features .feature svg {
   width: 3.5rem;
   height: 3.5rem;
   margin-right: 1rem;
+}
+
+.features .feature svg path {
+  fill: var(--text-secondary);
+}
+
+.features .feature:hover {
+  background-color: #1e1e1e;
 }
 
 .link-buttons {

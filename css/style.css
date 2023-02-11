@@ -23,7 +23,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  background-size: 40%;
   margin: 0rem;
 }
 
@@ -34,37 +33,11 @@ main {
   color: white;
 }
 
+/* prevents the footer from rising to the top on pages with less content
+like tnc-privacy and commands when viewing small categories */
 .content {
   min-height: 100vh;
   overflow: hidden;
-}
-
-.title {
-  display: grid;
-  place-items: center;
-  background-color: black;
-  height: 100vh
-}
-
-.title h1 {
-  font-family: 'Space Mono', monospace;
-  font-size: clamp(3rem, 10vw, 10rem);
-  color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
-}
-
-.title h2 {
-  font-family: 'Space Mono', monospace;
-  font-size: clamp(1rem, 2vw, 2rem);
-  color: lightgray;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
-}
-
-.title h1:hover, .title h2:hover{
-  background-color: white;
-  color: black;
 }
 
 /* Start navbar */
@@ -211,7 +184,40 @@ main {
 
 /* Start home page */
 
-.homebody {
+.homepage-title {
+  display: grid;
+  text-align: center;
+  place-items: center;
+  background-color: black;
+  height: 100vh
+}
+
+.homepage-title h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(3rem, 10vw, 10rem);
+  color: white;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+.homepage-title h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(1rem, 2vw, 2rem);
+  color: lightgray;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+.homepage-title h2:hover{
+  background-color: white;
+  color: black;
+}
+
+.invite-button {
+  padding-top: 3rem;
+}
+
+.after-title {
   margin-left: 10.5rem;
   margin-right: 10.5rem;
   font-size: 1.5rem;
@@ -219,6 +225,7 @@ main {
 
 .introduction {
   text-align: center;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
 }
 
@@ -258,12 +265,6 @@ main {
 
 .features .feature:hover {
   background-color: #1e1e1e;
-}
-
-.link-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
 }
 
 /* End home page */

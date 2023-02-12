@@ -211,10 +211,21 @@ like tnc-privacy and commands when viewing small categories */
 .homepage-title h2:hover{
   background-color: white;
   color: black;
+  cursor: none;
 }
 
 .invite-button {
   padding-top: 3rem;
+}
+
+.invite-button::before {
+  animation: move-image 3s ease-in-out;
+}
+
+@keyframes move-image {
+  0% {
+    transform: translateX(-10%);
+  }
 }
 
 .after-title {

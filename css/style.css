@@ -218,16 +218,6 @@ like tnc-privacy and commands when viewing small categories */
   padding-top: 3rem;
 }
 
-.invite-button::before {
-  animation: move-image 3s ease-in-out;
-}
-
-@keyframes move-image {
-  0% {
-    transform: translateX(-10%);
-  }
-}
-
 .after-title {
   margin-left: 10.5rem;
   margin-right: 10.5rem;

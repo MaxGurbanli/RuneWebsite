@@ -241,7 +241,7 @@ like tnc-privacy and commands when viewing small categories */
 
 .feature-card {
   position: relative;
-  width: 50rem;
+  width: 100%;
   height: 30rem;
 }
 
@@ -383,6 +383,18 @@ like tnc-privacy and commands when viewing small categories */
 
   .features {
     grid-template-columns: 1fr;
+  }
+
+  .feature-card{
+    margin-bottom: 10rem;
+  }
+
+  .feature-content{
+    background-color: black !important;
+  }
+
+  .hover-point {
+    display: none;
   }
 
 }

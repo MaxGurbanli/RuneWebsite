@@ -218,13 +218,13 @@ like tnc-privacy and commands when viewing small categories */
 }
 
 .after-title {
-  margin-left: 10.5rem;
-  margin-right: 10.5rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .introduction {
-  text-align: center;
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
@@ -364,6 +364,7 @@ like tnc-privacy and commands when viewing small categories */
     grid-template-columns: 1fr 1fr 1fr !important;
     row-gap: 1rem;
   }
+
 }
 
 /* Flexbox and command container adjustments on smaller screens to prevent horizontal scroll */
@@ -383,14 +384,17 @@ like tnc-privacy and commands when viewing small categories */
 
   .features {
     grid-template-columns: 1fr;
+    margin-left: 0;
   }
 
   .feature-card{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 
   .feature-content{
     background-color: black !important;
+    height: 100%;
+    width: 100%
   }
 
   .hover-point {
@@ -438,6 +442,8 @@ like tnc-privacy and commands when viewing small categories */
     margin: 0 !important;
     font-size: 2rem;
   }
+
+
 }
 
 /* Large screens */

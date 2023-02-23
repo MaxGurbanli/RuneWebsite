@@ -236,7 +236,7 @@ like tnc-privacy and commands when viewing small categories */
 .features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
 }
 
 .feature-card {

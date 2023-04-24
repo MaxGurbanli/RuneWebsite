@@ -4,8 +4,8 @@
   font-family: 'Open Sans';
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
-  --bg-primary: rgb(14, 14, 14);
-  --bg-secondary: rgb(23, 23, 23);
+  --bg-primary: rgb(23, 23, 23);
+  --bg-secondary: rgb(30, 30, 30);
   --transition-speed: 600ms;
   --lightblue: #AD91FF;
   --gray: #2C2F33;
@@ -22,7 +22,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: rgb(17, 17, 17);
   margin: 0rem;
 }
 

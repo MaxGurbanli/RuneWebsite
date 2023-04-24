@@ -210,7 +210,6 @@ like tnc-privacy and commands when viewing small categories */
 .homepage-title h2:hover{
   background-color: white;
   color: black;
-  cursor: none;
 }
 
 .invite-button {

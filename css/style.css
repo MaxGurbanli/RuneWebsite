@@ -195,8 +195,6 @@ like tnc-privacy and commands when viewing small categories */
   font-family: 'Space Mono', monospace;
   font-size: clamp(3rem, 10vw, 10rem);
   color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
 .homepage-title h2 {
@@ -208,7 +206,7 @@ like tnc-privacy and commands when viewing small categories */
 }
 
 .homepage-title h2:hover{
-  background-color: white;
+  background-color: rgb(240, 240, 240);
   color: black;
 }
 

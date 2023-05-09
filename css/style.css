@@ -24,6 +24,7 @@ body {
   padding: 0;
   background-color: rgb(17, 17, 17);
   margin: 0rem;
+  overflow-x: hidden;
 }
 
 main {
@@ -188,7 +189,7 @@ like tnc-privacy and commands when viewing small categories */
   display: grid;
   text-align: center;
   place-items: center;
-  height: 100vh
+  height: 100vh;
 }
 
 .homepage-title h1 {
@@ -351,6 +352,38 @@ like tnc-privacy and commands when viewing small categories */
   fill: var(--text-secondary);
 }
 
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  filter: blur(14vmax);
+  opacity: 0.8;
+  z-index: -1;
+  overflow: hidden !important;
+}
+
+
 /* End home page */
 
 /* Start media queries */
@@ -439,7 +472,6 @@ like tnc-privacy and commands when viewing small categories */
     margin: 0 !important;
     font-size: 2rem;
   }
-
 
 }
 

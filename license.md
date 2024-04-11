@@ -1,6 +1,6 @@
 # DON'T BE A DICK PUBLIC LICENSE
 
-> Copyright (C) 2023 @maxikinz
+> Copyright (C) 2024 @maxikinz
 
 Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document.

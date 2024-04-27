@@ -139,12 +139,86 @@
     <main>
     <div class="content">
         <h1 class='big-title'>Update v3.x Thread</h1>
-        <div class='gray-subtitle'>Last updated April 18th, 2024.</div>
+        <div class='gray-subtitle'>Last updated April 27th, 2024.</div>
         <div class='separator'></div>
         <br><br>
         <div class='blogbody'>
             This is an update thread for change notes of all v3.x updates. This blog is updated when a new update is released.
 
+            <h2>Update v3.1</h2>
+
+            <h3>Command Changes</h3>
+            <ul>
+            <li>Bank related commands are now grouped in the <cmd>/bank</cmd> slash command group</li>
+            <li><cmd>/openaccount</cmd> --> <cmd>/bank openaccount</cmd></li>
+            <li><cmd>/closeaccount</cmd> --> <cmd>/bank closeaccount</cmd></li>
+            <li><cmd>/bankinfo</cmd> --> <cmd>/bank info</cmd> (also now displays info for Rune Inc)</li>
+            </ul>
+            
+            <h3>New</h3>
+            <ul>
+            <li>Rename bank accounts using <cmd>/bank renameaccount [new name]</cmd></li>
+            <li>View your bank accounts directly using <cmd>/bank view (member)</cmd></li>
+            </ul>
+            
+            <h3>Fixes</h3>
+            <ul>
+            <li><cmd>/bank info</cmd> now correctly displays the number of bank accounts open at this bank</li>
+            </ul>
+            
+            <h3>Other</h3>
+            <ul>
+            <li>Removed the Version 3 announcement embed from being displayed when viewing your balance</li>
+            </ul>
+            
+            <h2>Update v3.0.4</h2>
+            
+            <h3>Fixes</h3>
+            <ul>
+            <li>Fixed an issue with logging events failing due to a datetime bug</li>
+            </ul>
+            
+            <h2>Update v3.0.3</h2>
+            
+            <h3>Improvements</h3>
+            <ul>
+            <li>Added a <i>Decline Contract</i> button to contract offers from businesses</li>
+            <li>Revamped the visuals for the <i>Accept Contract</i> button</li>
+            </ul>
+            
+            <h3>Fixes</h3>
+            <ul>
+            <li>Fixed an issue with some new commands not having a slash (<code>/</code>) command equivalent</li>
+            <li>Fixed an issue with servers not automatically getting a database entry when adding the bot</li>
+            </ul>
+            
+            <h2>Update v3.0.2</h2>
+            
+            <h3>New</h3>
+            <ul>
+            <li>Added <cmd>/business delete</cmd> to delete a business you own.</li>
+            </ul>
+            
+            <h3>Fixes</h3>
+            <ul>
+            <li>Fixed <cmd>/business hire</cmd> not actually registering employees.</li>
+            </ul>
+            
+            <h2>Update v3.0.1</h2>
+            
+            <h3>New</h3>
+            <ul>
+            <li><cmd>/blackjack</cmd> now has a small coins reward for winning</li>
+            </ul>
+            
+            <h3>Fixes</h3>
+            <ul>
+            <li>Fixed <cmd>/leaderboard</cmd> sometimes crashing due to uncached members</li>
+            <li>Fixed Mining Operation not awarding coins upon completion</li>
+            <li>Fixed Airport mini-game not starting</li>
+            <li>Fixed a rare case where <cmd>/business list</cmd> would fail due to being unable to get the name of the server a business was created in</li>
+            </ul>            
+            
             <h2>Update v3.0</h2>
 
             <h3>Revamped Banking system</h3>

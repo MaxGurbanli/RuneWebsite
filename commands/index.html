@@ -170,34 +170,44 @@
                 <div class="has-text-gray">/deposit [amount|all]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">bank info</div>
+                <div>View information about a bank.</div>
+                <div class="has-text-gray">/viewbank</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">bank view</div>
+                <div>View your bank account(s).</div>
+                <div class="has-text-gray">/bank view</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">bank renameaccount</div>
+                <div>Rename a bank account.</div>
+                <div class="has-text-gray">/bank renameaccount [new name]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">bank openaccount</div>
+                <div>Open a bank account.</div>
+                <div class="has-text-gray">/bank openaccount (name)</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">bank closeaccount</div>
+                <div>Close a bank account.</div>
+                <div class="has-text-gray">/bank closeaccount</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">achievements</div>
+                <div>View your achievements.</div>
+                <div class="has-text-gray">/achievements</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">rob</div>
                 <div>Rob someone, potentially stealing their wallet</div>
                 <div class="has-text-gray">/rob [@Member/ID]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">balance bankupgrade</div>
-                <div>Upgrade your bank storage capacity to store more coins.</div>
-                <div class="has-text-gray">/balance bankupgrade</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">balance bankupgrades</div>
-                <div>Provides bank level related information.</div>
-                <div class="has-text-gray">/balance bankupgrades</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">balance view</div>
                 <div>Displays an economy profile.</div>
                 <div class="has-text-gray">/balance view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">badges hide</div>
-                <div>Hide a badge from your profile!</div>
-                <div class="has-text-gray">/badges hide [badge]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">badges view</div>
-                <div>View your (or someone else's) economy badges!</div>
-                <div class="has-text-gray">/badges view (@Member/ID)</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">badges buy</div>
@@ -215,9 +225,24 @@
                 <div class="has-text-gray">/badges unhide [badge]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">badges view</div>
+                <div>View your (or someone else's) economy badges!</div>
+                <div class="has-text-gray">/badges view (@Member/ID)</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">badges hide</div>
+                <div>Hide a badge from your profile!</div>
+                <div class="has-text-gray">/badges hide [badge]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">leaderboard</div>
                 <div>View the richest people in your server!</div>
                 <div class="has-text-gray">/leaderboard</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">shop buy</div>
+                <div>Buy an item from the shop.</div>
+                <div class="has-text-gray">/shop buy [item ID]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">shop sell</div>
@@ -230,24 +255,14 @@
                 <div class="has-text-gray">/shop view</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">shop buy</div>
-                <div>Buy an item from the shop.</div>
-                <div class="has-text-gray">/shop buy (item)</div>
+                <div class="has-text-primary">inventory use</div>
+                <div>Use an item from your inventory.</div>
+                <div class="has-text-gray">/inventory use (item)</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">inventory view</div>
                 <div>View your purchased items inventory.</div>
                 <div class="has-text-gray">/inventory view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">inventory upgrade</div>
-                <div>Upgrade an item in your inventory.</div>
-                <div class="has-text-gray">/inventory upgrade (item)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">inventory use</div>
-                <div>Use an item from your inventory.</div>
-                <div class="has-text-gray">/inventory use (item)</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">crime</div>
@@ -280,19 +295,19 @@
                 <div class="has-text-gray">/beg</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">gift</div>
-                <div>Gift coins from your wallet to another member.</div>
-                <div class="has-text-gray">/gift [@Member/ID] [amount]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">compare</div>
-                <div>Compare yourself to another member to settle who's better.</div>
-                <div class="has-text-gray">/compare [@Member/ID]</div>
+                <div class="has-text-primary">pay</div>
+                <div>Pay another user money</div>
+                <div class="has-text-gray">/pay [@Member/ID] [amount]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">mine</div>
                 <div>Use your pickaxe to mine materials.</div>
                 <div class="has-text-gray">/mine</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">ores sellall</div>
+                <div>Sell all ores from your mining trips.</div>
+                <div class="has-text-gray">/ores sellall</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">ores sell</div>
@@ -305,19 +320,9 @@
                 <div class="has-text-gray">/ores view</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">ores sellall</div>
-                <div>Sell all ores from your mining trips.</div>
-                <div class="has-text-gray">/ores sellall</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">chop</div>
                 <div>Use your axe to gather wood.</div>
                 <div class="has-text-gray">/chop</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">wood sell</div>
-                <div>Sell your wood for coins.</div>
-                <div class="has-text-gray">/wood sell [amount]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">wood view</div>
@@ -325,29 +330,9 @@
                 <div class="has-text-gray">/wood view</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business upgrade</div>
-                <div>Upgrade an owned business to increase revenue.</div>
-                <div class="has-text-gray">/business upgrade [ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business list</div>
-                <div>List businesses available to purchase.</div>
-                <div class="has-text-gray">/business list</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business view</div>
-                <div>View your currently owned businesses.</div>
-                <div class="has-text-gray">/business view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business buy</div>
-                <div>Buy a business to earn revenue in the background.</div>
-                <div class="has-text-gray">/business buy [ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business work</div>
-                <div>Complete a task for one of your businesses to earn an income!</div>
-                <div class="has-text-gray">/business work [ID]</div>
+                <div class="has-text-primary">wood sell</div>
+                <div>Sell your wood for coins.</div>
+                <div class="has-text-gray">/wood sell [amount]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">recipes</div>
@@ -361,7 +346,7 @@
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">daily</div>
-                <div>Receive a small reward to boost your carreer.</div>
+                <div>Receive a small reward to boost your career.</div>
                 <div class="has-text-gray">/daily</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
@@ -369,15 +354,29 @@
                 <div>Start a heist with your friends.</div>
                 <div class="has-text-gray">/heist [heist] [mode]</div>
             </a>
+        </div>
+        
+        <div id='Pets' class='cmdcategory'>
+        
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">pet remove</div>
+                <div>Remove your pet forever.</div>
+                <div class="has-text-gray">/pet remove</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">pet buy</div>
+                <div>Buy a pet from the shop. Pets cost 100 coins.</div>
+                <div class="has-text-gray">/pet buy [pet]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">pet wash</div>
+                <div>Wash your pet!</div>
+                <div class="has-text-gray">/pet wash</div>
+            </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">pet view</div>
                 <div>View your or someone else's pet.</div>
                 <div class="has-text-gray">/pet view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet shop</div>
-                <div>View the pet shop.</div>
-                <div class="has-text-gray">/pet shop</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">pet play</div>
@@ -385,24 +384,19 @@
                 <div class="has-text-gray">/pet play</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet remove</div>
-                <div>Remove your pet forever.</div>
-                <div class="has-text-gray">/pet remove</div>
+                <div class="has-text-primary">pet heal</div>
+                <div>Heal your pet!</div>
+                <div class="has-text-gray">/pet heal</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">pet shop</div>
+                <div>View the pet shop.</div>
+                <div class="has-text-gray">/pet shop</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">pet feed</div>
                 <div>Feed your pet!</div>
                 <div class="has-text-gray">/pet feed</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet buy</div>
-                <div>Buy a pet from the shop. Pets cost 150 coins.</div>
-                <div class="has-text-gray">/pet buy [pet]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet wash</div>
-                <div>Wash your pet!</div>
-                <div class="has-text-gray">/pet wash</div>
             </a>
         </div>
         
@@ -463,11 +457,6 @@
                 <div>Use this to show your appreciation to a member by... killing them.</div>
                 <div class="has-text-gray">/kill [@Member/ID]</div>
             </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">wordle</div>
-                <div>Play a game of Wordle!</div>
-                <div class="has-text-gray">/wordle</div>
-            </a>
         </div>
         
         <div id='Moderator' class='cmdcategory'>
@@ -498,24 +487,14 @@
                 <div class="has-text-gray">/slowmode [time or 0]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings deletescams</div>
-                <div>Automatically detect and delete phishing scam links from your server.</div>
-                <div class="has-text-gray">/settings deletescams [enable/disable]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings view</div>
-                <div>View the Rune settings in place for this server.</div>
-                <div class="has-text-gray">/settings view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings prefix</div>
-                <div>Customize Rune's prefix for this server.</div>
-                <div class="has-text-gray">/settings prefix (new prefix)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">settings autorole list</div>
                 <div>View the current auto-role settings.</div>
                 <div class="has-text-gray">/settings autorole list</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">settings autorole remove</div>
+                <div>Remove a role from auto-role.</div>
+                <div class="has-text-gray">/settings autorole remove [@Role/ID]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">settings autorole add</div>
@@ -523,9 +502,19 @@
                 <div class="has-text-gray">/settings autorole add [@Role/ID]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings autorole remove</div>
-                <div>Remove a role from auto-role.</div>
-                <div class="has-text-gray">/settings autorole remove [@Role/ID]</div>
+                <div class="has-text-primary">settings view</div>
+                <div>View the Rune settings in place for this server.</div>
+                <div class="has-text-gray">/settings view</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">settings deletescams</div>
+                <div>Automatically detect and delete phishing scam links from your server.</div>
+                <div class="has-text-gray">/settings deletescams [enable/disable]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">settings prefix</div>
+                <div>Customize Rune's prefix for this server.</div>
+                <div class="has-text-gray">/settings prefix (new prefix)</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">mute</div>
@@ -582,19 +571,19 @@
                 <div>Set a member's nickname.</div>
                 <div class="has-text-gray">/setnickname [@Member/ID] [nickname]</div>
             </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">unban</div>
+                <div>Unban a user from the server.</div>
+                <div class="has-text-gray">/unban [User ID] (reason)</div>
+            </a>
         </div>
         
         <div id='Logging' class='cmdcategory'>
         
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">logchannel roles</div>
-                <div>Set or change the log channel for Rune to send role related logs to</div>
-                <div class="has-text-gray">/logchannel roles [#Channel|clear]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">logchannel channels</div>
-                <div>Set or change the log channel for Rune to send channel related logs to</div>
-                <div class="has-text-gray">/logchannel channels [#Channel|clear]</div>
+                <div class="has-text-primary">logchannel members</div>
+                <div>Set or change the log channel for Rune to send member related logs to</div>
+                <div class="has-text-gray">/logchannel members [#Channel|clear]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">logchannel commands</div>
@@ -602,9 +591,14 @@
                 <div class="has-text-gray">/logchannel commands [#Channel|clear]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">logchannel members</div>
-                <div>Set or change the log channel for Rune to send member related logs to</div>
-                <div class="has-text-gray">/logchannel members [#Channel|clear]</div>
+                <div class="has-text-primary">logchannel channels</div>
+                <div>Set or change the log channel for Rune to send channel related logs to</div>
+                <div class="has-text-gray">/logchannel channels [#Channel|clear]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">logchannel roles</div>
+                <div>Set or change the log channel for Rune to send role related logs to</div>
+                <div class="has-text-gray">/logchannel roles [#Channel|clear]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">logchannel messages</div>
@@ -626,29 +620,9 @@
         <div id='Surveys' class='cmdcategory'>
         
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey delete</div>
-                <div>Delete this server's survey.</div>
-                <div class="has-text-gray">/survey delete</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey blacklist</div>
-                <div>Blacklist a member from sending responses to this server's surveys.</div>
-                <div class="has-text-gray">/survey blacklist [@Member/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey unblacklist</div>
-                <div>Unblacklist a member from sending responses to this server's surveys.</div>
-                <div class="has-text-gray">/survey unblacklist [@Member/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey addquestion</div>
-                <div>Add a question to this server's survey.</div>
-                <div class="has-text-gray">/survey addquestion [question]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey responsechannel</div>
-                <div>The channel survey submissions will be posted to.</div>
-                <div class="has-text-gray">/survey responsechannel [#channel/ID]</div>
+                <div class="has-text-primary">survey create</div>
+                <div>Create a survey for this server.</div>
+                <div class="has-text-gray">/survey create</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">survey unlock</div>
@@ -656,24 +630,44 @@
                 <div class="has-text-gray">/survey unlock</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey create</div>
-                <div>Create a survey for this server.</div>
-                <div class="has-text-gray">/survey create</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">survey removequestion</div>
                 <div>Remove a question from this server's survey.</div>
                 <div class="has-text-gray">/survey removequestion [question number]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey lock</div>
-                <div>Lock the survey from new responses.</div>
-                <div class="has-text-gray">/survey lock</div>
+                <div class="has-text-primary">survey responsechannel</div>
+                <div>The channel survey submissions will be posted to.</div>
+                <div class="has-text-gray">/survey responsechannel [#channel/ID]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">survey addquestion</div>
+                <div>Add a question to this server's survey.</div>
+                <div class="has-text-gray">/survey addquestion [question]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">survey blacklist</div>
+                <div>Blacklist a member from sending responses to this server's surveys.</div>
+                <div class="has-text-gray">/survey blacklist [@Member/ID]</div>
             </a>
             <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
                 <div class="has-text-primary">survey view</div>
                 <div>View an already created survey in this server, if any.</div>
                 <div class="has-text-gray">/survey view</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">survey unblacklist</div>
+                <div>Unblacklist a member from sending responses to this server's surveys.</div>
+                <div class="has-text-gray">/survey unblacklist [@Member/ID]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">survey delete</div>
+                <div>Delete this server's survey.</div>
+                <div class="has-text-gray">/survey delete</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">survey lock</div>
+                <div>Lock the survey from new responses.</div>
+                <div class="has-text-gray">/survey lock</div>
             </a>
         </div>
         
@@ -742,6 +736,40 @@
                 <div class="has-text-primary">stats</div>
                 <div>Displays the bot's stats.</div>
                 <div class="has-text-gray">/stats</div>
+            </a>
+        </div>
+        
+        <div id='Businesses' class='cmdcategory'>
+        
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">business work</div>
+                <div>Complete a task for one of your businesses to earn an income!</div>
+                <div class="has-text-gray">/business work [ID]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">business create</div>
+                <div>Create your own business.</div>
+                <div class="has-text-gray">/business create [name]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">business list</div>
+                <div>View your businesses.</div>
+                <div class="has-text-gray">/business list</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">business fire</div>
+                <div>Fire an employee from your business.</div>
+                <div class="has-text-gray">/business fire [employee]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">business hire</div>
+                <div>Hire an employee for your business.</div>
+                <div class="has-text-gray">/business hire [employee]</div>
+            </a>
+            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
+                <div class="has-text-primary">business delete</div>
+                <div>Delete a business you own.</div>
+                <div class="has-text-gray">/business delete</div>
             </a>
         </div>
 

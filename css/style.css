@@ -742,7 +742,7 @@ cmd {
   color: #d1d5e1 !important;
   text-align: center;
   margin: 0.75em auto 1.5em;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;

@@ -1,59 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Commands</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Rune - Commands" property="og:title">
-    <meta content="Rune is a multi-purpose bot ready to skill up and boost your Discord server, easy and free." property="og:description">
-    <meta content="https://media.discordapp.net/attachments/811623272810676284/880034059525455882/rune_icon3.png" property="og:image">
-    <meta content="/#" property="og:url">
-    <meta name="theme-color" content="#00ff00">
-    <link rel="icon" href="assets/RuneIconCircle.png">
-    <link rel="stylesheet" href="../css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1542335863465634"
-     crossorigin="anonymous"></script>
-    <meta charset="utf-8"/>
+  <meta charset="utf-8" />
+  <title>Commands - Rune</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="Rune - Commands" property="og:title">
+  <meta content="Every command Rune has to offer, with usage, cooldowns and required permissions."
+    property="og:description">
+  <meta content="https://runebot.me/assets/RuneIconCircle.png" property="og:image">
+  <meta content="https://runebot.me/commands/" property="og:url">
+  <meta name="theme-color" content="#e8a33d">
+  <link rel="icon" href="../assets/RuneIconCircle.png">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&family=Cinzel:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1542335863465634"
+    crossorigin="anonymous"></script>
 </head>
 
-<!-- By @maxikinz for Discord Bot Rune: botrune.herokuapp.com -->     
+<!-- Code written by @maxikinz for Discord Bot Rune: runebot.me -->
+<!-- This page is generated from the bot's actual command data. -->
 
 <body>
   <nav class="navbar">
     <ul class="navbar-nav">
       <li class="logo">
-        <a class="nav-link" href='../'>
-          <span class="link-text logo-text">Rune</span>
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fad"
-            data-icon="angle-double-right"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
-          >
-            <g class="fa-group">
-              <path
-                fill="currentColor"
-                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
-                class="fa-secondary"
-              ></path>
-              <path
-                fill="currentColor"
-                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
-                class="fa-primary"
-              ></path>
-            </g>
-          </svg>
+        <a class="nav-link" href="../">
+          <span class="nav-rune" aria-hidden="true">ᚱ</span>
+          <span class="logo-text">RUNE</span>
         </a>
       </li>
 
       <li class="nav-item">
         <a href="../commands/" class="nav-link">
-          <svg class="svg-icon" viewBox="0 0 20 20">
-            <path fill="none" d="M7.83,3.404l1.741-2.909C9.367,0.407,9.15,0.344,8.913,0.344c-0.954,0-1.728,0.774-1.728,1.728C7.185,2.613,7.441,3.087,7.83,3.404z"></path>
-            <path fill="none" d="M19.645,12.002l-0.464-0.31c-0.09-1.505-0.628-2.972-1.575-4.187l-1.212,0.156l0.084-0.125c0.316-0.473,0.188-1.119-0.286-1.435L15.517,5.65c-0.473-0.316-1.119-0.187-1.435,0.286l-0.095,0.142l-0.538-3.219l-3.271-2.033l-1.754,2.93l0.86,0.481L3.04,3.445L2.136,4.798l3.766,2.516c-0.17,0.204-0.333,0.414-0.484,0.639C5.269,8.178,5.137,8.41,5.013,8.645L1.247,6.129L0.344,7.482l4.878,8.537l0.008-0.013c0.098,0.164,0.207,0.322,0.317,0.479l1.628-0.209l-0.302,0.452c-0.316,0.473-0.187,1.119,0.286,1.435l0.675,0.451c0.473,0.316,1.119,0.188,1.435-0.286l0.252-0.378l0.185,1.442c1.418,0.385,2.904,0.334,4.273-0.105l0.552,0.369c1.512-0.533,2.87-1.542,3.829-2.977C19.32,15.244,19.732,13.602,19.645,12.002z M14.09,16.055c-0.106,0.158-0.32,0.201-0.478,0.095c-0.158-0.106-0.201-0.32-0.095-0.478c0.106-0.158,0.32-0.201,0.478-0.095C14.153,15.682,14.196,15.896,14.09,16.055zM13.969,13.664c-0.513,0.769-1.371,1.227-2.296,1.227c-0.546,0-1.075-0.161-1.531-0.465c-1.265-0.845-1.606-2.561-0.762-3.826c0.513-0.768,1.372-1.227,2.297-1.227c0.545,0,1.074,0.161,1.53,0.465C14.472,10.683,14.814,12.4,13.969,13.664z M15.065,17.476c-0.106,0.158-0.32,0.201-0.478,0.095c-0.158-0.106-0.201-0.32-0.095-0.478c0.106-0.158,0.32-0.201,0.478-0.095C15.129,17.104,15.171,17.318,15.065,17.476z M15.334,14.768c-0.106,0.158-0.32,0.201-0.478,0.095c-0.158-0.106-0.201-0.32-0.095-0.478c0.106-0.158,0.32-0.201,0.478-0.095C15.397,14.396,15.44,14.61,15.334,14.768zM15.568,13.222c-0.158-0.106-0.201-0.32-0.095-0.478c0.106-0.158,0.32-0.201,0.478-0.095c0.158,0.106,0.201,0.32,0.095,0.478C15.94,13.285,15.726,13.327,15.568,13.222z M16.665,15.658c-0.106,0.158-0.32,0.201-0.478,0.095c-0.158-0.106-0.201-0.32-0.095-0.478c0.106-0.158,0.32-0.201,0.478-0.095S16.771,15.499,16.665,15.658z M17.733,13.483c-0.106,0.158-0.32,0.201-0.478,0.095c-0.158-0.106-0.201-0.32-0.095-0.478c0.106-0.158,0.32-0.201,0.478-0.095C17.796,13.111,17.839,13.325,17.733,13.483z"></path>
-            <path fill="none" d="M12.824,10.412c-0.341-0.228-0.738-0.349-1.146-0.349c-0.694,0-1.338,0.344-1.723,0.92c-0.634,0.949-0.377,2.236,0.571,2.869c0.342,0.228,0.739,0.35,1.147,0.35c0.694,0,1.337-0.344,1.722-0.92C14.029,12.332,13.773,11.045,12.824,10.412z"></path>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm0 2v14h14V5H5zm8.1 1.5 1.9.6-4.1 10.8-1.9-.6 4.1-10.8z" />
           </svg>
           <span class="link-text">Commands</span>
         </a>
@@ -61,28 +47,9 @@
 
       <li class="nav-item">
         <a href="../blogs/" class="nav-link">
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fad"
-            data-icon="space-station-moon-alt"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x"
-          >
-            <g class="fa-group">
-              <path
-                fill="currentColor"
-                d="M501.70312,224H448V160H368V96h48V66.67383A246.86934,246.86934,0,0,0,256,8C119.03125,8,8,119.0332,8,256a250.017,250.017,0,0,0,1.72656,28.26562C81.19531,306.76953,165.47656,320,256,320s174.80469-13.23047,246.27344-35.73438A250.017,250.017,0,0,0,504,256,248.44936,248.44936,0,0,0,501.70312,224ZM192,240a80,80,0,1,1,80-80A80.00021,80.00021,0,0,1,192,240ZM384,343.13867A940.33806,940.33806,0,0,1,256,352c-87.34375,0-168.71094-11.46094-239.28906-31.73633C45.05859,426.01953,141.29688,504,256,504a247.45808,247.45808,0,0,0,192-91.0918V384H384Z"
-                class="fa-secondary"
-              ></path>
-              <path
-                fill="currentColor"
-                d="M256,320c-90.52344,0-174.80469-13.23047-246.27344-35.73438a246.11376,246.11376,0,0,0,6.98438,35.998C87.28906,340.53906,168.65625,352,256,352s168.71094-11.46094,239.28906-31.73633a246.11376,246.11376,0,0,0,6.98438-35.998C430.80469,306.76953,346.52344,320,256,320Zm-64-80a80,80,0,1,0-80-80A80.00021,80.00021,0,0,0,192,240Zm0-104a24,24,0,1,1-24,24A23.99993,23.99993,0,0,1,192,136Z"
-                class="fa-primary"
-              ></path>
-            </g>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v16h12V4H6zm2 3h8v2H8V7zm0 4h8v2H8v-2zm0 4h5v2H8v-2z" />
           </svg>
           <span class="link-text">Blogs</span>
         </a>
@@ -90,40 +57,19 @@
 
       <li class="nav-item">
         <a href="../tnc-privacy/" class="nav-link">
-          <svg class="svg-icon" viewBox="0 0 20 20">
-            <path fill="none" d="M18.21,16.157v-8.21c0-0.756-0.613-1.368-1.368-1.368h-1.368v1.368v1.368v6.841l-1.368,3.421h5.473L18.21,16.157z"></path>
-            <path fill="none" d="M4.527,9.316V7.948V6.579H3.159c-0.756,0-1.368,0.613-1.368,1.368v8.21l-1.368,3.421h5.473l-1.368-3.421V9.316z"></path>
-            <path fill="none" d="M14.766,5.895h0.023V5.21c0-2.644-2.145-4.788-4.789-4.788S5.211,2.566,5.211,5.21v0.685h0.023H14.766zM12.737,3.843c0.378,0,0.684,0.307,0.684,0.684s-0.306,0.684-0.684,0.684c-0.378,0-0.684-0.307-0.684-0.684S12.358,3.843,12.737,3.843z M10,1.448c0.755,0,1.368,0.613,1.368,1.368S10.755,4.185,10,4.185c-0.756,0-1.368-0.613-1.368-1.368S9.244,1.448,10,1.448z"></path>
-            <path fill="none" d="M14.789,6.579H5.211v9.578l1.368,1.368h6.841l1.368-1.368V6.579z M12.052,12.052H7.948c-0.378,0-0.684-0.306-0.684-0.684c0-0.378,0.306-0.684,0.684-0.684h4.105c0.378,0,0.684,0.306,0.684,0.684C12.737,11.746,12.431,12.052,12.052,12.052z M12.052,9.316H7.948c-0.378,0-0.684-0.307-0.684-0.684s0.306-0.684,0.684-0.684h4.105c0.378,0,0.684,0.307,0.684,0.684S12.431,9.316,12.052,9.316z"></path>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2l8 3v6c0 5.25-3.4 9.74-8 11-4.6-1.26-8-5.75-8-11V5l8-3zm0 2.18L6 6.3v4.7c0 4.28 2.63 8.02 6 9.22 3.37-1.2 6-4.94 6-9.22V6.3l-6-2.12z" />
           </svg>
           <span class="link-text">Privacy</span>
         </a>
       </li>
 
       <li class="nav-item">
-        <a href="https://discord.gg/HWRM24fBBK" class="nav-link" target="_blank">
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fad"
-            data-icon="space-shuttle"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 640 512"
-            class="svg-inline--fa fa-space-shuttle fa-w-20 fa-5x"
-          >
-            <g class="fa-group">
-              <path
-                fill="currentColor"
-                d="M32 416c0 35.35 21.49 64 48 64h16V352H32zm154.54-232h280.13L376 168C243 140.59 222.45 51.22 128 34.65V160h18.34a45.62 45.62 0 0 1 40.2 24zM32 96v64h64V32H80c-26.51 0-48 28.65-48 64zm114.34 256H128v125.35C222.45 460.78 243 371.41 376 344l90.67-16H186.54a45.62 45.62 0 0 1-40.2 24z"
-                class="fa-secondary"
-              ></path>
-              <path
-                fill="currentColor"
-                d="M592.6 208.24C559.73 192.84 515.78 184 472 184H186.54a45.62 45.62 0 0 0-40.2-24H32c-23.2 0-32 10-32 24v144c0 14 8.82 24 32 24h114.34a45.62 45.62 0 0 0 40.2-24H472c43.78 0 87.73-8.84 120.6-24.24C622.28 289.84 640 272 640 256s-17.72-33.84-47.4-47.76zM488 296a8 8 0 0 1-8-8v-64a8 8 0 0 1 8-8c31.91 0 31.94 80 0 80z"
-                class="fa-primary"
-              ></path>
-            </g>
+        <a href="https://discord.gg/HWRM24fBBK" class="nav-link" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z" />
           </svg>
           <span class="link-text">Discord</span>
         </a>
@@ -132,679 +78,1625 @@
   </nav>
 
   <main>
-  <div class='content'>
-    <h1>Commands</h1>
-    List of commands, their descriptions, and their usages (when clicked) provided to you by Rune.
 
-    <div class='cmdcontainerbuttons' id='cmdcontainerbuttons'>
-      <a id='allbutton' class='textbutton is-active' onclick="showall();" style='max-width: 100%'>All Commands</a>
-      <a id='economybutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Economy</a>
-      <a id='funbutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Fun</a>
-      <a id='moderatorbutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Moderator</a>
-      <a id='loggingbutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Logging</a>
-      <a id='surveysbutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Surveys</a>
-      <a id='informationbutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Information</a>
-      <a id='utilitybutton' class='textbutton' onclick="setcategory(event);" style='max-width: 100%'>Utility</a>
-      <input type="text" id="myInput" onkeyup="searchCommands()" placeholder="🔍 Search for a command" style='width: 15rem; background-color: inherit; color: white; border: 0 solid; font-size: 1rem'>
+    <div class="page-head">
+      <h1>Commands</h1>
+      <p>Everything Rune can do. Click a command for usage, cooldowns and required permissions.<br>
+        <code>[]</code> = required, <code>()</code> = optional. Every slash command also works with the classic
+        <code>!!</code> prefix.</p>
     </div>
 
-    <div class='cmdcontainer' id='cmdcontainer'>
-
-        <!-- Input commands from below -->
-
-        <div id='Economy' class='cmdcategory'>
-
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">tutorial</div>
-                <div>Learn how to use the Economy system.</div>
-                <div class="has-text-gray">/tutorial</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">withdraw</div>
-                <div>Withdraw coins from your bank to your wallet.</div>
-                <div class="has-text-gray">/withdraw [amount|all]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">deposit</div>
-                <div>Deposit your coins from your wallet to the bank for safe-keeping.</div>
-                <div class="has-text-gray">/deposit [amount|all]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">bank info</div>
-                <div>View information about a bank.</div>
-                <div class="has-text-gray">/viewbank</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">bank view</div>
-                <div>View your bank account(s).</div>
-                <div class="has-text-gray">/bank view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">bank renameaccount</div>
-                <div>Rename a bank account.</div>
-                <div class="has-text-gray">/bank renameaccount [new name]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">bank openaccount</div>
-                <div>Open a bank account.</div>
-                <div class="has-text-gray">/bank openaccount (name)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">bank closeaccount</div>
-                <div>Close a bank account.</div>
-                <div class="has-text-gray">/bank closeaccount</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">achievements</div>
-                <div>View your achievements.</div>
-                <div class="has-text-gray">/achievements</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">rob</div>
-                <div>Rob someone, potentially stealing their wallet</div>
-                <div class="has-text-gray">/rob [@Member/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">balance view</div>
-                <div>Displays an economy profile.</div>
-                <div class="has-text-gray">/balance view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">badges buy</div>
-                <div>Buy a badge to display on your profile! (100 coins)</div>
-                <div class="has-text-gray">/badges buy [badge]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">badges list</div>
-                <div>List all available badges!</div>
-                <div class="has-text-gray">/badges list</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">badges unhide</div>
-                <div>Unhide a badge from your profile!</div>
-                <div class="has-text-gray">/badges unhide [badge]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">badges view</div>
-                <div>View your (or someone else's) economy badges!</div>
-                <div class="has-text-gray">/badges view (@Member/ID)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">badges hide</div>
-                <div>Hide a badge from your profile!</div>
-                <div class="has-text-gray">/badges hide [badge]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">leaderboard</div>
-                <div>View the richest people in your server!</div>
-                <div class="has-text-gray">/leaderboard</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">shop buy</div>
-                <div>Buy an item from the shop.</div>
-                <div class="has-text-gray">/shop buy [item ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">shop sell</div>
-                <div>Sell an item from your inventory.</div>
-                <div class="has-text-gray">/shop sell [item ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">shop view</div>
-                <div>Displays the item shop.</div>
-                <div class="has-text-gray">/shop view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">inventory use</div>
-                <div>Use an item from your inventory.</div>
-                <div class="has-text-gray">/inventory use (item)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">inventory view</div>
-                <div>View your purchased items inventory.</div>
-                <div class="has-text-gray">/inventory view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">crime</div>
-                <div>Commit a crime! High risk, high reward.</div>
-                <div class="has-text-gray">/crime</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">dig</div>
-                <div>Use your shovel to dig in the ground.</div>
-                <div class="has-text-gray">/dig</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">hunt</div>
-                <div>Use your hunting rifle to go hunting.</div>
-                <div class="has-text-gray">/hunt</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">fish</div>
-                <div>Use your fishing pole to go fishing.</div>
-                <div class="has-text-gray">/fish</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">search</div>
-                <div>Search a place for some coins, maybe you'll find some.</div>
-                <div class="has-text-gray">/search</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">beg</div>
-                <div>Maybe someone will be kind enough to donate a few coins.</div>
-                <div class="has-text-gray">/beg</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pay</div>
-                <div>Pay another user money</div>
-                <div class="has-text-gray">/pay [@Member/ID] [amount]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">mine</div>
-                <div>Use your pickaxe to mine materials.</div>
-                <div class="has-text-gray">/mine</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">ores sellall</div>
-                <div>Sell all ores from your mining trips.</div>
-                <div class="has-text-gray">/ores sellall</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">ores sell</div>
-                <div>Sell ores from your mining trips.</div>
-                <div class="has-text-gray">/ores sell [ore] [amount]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">ores view</div>
-                <div>View ores collected from your mining trips.</div>
-                <div class="has-text-gray">/ores view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">chop</div>
-                <div>Use your axe to gather wood.</div>
-                <div class="has-text-gray">/chop</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">wood view</div>
-                <div>View how much wood you have.</div>
-                <div class="has-text-gray">/wood view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">wood sell</div>
-                <div>Sell your wood for coins.</div>
-                <div class="has-text-gray">/wood sell [amount]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">recipes</div>
-                <div>View crafting recipes.</div>
-                <div class="has-text-gray">/recipes</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">craft</div>
-                <div>Craft an item.</div>
-                <div class="has-text-gray">/craft [item]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">daily</div>
-                <div>Receive a small reward to boost your career.</div>
-                <div class="has-text-gray">/daily</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">heist</div>
-                <div>Start a heist with your friends.</div>
-                <div class="has-text-gray">/heist [heist] [mode]</div>
-            </a>
+    <div class="cmd-toolbar">
+      <div class="cmd-toolbar-inner">
+        <div class="cmd-search">
+          <input type="search" id="cmd-search" placeholder="Search commands..." autocomplete="off"
+            aria-label="Search commands">
+          <span class="kbd-hint" aria-hidden="true">/</span>
+          <span class="cmd-result-count" aria-live="polite"></span>
         </div>
-        
-        <div id='Pets' class='cmdcategory'>
-        
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet remove</div>
-                <div>Remove your pet forever.</div>
-                <div class="has-text-gray">/pet remove</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet buy</div>
-                <div>Buy a pet from the shop. Pets cost 100 coins.</div>
-                <div class="has-text-gray">/pet buy [pet]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet wash</div>
-                <div>Wash your pet!</div>
-                <div class="has-text-gray">/pet wash</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet view</div>
-                <div>View your or someone else's pet.</div>
-                <div class="has-text-gray">/pet view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet play</div>
-                <div>Play with your pet!</div>
-                <div class="has-text-gray">/pet play</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet heal</div>
-                <div>Heal your pet!</div>
-                <div class="has-text-gray">/pet heal</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet shop</div>
-                <div>View the pet shop.</div>
-                <div class="has-text-gray">/pet shop</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">pet feed</div>
-                <div>Feed your pet!</div>
-                <div class="has-text-gray">/pet feed</div>
-            </a>
-        </div>
-        
-        <div id='Fun' class='cmdcategory'>
-        
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">blackjack</div>
-                <div>Play a game of blackjack.</div>
-                <div class="has-text-gray">/blackjack</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">numberguesser</div>
-                <div>Guess the number!</div>
-                <div class="has-text-gray">/numberguesser</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">antijoke</div>
-                <div>Randomly generated antijoke!</div>
-                <div class="has-text-gray">/antijoke</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">8ball</div>
-                <div>The honest 8-ball will answer all your questions.</div>
-                <div class="has-text-gray">/8ball</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">coinflip</div>
-                <div>Flip a coin.</div>
-                <div class="has-text-gray">/coinflip</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">dadjoke</div>
-                <div>Gives you a random dad joke.</div>
-                <div class="has-text-gray">/dadjoke</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">trivia</div>
-                <div>Play a multiple choice trivia and earn coins for answering correctly!</div>
-                <div class="has-text-gray">/trivia</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">advice</div>
-                <div>Randomly generated advice!</div>
-                <div class="has-text-gray">/advice</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">hug</div>
-                <div>Use this to show your appreciation to a member by hugging them.</div>
-                <div class="has-text-gray">/hug [@Member/ID] (reason)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">kill</div>
-                <div>Use this to show your appreciation to a member by... killing them.</div>
-                <div class="has-text-gray">/kill [@Member/ID]</div>
-            </a>
-        </div>
-        
-        <div id='Moderator' class='cmdcategory'>
-        
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">say</div>
-                <div>Make the bot say a message.</div>
-                <div class="has-text-gray">/say [channel] [message]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">sync</div>
-                <div>Synchronize permissions of the current channel to the category it is in.</div>
-                <div class="has-text-gray">/sync</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">purge</div>
-                <div>Purge a specified number of messages in this channel.</div>
-                <div class="has-text-gray">/purge [number]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">clean</div>
-                <div>Clean up Rune's messages in this channel.</div>
-                <div class="has-text-gray">/clean (number)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">slowmode</div>
-                <div>Set or remove the current channel's slowmode.</div>
-                <div class="has-text-gray">/slowmode [time or 0]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings autorole list</div>
-                <div>View the current auto-role settings.</div>
-                <div class="has-text-gray">/settings autorole list</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings autorole remove</div>
-                <div>Remove a role from auto-role.</div>
-                <div class="has-text-gray">/settings autorole remove [@Role/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings autorole add</div>
-                <div>Add a role to auto-role.</div>
-                <div class="has-text-gray">/settings autorole add [@Role/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings view</div>
-                <div>View the Rune settings in place for this server.</div>
-                <div class="has-text-gray">/settings view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings deletescams</div>
-                <div>Automatically detect and delete phishing scam links from your server.</div>
-                <div class="has-text-gray">/settings deletescams [enable/disable]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">settings prefix</div>
-                <div>Customize Rune's prefix for this server.</div>
-                <div class="has-text-gray">/settings prefix (new prefix)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">mute</div>
-                <div>Timeout a member for a specified duration of time.</div>
-                <div class="has-text-gray">/mute [@Member/ID] [Duration] (reason)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">mutes</div>
-                <div>List all the currently timed out members.</div>
-                <div class="has-text-gray">/mutes</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">unmute</div>
-                <div>Unmutes a user in timeout.</div>
-                <div class="has-text-gray">/unmute [@Member/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">rolemembers</div>
-                <div>Lists (up to 100) members that have the specified role.</div>
-                <div class="has-text-gray">/rolemembers [@Role/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">unbanall</div>
-                <div>Unban all currently banned members from this server.</div>
-                <div class="has-text-gray">/unbanall</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">createchannel</div>
-                <div>Create a new text channel in a specified category.</div>
-                <div class="has-text-gray">/createchannel [#Channel Category/ID] [name]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">deletechannel</div>
-                <div>Delete a channel.</div>
-                <div class="has-text-gray">/deletechannel [#Channel/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">movechannel</div>
-                <div>Move a channel to a different category.</div>
-                <div class="has-text-gray">/movechannel [#Channel/ID] [#Channel Category/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">setchannelname</div>
-                <div>Set a channel's name.</div>
-                <div class="has-text-gray">/setchannelname [#Channel/ID] [name]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">setchanneltopic</div>
-                <div>Set a channel's topic.</div>
-                <div class="has-text-gray">/setchanneltopic [#Channel/ID] [topic]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">setnickname</div>
-                <div>Set a member's nickname.</div>
-                <div class="has-text-gray">/setnickname [@Member/ID] [nickname]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">unban</div>
-                <div>Unban a user from the server.</div>
-                <div class="has-text-gray">/unban [User ID] (reason)</div>
-            </a>
-        </div>
-        
-        <div id='Logging' class='cmdcategory'>
-        
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">logchannel members</div>
-                <div>Set or change the log channel for Rune to send member related logs to</div>
-                <div class="has-text-gray">/logchannel members [#Channel|clear]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">logchannel commands</div>
-                <div>Set or change the log channel for Rune to send command logs to</div>
-                <div class="has-text-gray">/logchannel commands [#Channel|clear]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">logchannel channels</div>
-                <div>Set or change the log channel for Rune to send channel related logs to</div>
-                <div class="has-text-gray">/logchannel channels [#Channel|clear]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">logchannel roles</div>
-                <div>Set or change the log channel for Rune to send role related logs to</div>
-                <div class="has-text-gray">/logchannel roles [#Channel|clear]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">logchannel messages</div>
-                <div>Set or change the log channel for Rune to send message related logs to</div>
-                <div class="has-text-gray">/logchannel messages [#Channel|clear]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">ignorechannel</div>
-                <div>Manage which channels Rune's logs should ignore.</div>
-                <div class="has-text-gray">/ignorechannel [#channel/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">logging</div>
-                <div>Manage your action log by customizing which events Rune should log in your logchannel.</div>
-                <div class="has-text-gray">/logging</div>
-            </a>
-        </div>
-        
-        <div id='Surveys' class='cmdcategory'>
-        
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey create</div>
-                <div>Create a survey for this server.</div>
-                <div class="has-text-gray">/survey create</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey unlock</div>
-                <div>Unlock the survey from new responses.</div>
-                <div class="has-text-gray">/survey unlock</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey removequestion</div>
-                <div>Remove a question from this server's survey.</div>
-                <div class="has-text-gray">/survey removequestion [question number]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey responsechannel</div>
-                <div>The channel survey submissions will be posted to.</div>
-                <div class="has-text-gray">/survey responsechannel [#channel/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey addquestion</div>
-                <div>Add a question to this server's survey.</div>
-                <div class="has-text-gray">/survey addquestion [question]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey blacklist</div>
-                <div>Blacklist a member from sending responses to this server's surveys.</div>
-                <div class="has-text-gray">/survey blacklist [@Member/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey view</div>
-                <div>View an already created survey in this server, if any.</div>
-                <div class="has-text-gray">/survey view</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey unblacklist</div>
-                <div>Unblacklist a member from sending responses to this server's surveys.</div>
-                <div class="has-text-gray">/survey unblacklist [@Member/ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey delete</div>
-                <div>Delete this server's survey.</div>
-                <div class="has-text-gray">/survey delete</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">survey lock</div>
-                <div>Lock the survey from new responses.</div>
-                <div class="has-text-gray">/survey lock</div>
-            </a>
-        </div>
-        
-        <div id='Utility' class='cmdcategory'>
-        
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">whois</div>
-                <div>Shows details about you or a specified Discord account.</div>
-                <div class="has-text-gray">/whois (@Member/ID)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">avatar</div>
-                <div>Grab a full sized image/GIF avatar of a discord account.</div>
-                <div class="has-text-gray">/avatar (@User/ID)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">serveravatar</div>
-                <div>Grab the current server's avatar icon.</div>
-                <div class="has-text-gray">/serveravatar</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">serverinfo</div>
-                <div>Shows details about the current server.</div>
-                <div class="has-text-gray">/serverinfo</div>
-            </a>
-        </div>
-        
-        <div id='Information' class='cmdcategory'>
-        
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">help</div>
-                <div>Shows the help selection menu, command categories, or information on a specific command.</div>
-                <div class="has-text-gray">/help (command or category)</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">ping</div>
-                <div>Returns the bot's latency (response time), in miliseconds.</div>
-                <div class="has-text-gray">/ping</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">credits</div>
-                <div>Information about the developers of Rune.</div>
-                <div class="has-text-gray">/credits</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">devserver</div>
-                <div>Get an invite to Rune's support server.</div>
-                <div class="has-text-gray">/devserver</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">invite</div>
-                <div>Add Rune to your server.</div>
-                <div class="has-text-gray">/invite</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">website</div>
-                <div>Visit Rune's website!</div>
-                <div class="has-text-gray">/website</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">uptime</div>
-                <div>Displays the bot's uptime.</div>
-                <div class="has-text-gray">/uptime</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">stats</div>
-                <div>Displays the bot's stats.</div>
-                <div class="has-text-gray">/stats</div>
-            </a>
-        </div>
-        
-        <div id='Businesses' class='cmdcategory'>
-        
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business work</div>
-                <div>Complete a task for one of your businesses to earn an income!</div>
-                <div class="has-text-gray">/business work [ID]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business create</div>
-                <div>Create your own business.</div>
-                <div class="has-text-gray">/business create [name]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business list</div>
-                <div>View your businesses.</div>
-                <div class="has-text-gray">/business list</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business fire</div>
-                <div>Fire an employee from your business.</div>
-                <div class="has-text-gray">/business fire [employee]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business hire</div>
-                <div>Hire an employee for your business.</div>
-                <div class="has-text-gray">/business hire [employee]</div>
-            </a>
-            <a class="cmdcategoryitem" onclick='toggleinfo(event)'>
-                <div class="has-text-primary">business delete</div>
-                <div>Delete a business you own.</div>
-                <div class="has-text-gray">/business delete</div>
-            </a>
-        </div>
-
-        <!-- Input commands from above -->
-    </div>
-  </div>
-    
-      <div class="footer">
-
-        <div class="row">
-  
-          <div style="line-height: 1.5rem;">
-            <h3>Rune © 2024</h3>
-            Developed by @maxikinz<br>
-            
-          </div>
-  
-          <div class='couple'>
-            <ul>
-              <li><a href="../commands/">Commands</a></li>
-              <li><a href="../blogs/">Blogs</a></li>
-              <li><a href="https://discord.gg/UND2uSY">Discord</a></li>
-            </ul>
-            <ul>
-              <li><a href="../tnc-privacy/">Privacy</a></li>
-              <li><a href="https://github.com/MaxGurbanli/RuneWebsite">GitHub</a></li>
-              <li><a href="https://twitter.com/Maxikinz_">X (formerly Twitter)</a></li>
-            </ul>
-          </div>
-  
+        <div class="cmd-filters">
+          <button class="cmd-filter active" data-category="all">All <span class="count"></span></button>
+          <button class="cmd-filter" data-category="economy">Economy <span class="count"></span></button>
+          <button class="cmd-filter" data-category="pets">Pets <span class="count"></span></button>
+          <button class="cmd-filter" data-category="businesses">Businesses <span class="count"></span></button>
+          <button class="cmd-filter" data-category="fun">Fun <span class="count"></span></button>
+          <button class="cmd-filter" data-category="moderator">Moderator <span class="count"></span></button>
+          <button class="cmd-filter" data-category="logging">Logging <span class="count"></span></button>
+          <button class="cmd-filter" data-category="surveys">Surveys <span class="count"></span></button>
+          <button class="cmd-filter" data-category="utility">Utility <span class="count"></span></button>
+          <button class="cmd-filter" data-category="information">Information <span class="count"></span></button>
         </div>
       </div>
+    </div>
+
+    <div class="cmd-list">
+      <section class="cmd-category" id="cat-economy" data-category="economy">
+        <h2><span class="category-rune" aria-hidden="true">ᚠ</span>Economy</h2>
+        <details class="cmd-item" id="tutorial" data-search="tutorial learn how to use the economy system.">
+          <summary>
+            <span class="cmd-name">/tutorial</span>
+            <span class="cmd-desc">Learn how to use the Economy system.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/tutorial</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/tutorial">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="balance-view" data-search="balance view displays an economy profile. bal coins wallet profile">
+          <summary>
+            <span class="cmd-name">/balance view</span>
+            <span class="cmd-desc">Displays an economy profile.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/balance view (@Member/ID)</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!bal</code> <code>!!coins</code> <code>!!wallet</code> <code>!!profile</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/balance view">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="deposit" data-search="deposit deposit your coins from your wallet to the bank for safe-keeping. dep">
+          <summary>
+            <span class="cmd-name">/deposit</span>
+            <span class="cmd-desc">Deposit your coins from your wallet to the bank for safe-keeping.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/deposit [amount|all]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!dep</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/deposit">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="withdraw" data-search="withdraw withdraw coins from your bank to your wallet. with">
+          <summary>
+            <span class="cmd-name">/withdraw</span>
+            <span class="cmd-desc">Withdraw coins from your bank to your wallet.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/withdraw [amount|all]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!with</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/withdraw">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="bank-view" data-search="bank view view your bank account(s).">
+          <summary>
+            <span class="cmd-name">/bank view</span>
+            <span class="cmd-desc">View your bank account(s).</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/bank view (@Member/ID)</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/bank view">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="bank-info" data-search="bank info view information about a bank.">
+          <summary>
+            <span class="cmd-name">/bank info</span>
+            <span class="cmd-desc">View information about a bank.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/bank info</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/bank info">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="bank-openaccount" data-search="bank openaccount open a bank account.">
+          <summary>
+            <span class="cmd-name">/bank openaccount</span>
+            <span class="cmd-desc">Open a bank account.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/bank openaccount (name)</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/bank openaccount">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="bank-closeaccount" data-search="bank closeaccount close a bank account.">
+          <summary>
+            <span class="cmd-name">/bank closeaccount</span>
+            <span class="cmd-desc">Close a bank account.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/bank closeaccount</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/bank closeaccount">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="bank-renameaccount" data-search="bank renameaccount rename a bank account.">
+          <summary>
+            <span class="cmd-name">/bank renameaccount</span>
+            <span class="cmd-desc">Rename a bank account.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/bank renameaccount [new name]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/bank renameaccount">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="pay" data-search="pay pay another user money.">
+          <summary>
+            <span class="cmd-name">/pay</span>
+            <span class="cmd-desc">Pay another user money.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/pay [@Member/ID] [amount]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/pay">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="daily" data-search="daily receive a small reward to boost your career.">
+          <summary>
+            <span class="cmd-name">/daily</span>
+            <span class="cmd-desc">Receive a small reward to boost your career.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/daily</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">23 hours</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/daily">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="mine" data-search="mine use your pickaxe to mine materials.">
+          <summary>
+            <span class="cmd-name">/mine</span>
+            <span class="cmd-desc">Use your pickaxe to mine materials.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/mine</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">10 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/mine">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="drill" data-search="drill use your drill to drill for ores.">
+          <summary>
+            <span class="cmd-name">/drill</span>
+            <span class="cmd-desc">Use your drill to drill for ores.</span>
+            <span class="badge-new">New</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/drill</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">10 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/drill">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="chop" data-search="chop use your axe to gather wood.">
+          <summary>
+            <span class="cmd-name">/chop</span>
+            <span class="cmd-desc">Use your axe to gather wood.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/chop</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">5 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/chop">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="fish" data-search="fish use your fishing pole to go fishing.">
+          <summary>
+            <span class="cmd-name">/fish</span>
+            <span class="cmd-desc">Use your fishing pole to go fishing.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/fish</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">20 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/fish">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="hunt" data-search="hunt use your hunting rifle to go hunting.">
+          <summary>
+            <span class="cmd-name">/hunt</span>
+            <span class="cmd-desc">Use your hunting rifle to go hunting.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/hunt</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">20 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/hunt">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="dig" data-search="dig use your shovel to dig in the ground.">
+          <summary>
+            <span class="cmd-name">/dig</span>
+            <span class="cmd-desc">Use your shovel to dig in the ground.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/dig</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">20 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/dig">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="search" data-search="search search a place for some coins, maybe you'll find some.">
+          <summary>
+            <span class="cmd-name">/search</span>
+            <span class="cmd-desc">Search a place for some coins, maybe you'll find some.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/search</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">15 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/search">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="beg" data-search="beg maybe someone will be kind enough to donate a few coins.">
+          <summary>
+            <span class="cmd-name">/beg</span>
+            <span class="cmd-desc">Maybe someone will be kind enough to donate a few coins.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/beg</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">10 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/beg">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="crime" data-search="crime commit a crime! high risk, high reward.">
+          <summary>
+            <span class="cmd-name">/crime</span>
+            <span class="cmd-desc">Commit a crime! High risk, high reward.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/crime</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">30 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/crime">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="rob" data-search="rob rob someone, potentially stealing their wallet.">
+          <summary>
+            <span class="cmd-name">/rob</span>
+            <span class="cmd-desc">Rob someone, potentially stealing their wallet.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/rob [@Member/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">10 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/rob">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="heist" data-search="heist start a heist on the jewellery store or the bank.">
+          <summary>
+            <span class="cmd-name">/heist</span>
+            <span class="cmd-desc">Start a heist on the Jewellery Store or the Bank.</span>
+            <span class="badge-new">New</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/heist</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/heist">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="hack" data-search="hack hack into the mainframe to steal some coins.">
+          <summary>
+            <span class="cmd-name">/hack</span>
+            <span class="cmd-desc">Hack into the mainframe to steal some coins.</span>
+            <span class="badge-new">New</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/hack</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">20 minutes</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/hack">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="shop-view" data-search="shop view displays the item shop.">
+          <summary>
+            <span class="cmd-name">/shop view</span>
+            <span class="cmd-desc">Displays the item shop.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/shop view</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/shop view">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="shop-buy" data-search="shop buy buy an item from the shop.">
+          <summary>
+            <span class="cmd-name">/shop buy</span>
+            <span class="cmd-desc">Buy an item from the shop.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/shop buy [item ID]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/shop buy">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="shop-sell" data-search="shop sell sell an item from your inventory.">
+          <summary>
+            <span class="cmd-name">/shop sell</span>
+            <span class="cmd-desc">Sell an item from your inventory.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/shop sell [item ID] (amount)</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/shop sell">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="inventory-view" data-search="inventory view view your items, ores, wood and fish. inv items">
+          <summary>
+            <span class="cmd-name">/inventory view</span>
+            <span class="cmd-desc">View your items, ores, wood and fish.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/inventory view (@Member/ID)</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!inv</code> <code>!!items</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/inventory view">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="inventory-use" data-search="inventory use use an item from your inventory.">
+          <summary>
+            <span class="cmd-name">/inventory use</span>
+            <span class="cmd-desc">Use an item from your inventory.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/inventory use (item)</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/inventory use">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="recipes" data-search="recipes view crafting recipes.">
+          <summary>
+            <span class="cmd-name">/recipes</span>
+            <span class="cmd-desc">View crafting recipes.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/recipes</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/recipes">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="craft" data-search="craft craft an item.">
+          <summary>
+            <span class="cmd-name">/craft</span>
+            <span class="cmd-desc">Craft an item.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/craft [item]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/craft">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="cooldowns" data-search="cooldowns view your active economy cooldowns.">
+          <summary>
+            <span class="cmd-name">/cooldowns</span>
+            <span class="cmd-desc">View your active Economy cooldowns.</span>
+            <span class="badge-new">New</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/cooldowns</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/cooldowns">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="achievements" data-search="achievements view your achievements. ach">
+          <summary>
+            <span class="cmd-name">/achievements</span>
+            <span class="cmd-desc">View your achievements.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/achievements</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!ach</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/achievements">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="badges-view" data-search="badges view view your (or someone else's) economy badges! badge">
+          <summary>
+            <span class="cmd-name">/badges view</span>
+            <span class="cmd-desc">View your (or someone else's) economy badges!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/badges view (@Member/ID)</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!badge</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/badges view">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="badges-list" data-search="badges list list all available badges!">
+          <summary>
+            <span class="cmd-name">/badges list</span>
+            <span class="cmd-desc">List all available badges!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/badges list</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/badges list">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="badges-buy" data-search="badges buy buy a badge to display on your profile! (100 coins)">
+          <summary>
+            <span class="cmd-name">/badges buy</span>
+            <span class="cmd-desc">Buy a badge to display on your profile! (100 coins)</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/badges buy [badge]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/badges buy">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="badges-hide" data-search="badges hide hide a badge from your profile!">
+          <summary>
+            <span class="cmd-name">/badges hide</span>
+            <span class="cmd-desc">Hide a badge from your profile!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/badges hide [badge]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/badges hide">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="badges-unhide" data-search="badges unhide unhide a badge from your profile!">
+          <summary>
+            <span class="cmd-name">/badges unhide</span>
+            <span class="cmd-desc">Unhide a badge from your profile!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/badges unhide [badge]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/badges unhide">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="leaderboard" data-search="leaderboard view the richest people in your server! lb coinslb">
+          <summary>
+            <span class="cmd-name">/leaderboard</span>
+            <span class="cmd-desc">View the richest people in your server!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/leaderboard</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!lb</code> <code>!!coinslb</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/leaderboard">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="cmd-category" id="cat-pets" data-category="pets">
+        <h2><span class="category-rune" aria-hidden="true">ᛖ</span>Pets</h2>
+        <details class="cmd-item" id="pet-shop" data-search="pet shop view the pet shop. pets">
+          <summary>
+            <span class="cmd-name">/pet shop</span>
+            <span class="cmd-desc">View the pet shop.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/pet shop</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!pets</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/pet shop">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="pet-buy" data-search="pet buy buy a pet from the shop. pets cost 100 coins.">
+          <summary>
+            <span class="cmd-name">/pet buy</span>
+            <span class="cmd-desc">Buy a pet from the shop. Pets cost 100 coins.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/pet buy [pet]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/pet buy">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="pet-view" data-search="pet view view your or someone else's pet.">
+          <summary>
+            <span class="cmd-name">/pet view</span>
+            <span class="cmd-desc">View your or someone else's pet.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/pet view (@Member/ID)</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/pet view">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="pet-play" data-search="pet play play with your pet!">
+          <summary>
+            <span class="cmd-name">/pet play</span>
+            <span class="cmd-desc">Play with your pet!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/pet play</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">4 hours</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/pet play">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="pet-feed" data-search="pet feed feed your pet!">
+          <summary>
+            <span class="cmd-name">/pet feed</span>
+            <span class="cmd-desc">Feed your pet!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/pet feed</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/pet feed">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="pet-wash" data-search="pet wash wash your pet!">
+          <summary>
+            <span class="cmd-name">/pet wash</span>
+            <span class="cmd-desc">Wash your pet!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/pet wash</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/pet wash">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="pet-heal" data-search="pet heal heal your pet!">
+          <summary>
+            <span class="cmd-name">/pet heal</span>
+            <span class="cmd-desc">Heal your pet!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/pet heal</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/pet heal">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="pet-remove" data-search="pet remove remove your pet forever.">
+          <summary>
+            <span class="cmd-name">/pet remove</span>
+            <span class="cmd-desc">Remove your pet forever.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/pet remove</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/pet remove">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="cmd-category" id="cat-businesses" data-category="businesses">
+        <h2><span class="category-rune" aria-hidden="true">ᛒ</span>Businesses</h2>
+        <details class="cmd-item" id="business-create" data-search="business create create your own business.">
+          <summary>
+            <span class="cmd-name">/business create</span>
+            <span class="cmd-desc">Create your own business.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/business create [name]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/business create">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="business-list" data-search="business list view your businesses.">
+          <summary>
+            <span class="cmd-name">/business list</span>
+            <span class="cmd-desc">View your businesses.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/business list</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/business list">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="business-work" data-search="business work complete a task for one of your businesses to earn an income!">
+          <summary>
+            <span class="cmd-name">/business work</span>
+            <span class="cmd-desc">Complete a task for one of your businesses to earn an income!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/business work [ID]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/business work">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="business-hire" data-search="business hire hire an employee for your business.">
+          <summary>
+            <span class="cmd-name">/business hire</span>
+            <span class="cmd-desc">Hire an employee for your business.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/business hire [@Member/ID]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/business hire">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="business-fire" data-search="business fire fire an employee from your business.">
+          <summary>
+            <span class="cmd-name">/business fire</span>
+            <span class="cmd-desc">Fire an employee from your business.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/business fire [@Member/ID]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/business fire">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="business-delete" data-search="business delete delete a business you own.">
+          <summary>
+            <span class="cmd-name">/business delete</span>
+            <span class="cmd-desc">Delete a business you own.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/business delete</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/business delete">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="cmd-category" id="cat-fun" data-category="fun">
+        <h2><span class="category-rune" aria-hidden="true">ᚹ</span>Fun</h2>
+        <details class="cmd-item" id="blackjack" data-search="blackjack play a game of blackjack. bj">
+          <summary>
+            <span class="cmd-name">/blackjack</span>
+            <span class="cmd-desc">Play a game of blackjack.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/blackjack</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!bj</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/blackjack">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="trivia" data-search="trivia play a multiple choice trivia and earn coins for answering correctly!">
+          <summary>
+            <span class="cmd-name">/trivia</span>
+            <span class="cmd-desc">Play a multiple choice trivia and earn coins for answering correctly!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/trivia</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">5 seconds</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/trivia">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="numberguesser" data-search="numberguesser guess the number! ng guesser guessthenumber">
+          <summary>
+            <span class="cmd-name">/numberguesser</span>
+            <span class="cmd-desc">Guess the number!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/numberguesser</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!ng</code> <code>!!guesser</code> <code>!!guessthenumber</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/numberguesser">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="8ball" data-search="8ball the honest 8-ball will answer all your questions. eightball 8-ball">
+          <summary>
+            <span class="cmd-name">/8ball</span>
+            <span class="cmd-desc">The honest 8-ball will answer all your questions.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/8ball [question]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!eightball</code> <code>!!8-ball</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/8ball">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="coinflip" data-search="coinflip flip a coin.">
+          <summary>
+            <span class="cmd-name">/coinflip</span>
+            <span class="cmd-desc">Flip a coin.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/coinflip</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/coinflip">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="dadjoke" data-search="dadjoke gives you a random dad joke.">
+          <summary>
+            <span class="cmd-name">/dadjoke</span>
+            <span class="cmd-desc">Gives you a random dad joke.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/dadjoke</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Cooldown</span><span class="chip-cooldown">3 seconds</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/dadjoke">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="hug" data-search="hug use this to show your appreciation to a member by hugging them.">
+          <summary>
+            <span class="cmd-name">/hug</span>
+            <span class="cmd-desc">Use this to show your appreciation to a member by hugging them.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/hug [@Member/ID] (reason)</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/hug">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="kill" data-search="kill use this to show your appreciation to a member by... killing them.">
+          <summary>
+            <span class="cmd-name">/kill</span>
+            <span class="cmd-desc">Use this to show your appreciation to a member by... killing them.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/kill [@Member/ID]</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/kill">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="cmd-category" id="cat-moderator" data-category="moderator">
+        <h2><span class="category-rune" aria-hidden="true">ᛏ</span>Moderator</h2>
+        <details class="cmd-item" id="say" data-search="say make the bot say a message.">
+          <summary>
+            <span class="cmd-name">/say</span>
+            <span class="cmd-desc">Make the bot say a message.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/say [channel] [message]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Messages</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/say">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="purge" data-search="purge purge a specified number of messages in this channel.">
+          <summary>
+            <span class="cmd-name">/purge</span>
+            <span class="cmd-desc">Purge a specified number of messages in this channel.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/purge [number]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Messages</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/purge">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="clean" data-search="clean clean up rune's messages in this channel.">
+          <summary>
+            <span class="cmd-name">/clean</span>
+            <span class="cmd-desc">Clean up Rune's messages in this channel.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/clean (number)</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Messages</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/clean">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="slowmode" data-search="slowmode set or remove the current channel's slowmode.">
+          <summary>
+            <span class="cmd-name">/slowmode</span>
+            <span class="cmd-desc">Set or remove the current channel's slowmode.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/slowmode [time or 0]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Channels</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/slowmode">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="sync" data-search="sync synchronize permissions of the current channel to the category it is in.">
+          <summary>
+            <span class="cmd-name">/sync</span>
+            <span class="cmd-desc">Synchronize permissions of the current channel to the category it is in.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/sync</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Channels</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/sync">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="settings-view" data-search="settings view view the rune settings in place for this server.">
+          <summary>
+            <span class="cmd-name">/settings view</span>
+            <span class="cmd-desc">View the Rune settings in place for this server.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/settings view</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/settings view">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="settings-prefix" data-search="settings prefix customize rune's prefix for this server.">
+          <summary>
+            <span class="cmd-name">/settings prefix</span>
+            <span class="cmd-desc">Customize Rune's prefix for this server.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/settings prefix (new prefix)</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/settings prefix">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="settings-deletescams" data-search="settings deletescams automatically detect and delete phishing scam links from your server.">
+          <summary>
+            <span class="cmd-name">/settings deletescams</span>
+            <span class="cmd-desc">Automatically detect and delete phishing scam links from your server.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/settings deletescams [enable/disable]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/settings deletescams">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="settings-autorole-list" data-search="settings autorole list view the current auto-role settings.">
+          <summary>
+            <span class="cmd-name">/settings autorole list</span>
+            <span class="cmd-desc">View the current auto-role settings.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/settings autorole list</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/settings autorole list">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="settings-autorole-add" data-search="settings autorole add add a role to auto-role.">
+          <summary>
+            <span class="cmd-name">/settings autorole add</span>
+            <span class="cmd-desc">Add a role to auto-role.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/settings autorole add [@Role/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/settings autorole add">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="settings-autorole-remove" data-search="settings autorole remove remove a role from auto-role.">
+          <summary>
+            <span class="cmd-name">/settings autorole remove</span>
+            <span class="cmd-desc">Remove a role from auto-role.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/settings autorole remove [@Role/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/settings autorole remove">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="mutes" data-search="mutes list all the currently timed out members. timeouts">
+          <summary>
+            <span class="cmd-name">/mutes</span>
+            <span class="cmd-desc">List all the currently timed out members.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/mutes</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!timeouts</code></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Moderate Members</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/mutes">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="rolemembers" data-search="rolemembers lists (up to 100) members that have the specified role.">
+          <summary>
+            <span class="cmd-name">/rolemembers</span>
+            <span class="cmd-desc">Lists (up to 100) members that have the specified role.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/rolemembers [@Role/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Roles</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/rolemembers">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="createchannel" data-search="createchannel create a new text channel in a specified category.">
+          <summary>
+            <span class="cmd-name">/createchannel</span>
+            <span class="cmd-desc">Create a new text channel in a specified category.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/createchannel [#Category/ID] [name]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Channels</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/createchannel">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="deletechannel" data-search="deletechannel delete a channel.">
+          <summary>
+            <span class="cmd-name">/deletechannel</span>
+            <span class="cmd-desc">Delete a channel.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/deletechannel [#Channel/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Channels</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/deletechannel">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="movechannel" data-search="movechannel move a channel to a different category.">
+          <summary>
+            <span class="cmd-name">/movechannel</span>
+            <span class="cmd-desc">Move a channel to a different category.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/movechannel [#Channel/ID] [#Category/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Channels</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/movechannel">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="setchannelname" data-search="setchannelname set a channel's name.">
+          <summary>
+            <span class="cmd-name">/setchannelname</span>
+            <span class="cmd-desc">Set a channel's name.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/setchannelname [#Channel/ID] [name]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Channels</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/setchannelname">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="setchanneltopic" data-search="setchanneltopic set a channel's topic.">
+          <summary>
+            <span class="cmd-name">/setchanneltopic</span>
+            <span class="cmd-desc">Set a channel's topic.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/setchanneltopic [#Channel/ID] [topic]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Channels</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/setchanneltopic">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="setnickname" data-search="setnickname set a member's nickname.">
+          <summary>
+            <span class="cmd-name">/setnickname</span>
+            <span class="cmd-desc">Set a member's nickname.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/setnickname [@Member/ID] [nickname]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Nicknames</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/setnickname">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="unban" data-search="unban unban a user from the server.">
+          <summary>
+            <span class="cmd-name">/unban</span>
+            <span class="cmd-desc">Unban a user from the server.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/unban [User ID] (reason)</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Ban Members</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/unban">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="cmd-category" id="cat-logging" data-category="logging">
+        <h2><span class="category-rune" aria-hidden="true">ᛚ</span>Logging</h2>
+        <details class="cmd-item" id="logchannel-commands" data-search="logchannel commands set or change the log channel for rune to send command logs to.">
+          <summary>
+            <span class="cmd-name">/logchannel commands</span>
+            <span class="cmd-desc">Set or change the log channel for Rune to send command logs to.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/logchannel commands [#Channel|clear]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/logchannel commands">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="logchannel-members" data-search="logchannel members set or change the log channel for rune to send member related logs to.">
+          <summary>
+            <span class="cmd-name">/logchannel members</span>
+            <span class="cmd-desc">Set or change the log channel for Rune to send member related logs to.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/logchannel members [#Channel|clear]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/logchannel members">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="logchannel-messages" data-search="logchannel messages set or change the log channel for rune to send message related logs to.">
+          <summary>
+            <span class="cmd-name">/logchannel messages</span>
+            <span class="cmd-desc">Set or change the log channel for Rune to send message related logs to.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/logchannel messages [#Channel|clear]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/logchannel messages">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="logchannel-roles" data-search="logchannel roles set or change the log channel for rune to send role related logs to.">
+          <summary>
+            <span class="cmd-name">/logchannel roles</span>
+            <span class="cmd-desc">Set or change the log channel for Rune to send role related logs to.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/logchannel roles [#Channel|clear]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/logchannel roles">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="logchannel-channels" data-search="logchannel channels set or change the log channel for rune to send channel related logs to.">
+          <summary>
+            <span class="cmd-name">/logchannel channels</span>
+            <span class="cmd-desc">Set or change the log channel for Rune to send channel related logs to.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/logchannel channels [#Channel|clear]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/logchannel channels">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="ignorechannel" data-search="ignorechannel manage which channels rune's logs should ignore.">
+          <summary>
+            <span class="cmd-name">/ignorechannel</span>
+            <span class="cmd-desc">Manage which channels Rune's logs should ignore.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/ignorechannel [#Channel/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/ignorechannel">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="logging" data-search="logging customize which events rune should log in your logchannels.">
+          <summary>
+            <span class="cmd-name">/logging</span>
+            <span class="cmd-desc">Customize which events Rune should log in your logchannels.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/logging</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/logging">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="cmd-category" id="cat-surveys" data-category="surveys">
+        <h2><span class="category-rune" aria-hidden="true">ᛈ</span>Surveys</h2>
+        <details class="cmd-item" id="survey" data-search="survey if exists, fill out the survey created by this server.">
+          <summary>
+            <span class="cmd-name">/survey</span>
+            <span class="cmd-desc">If exists, fill out the survey created by this server.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-view" data-search="survey view view an already created survey in this server, if any.">
+          <summary>
+            <span class="cmd-name">/survey view</span>
+            <span class="cmd-desc">View an already created survey in this server, if any.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey view</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey view">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-create" data-search="survey create create a survey for this server.">
+          <summary>
+            <span class="cmd-name">/survey create</span>
+            <span class="cmd-desc">Create a survey for this server.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey create</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey create">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-addquestion" data-search="survey addquestion add a question to this server's survey.">
+          <summary>
+            <span class="cmd-name">/survey addquestion</span>
+            <span class="cmd-desc">Add a question to this server's survey.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey addquestion [question]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey addquestion">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-removequestion" data-search="survey removequestion remove a question from this server's survey. deletequestion">
+          <summary>
+            <span class="cmd-name">/survey removequestion</span>
+            <span class="cmd-desc">Remove a question from this server's survey.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey removequestion [question number]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!deletequestion</code></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey removequestion">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-responsechannel" data-search="survey responsechannel the channel survey submissions will be posted to.">
+          <summary>
+            <span class="cmd-name">/survey responsechannel</span>
+            <span class="cmd-desc">The channel survey submissions will be posted to.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey responsechannel [#Channel/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey responsechannel">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-lock" data-search="survey lock lock the survey from new responses.">
+          <summary>
+            <span class="cmd-name">/survey lock</span>
+            <span class="cmd-desc">Lock the survey from new responses.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey lock</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey lock">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-unlock" data-search="survey unlock unlock the survey from new responses.">
+          <summary>
+            <span class="cmd-name">/survey unlock</span>
+            <span class="cmd-desc">Unlock the survey from new responses.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey unlock</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey unlock">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-blacklist" data-search="survey blacklist blacklist a member from sending responses to this server's surveys.">
+          <summary>
+            <span class="cmd-name">/survey blacklist</span>
+            <span class="cmd-desc">Blacklist a member from sending responses to this server's surveys.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey blacklist [@Member/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey blacklist">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-unblacklist" data-search="survey unblacklist unblacklist a member from sending responses to this server's surveys.">
+          <summary>
+            <span class="cmd-name">/survey unblacklist</span>
+            <span class="cmd-desc">Unblacklist a member from sending responses to this server's surveys.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey unblacklist [@Member/ID]</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey unblacklist">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="survey-delete" data-search="survey delete delete this server's survey.">
+          <summary>
+            <span class="cmd-name">/survey delete</span>
+            <span class="cmd-desc">Delete this server's survey.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/survey delete</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Server</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/survey delete">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="cmd-category" id="cat-utility" data-category="utility">
+        <h2><span class="category-rune" aria-hidden="true">ᚢ</span>Utility</h2>
+        <details class="cmd-item" id="whois" data-search="whois shows details about you or a specified discord account. userinfo">
+          <summary>
+            <span class="cmd-name">/whois</span>
+            <span class="cmd-desc">Shows details about you or a specified Discord account.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/whois (@Member/ID)</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!userinfo</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/whois">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="avatar" data-search="avatar grab a full sized image/gif avatar of a discord account.">
+          <summary>
+            <span class="cmd-name">/avatar</span>
+            <span class="cmd-desc">Grab a full sized image/GIF avatar of a discord account.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/avatar (@User/ID)</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/avatar">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="serveravatar" data-search="serveravatar grab the current server's avatar icon.">
+          <summary>
+            <span class="cmd-name">/serveravatar</span>
+            <span class="cmd-desc">Grab the current server's avatar icon.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/serveravatar</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/serveravatar">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="serverinfo" data-search="serverinfo shows details about the current server.">
+          <summary>
+            <span class="cmd-name">/serverinfo</span>
+            <span class="cmd-desc">Shows details about the current server.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/serverinfo</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/serverinfo">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="buildembed" data-search="buildembed build your own embed.">
+          <summary>
+            <span class="cmd-name">/buildembed</span>
+            <span class="cmd-desc">Build your own embed.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/buildembed</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Requires</span><span class="chip-perm">Manage Messages</span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/buildembed">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="cmd-category" id="cat-information" data-category="information">
+        <h2><span class="category-rune" aria-hidden="true">ᚨ</span>Information</h2>
+        <details class="cmd-item" id="help" data-search="help shows the help selection menu, command categories, or information on a specific command.">
+          <summary>
+            <span class="cmd-name">/help</span>
+            <span class="cmd-desc">Shows the help selection menu, command categories, or information on a specific command.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/help (command or category)</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/help">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="ping" data-search="ping returns the bot's latency (response time), in milliseconds.">
+          <summary>
+            <span class="cmd-name">/ping</span>
+            <span class="cmd-desc">Returns the bot's latency (response time), in milliseconds.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/ping</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/ping">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="stats" data-search="stats displays the bot's stats.">
+          <summary>
+            <span class="cmd-name">/stats</span>
+            <span class="cmd-desc">Displays the bot's stats.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/stats</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/stats">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="uptime" data-search="uptime displays the bot's uptime.">
+          <summary>
+            <span class="cmd-name">/uptime</span>
+            <span class="cmd-desc">Displays the bot's uptime.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/uptime</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/uptime">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="invite" data-search="invite add rune to your server. addbot">
+          <summary>
+            <span class="cmd-name">/invite</span>
+            <span class="cmd-desc">Add Rune to your server.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/invite</cmd></span></div>
+            <div class="detail-row"><span class="detail-label">Prefix aliases</span><span class="detail-value"><code>!!addbot</code></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/invite">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="website" data-search="website visit rune's website!">
+          <summary>
+            <span class="cmd-name">/website</span>
+            <span class="cmd-desc">Visit Rune's website!</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/website</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/website">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="devserver" data-search="devserver get an invite to rune's support server.">
+          <summary>
+            <span class="cmd-name">/devserver</span>
+            <span class="cmd-desc">Get an invite to Rune's support server.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/devserver</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/devserver">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+        <details class="cmd-item" id="credits" data-search="credits information about rune.">
+          <summary>
+            <span class="cmd-name">/credits</span>
+            <span class="cmd-desc">Information about Rune.</span>
+          </summary>
+          <div class="cmd-details">
+            <div class="detail-row"><span class="detail-label">Usage</span><span class="detail-value"><cmd>/credits</cmd></span></div>
+            <div class="cmd-actions">
+              <button class="icon-button copy-cmd" data-copy="/credits">Copy command</button>
+              <button class="icon-button copy-link">Copy link</button>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <div class="cmd-empty">
+        <span class="glyph" aria-hidden="true">ᚦ</span>
+        Nothing found. Maybe it got removed - check the <a href="../blogs/update-3.x/">update thread</a>.
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="row">
+        <div class="brand">
+          <h3>Rune © 2026</h3>
+          Developed by @maxikinz.<br>
+          Want a bot built for your server? I take commissions - <a href="https://discord.gg/HWRM24fBBK"
+            target="_blank" rel="noopener noreferrer">message @maxikinz on Discord</a>.
+        </div>
+
+        <div class="couple">
+          <ul>
+            <li><a href="../commands/">Commands</a></li>
+            <li><a href="../blogs/">Blogs</a></li>
+            <li><a href="https://discord.gg/HWRM24fBBK" target="_blank" rel="noopener noreferrer">Discord</a></li>
+          </ul>
+          <ul>
+            <li><a href="../tnc-privacy/">Privacy</a></li>
+            <li><a href="https://github.com/MaxGurbanli/RuneWebsite" target="_blank"
+                rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://twitter.com/Maxikinz_" target="_blank" rel="noopener noreferrer">X (formerly
+                Twitter)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fine-print">ᚱᚢᚾᛖ - hand-carved HTML, no frameworks were harmed in the making of this site.</div>
+    </div>
 
   </main>
 
-    <!-- <div id="myCookieConsent">
-      <a id="cookieButton">Understood</a>
-      <div>We use cookies to remember your preferences.<a href="../tnc-privacy/">More details</a></div>
-    </div> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src='../js/main.js'></script>
-    <script>loadCommands()</script>
+  <script src="../js/main.js"></script>
 </body>
+
+</html>

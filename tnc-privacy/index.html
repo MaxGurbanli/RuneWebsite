@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Privacy</title>
+  <title>Privacy Policy | Rune</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="Privacy" property="og:title">
   <meta content="Rune is a multi-purpose bot ready to skill up and boost your Discord server, easy and free."
@@ -78,21 +78,98 @@
 
   <main>
 
-      <div class='content'>
-        <h1>Terms and Conditions, Privacy Policy</h1>
-        <div style='font-size: 1.2rem;'>
-        If you continue to browse and use this website or Rune, you are agreeing to comply with and be bound by the following terms and conditions of use. If you disagree with any part of these terms and conditions, please do not use our services.
+    <div class="content">
+      <h1 class='big-title'>Privacy Policy and Terms</h1>
+      <div class='gray-subtitle'>Last updated October 16, 2026.</div>
+      <div class='separator'></div>
+      <div class='blogbody' data-no-jump>
+        By using Rune or this website you agree to these terms. If you disagree with any part of them, please do not
+        use Rune. Rune is run by a single developer, @maxikinz, who is responsible for the data described here.
+
+        <h2>What Rune stores</h2>
+        <ul>
+          <li>Discord IDs for users, servers, channels, roles and messages, plus usernames where a record needs to be
+            readable later.</li>
+          <li>Server settings chosen by server administrators, such as the prefix, log channels, enabled log
+            categories, autorole and ignored channels.</li>
+          <li>Economy data: balances, items, businesses, pets and cooldowns.</li>
+          <li>Support tickets and ban appeals: what you type into the ticket or appeal form, the case status, and staff
+            decisions.</li>
+          <li>Moderation records: the action taken, the moderator, the reason, evidence links and screenshots, and the
+            Roblox username or ID involved.</li>
+          <li>Staff records for servers that use Rune's staff tools: activity, training progress, leave, pay
+            calculations and the Roblox account used for payouts.</li>
+        </ul>
+        Rune does not store passwords, email addresses or payment details, and it does not keep a history of the
+        messages in your server.
+
+        <h2>Message content</h2>
+        Rune reads message content only for the features below. Most of them read a message, act on it and keep
+        nothing.
+        <ul>
+          <li><b>Edit and delete logs.</b> If a server turns these on, Rune posts the old and new text of an edited
+            or deleted message to that server's log channel. Nothing is saved to Rune's database. Administrators can
+            turn this off, or exclude channels, at any time.</li>
+          <li><b>Phishing link scanning.</b> If a server turns this on, messages that contain a link are checked
+            against a phishing domain service and removed if they match. Only the message text is sent for the check
+            and nothing is saved.</li>
+          <li><b>Link rules in Vikings Community.</b> Links outside an approved list are removed, and the author is
+            sent their message back by DM. Nothing is saved.</li>
+          <li><b>Reported messages.</b> When a member reports a message with the Report Message command, Rune saves
+            that message and a few messages around it so staff can review it in context. Reports are deleted
+            automatically after 30 days.</li>
+          <li><b>Moderation logs.</b> In the Vikings servers, Rune reads punishment logs posted by Dyno and by the
+            Vikings Roblox game servers and saves them as moderation records. Notes and screenshots that moderators
+            post in a case thread are saved as evidence on that case.</li>
+        </ul>
+
+        <h2>How long data is kept</h2>
+        <ul>
+          <li>Reported messages are deleted automatically after 30 days.</li>
+          <li>Moderation records, appeals and their evidence are kept for as long as the punishment can be appealed
+            or referred to, which can be years. Deleting them early would make fair appeals impossible.</li>
+          <li>Economy data and server settings are kept while they are in use. Server settings are not deleted when
+            Rune is removed from a server, so they still work if Rune is added back. Ask us and we will delete
+            them.</li>
+          <li>Short lived technical records, such as markers for messages Rune has already processed, are deleted
+            automatically.</li>
+        </ul>
+
+        <h2>Where data is kept and who it is shared with</h2>
+        <ul>
+          <li>Data is stored in MongoDB Atlas, which encrypts it at rest. Every connection to the database uses TLS,
+            and only the developer has access.</li>
+          <li>Text written in support tickets may be sent to OpenAI to sort the ticket into the right category. Data
+            sent through OpenAI's API is not used to train its models, and Rune does not train any AI model of its
+            own.</li>
+          <li>Links from servers that turn on phishing scanning are checked with a phishing domain service, as
+            described above.</li>
+          <li>Roblox usernames and IDs are looked up through Roblox's public API.</li>
+        </ul>
+        Rune does not sell data or share it with anyone else.
+
+        <h2>Your choices and deleting your data</h2>
+        Server administrators decide which logging and scanning features run in their server and can turn each one
+        off at any time. To have your data deleted, join <a href="https://discord.gg/HWRM24fBBK" target="_blank"
+          rel="noopener noreferrer">Rune HQ</a> and message @maxikinz. Requests are handled by hand, usually within a
+        few days and always within 30 days. Records tied to an open case or an active ban may have to be kept until
+        that case is closed.
         <br><br>
-        1. Rune stores user IDs and server IDs for purposes such as the economy system and auto-moderation settings. If you wish to contact us about the deletion of your data, please join our <a href="https://discord.gg/AFqRFfxQue" style="color: white" target="_blank">Discord Server</a>.
-        <br><br>
-        2. Abuse of any major bugs or otherwise unintended mechanics discovered within Rune can result in a ban from using the bot. Likewise, abusing bugs to give yourself or someone else an advantage in the economy system can result in a wipe and/or ban for everyone involved.
-        <br><br>
-        3. Use of alternate accounts to bypass cooldowns, bans, or other restrictions is strictly prohibited and can result in a permanent ban.
-        <br><br>
-        4. Use of user bots, scripts, or any other ways to automate the process of using commands is forbidden and can result in a ban. The same goes for excessive spam of commands without reason.
-        </div>
-        
+        You must meet Discord's minimum age to use Rune. If this policy changes, the date at the top of this page
+        will change with it.
+
+        <h2>Rules for using Rune</h2>
+        <ul>
+          <li>Abusing major bugs or unintended mechanics in Rune can get you banned from the bot. Abusing bugs to give
+            yourself or someone else an advantage in the economy can lead to a wipe, a ban, or both, for everyone
+            involved.</li>
+          <li>Using alternate accounts to get around cooldowns, bans or other restrictions is not allowed and can lead
+            to a permanent ban.</li>
+          <li>Using user bots, scripts or anything else to automate commands is not allowed and can lead to a ban. The
+            same goes for spamming commands for no reason.</li>
+        </ul>
       </div>
+    </div>
 
     <div class="footer">
       <div class="row">

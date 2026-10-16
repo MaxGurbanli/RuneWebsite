@@ -247,9 +247,9 @@ function initBlogPost() {
     h2.appendChild(anchor);
   });
 
-  // jump-to-version dropdown, only worth it on long threads
+  // jump-to-version dropdown, only worth it on long threads (data-no-jump opts out)
   const subtitle = document.querySelector('.gray-subtitle');
-  if (headings.length > 3 && subtitle) {
+  if (headings.length > 3 && subtitle && !('noJump' in body.dataset)) {
     const nav = document.createElement('div');
     nav.className = 'post-nav';
     const label = document.createElement('label');
